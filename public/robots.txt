@@ -1,0 +1,11 @@
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+Disallow: /landing/policy/
+Disallow: /fr/landing/policy/
+Disallow: /landing/terms/
+Disallow: /fr/landing/terms/
+Disallow: /transition
+Disallow: /fr/transition

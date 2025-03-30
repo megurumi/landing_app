@@ -1,0 +1,41 @@
+title: Megurumi Creative
+description:
+  Enjoy the art of crochet with Megurumi Creative. Explore unique handmade creations, get inspired, and connect with crochet enthusiasts.
+navigation: false
+hero:
+  title: Unleash Your Creativity with Crochet
+  description:
+    Dive into my world of crochet with stunning handmade creations, tutorials, and people that shares your passion for crafting.
+  headline:
+    label: Explore the art of crochet
+    icon: i-heroicons-sparkles
+  links:
+    - label: Follow us on YouTube
+      to: https://www.youtube.com/@megurumi_creative
+      size: xl
+      color: black
+      icon: i-simple-icons-youtube
+      trailing: true
+social:
+  id: social
+  title: Handmade Creations
+  description:
+    Explore a collection of unique crochet creations, from adorable amigurumi to stylish accessories, all crafted with love and creativity.
+  image: /img/landing/creations.png
+  align: left
+cta:
+  title: Start Your Mergurumi Journey
+  description:
+    Explore unique creations, learn new techniques, and connect with a community that shares your passion for crochet.
+  links:
+    - label: Shop Now
+      size: xl
+      to: /
+      color: gray
+      icon: i-heroicons-shopping-bag
+    - label: Explore Creations
+      size: xl
+      to: /
+      color: black
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true
