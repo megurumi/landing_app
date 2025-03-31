@@ -1,6 +1,5 @@
 <script setup lang="ts">
 const { locale } = useI18n();
-const viewport = useViewport();
 const router = useRouter();
 const localePath = useLocalePath();
 
@@ -112,17 +111,14 @@ const socials = [
 
       <div class="flex flex-col gap-4 items-center justify-end">
         <UButton
-          v-for="social in socials"
+          v-for="social in page.social.links"
           :key="social.label"
+          v-bind="social"
+          target="_blank"
           color="white"
           variant="solid"
           class="flex items-center justify-start w-full max-w-sm rounded-full px-8 py-6 shadow-lg"
-          :href="social.url"
-          target="_blank"
-        >
-          <UIcon :name="social.icon" class="w-8 h-8" />
-          <span class="ml-2 text-lg font-medium">{{ social.label }}</span>
-        </UButton>
+        />
       </div>
     </ULandingSection>
 

@@ -23,6 +23,27 @@ social:
     Explore a collection of unique crochet creations, from adorable amigurumi to stylish accessories, all crafted with love and creativity.
   image: /img/landing/creations.png
   align: left
+  links:
+    - label: YouTube
+      to: https://www.youtube.com/@Megurumi_creative
+      size: xl
+      color: black
+      icon: i-simple-icons-youtube
+    - label: TikTok
+      to: https://www.tiktok.com/@megurumi_creative
+      size: xl
+      color: black
+      icon: i-simple-icons-tiktok
+    - label: Instagram
+      to: https://www.instagram.com/megurumi_creative
+      size: xl
+      color: black
+      icon: i-simple-icons-instagram
+    - label: Facebook
+      to: https://www.facebook.com/megurumicreative
+      size: xl
+      color: black
+      icon: i-simple-icons-facebook
 cta:
   title: Start Your Mergurumi Journey
   description:
