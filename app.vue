@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import { Analytics } from "@vercel/analytics/nuxt";
+import { SpeedInsights } from "@vercel/speed-insights/nuxt";
+
 const { t, locale } = useI18n();
 const config = useRuntimeConfig();
 
@@ -36,6 +39,8 @@ useSeoMeta({
 
 <template>
   <VitePwaManifest />
+  <SpeedInsights />
+  <Analytics />
   <UNotifications />
 
   <NuxtLayout>
