@@ -1,8 +1,6 @@
 <script lang="ts" setup>
-import { SpeedInsights } from '@vercel/speed-insights/vue';
-
-const { t, locale } = useI18n()
-const config = useRuntimeConfig()
+const { t, locale } = useI18n();
+const config = useRuntimeConfig();
 
 useHead({
   title: "App",
@@ -18,7 +16,7 @@ useHead({
   htmlAttrs: {
     lang: () => locale.value,
   },
-})
+});
 useSeoMeta({
   titleTemplate: "%s | Megurumi",
   description: t("description"),
@@ -33,13 +31,11 @@ useSeoMeta({
   twitterImage: "",
   twitterCard: "summary_large_image",
   themeColor: "#6366f1",
-})
-
+});
 </script>
 
 <template>
   <VitePwaManifest />
-  <SpeedInsights />
   <UNotifications />
 
   <NuxtLayout>
@@ -51,11 +47,11 @@ useSeoMeta({
 {
   "en": {
     "title": "Canadian Citizenship Preparation: Tests, Study Materials & Quizzes",
-    "description": "Prepare for Canadian Citizenship with our interactive web application. Access a comprehensive set of practice tests, study materials, and quizzes to help you ace Megurumi exam. Get ready for a successful Canadian citizenship journey with us.",
+    "description": "Prepare for Canadian Citizenship with our interactive web application. Access a comprehensive set of practice tests, study materials, and quizzes to help you ace Megurumi exam. Get ready for a successful Canadian citizenship journey with us."
   },
   "fr": {
     "title": "Préparation à la Citoyenneté Canadienne: Tests, Matériel d'Étude & Quiz",
-    "description": "Préparez-vous à la citoyenneté canadienne avec notre application web interactive. Accédez à une série complète de tests de pratique, de matériel d'étude et de quiz pour vous aider à réussir votre examen de citoyenneté. Préparez-vous pour un parcours réussi vers la citoyenneté canadienne avec nous.",
+    "description": "Préparez-vous à la citoyenneté canadienne avec notre application web interactive. Accédez à une série complète de tests de pratique, de matériel d'étude et de quiz pour vous aider à réussir votre examen de citoyenneté. Préparez-vous pour un parcours réussi vers la citoyenneté canadienne avec nous."
   }
 }
 </i18n>

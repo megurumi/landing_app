@@ -30,5 +30,5 @@ export default defineConfig({
       },
     },
   ],
-  ignorePatterns: ["node_modules/", "dist/", "supabase/functions/**/*.ts"],
+  ignorePatterns: ["node_modules/", "dist/"],
 })

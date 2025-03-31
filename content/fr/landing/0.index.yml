@@ -1,72 +1,41 @@
 title: Megurumi Créatif
 description:
-  Découvrez l'art du crochet avec Megurumi Créatif. Explorez des créations uniques faites à la main, trouvez l'inspiration et connectez-vous avec une communauté dynamique de passionnés de crochet.
+  Profitez de l'art du crochet avec Megurumi Créatif. Explorez des créations uniques faites à la main, inspirez-vous et connectez-vous avec des passionnés de crochet.
 navigation: false
 hero:
   title: Libérez votre créativité avec le crochet
   description:
-    Plongez dans l'univers du crochet avec des créations faites à la main, des tutoriels et une communauté qui partage votre passion pour l'artisanat.
+    Plongez dans mon univers de crochet avec des créations faites à la main, des tutoriels époustouflants et des personnes partageant votre passion pour l'artisanat.
   headline:
     label: Explorez l'art du crochet
     icon: i-heroicons-sparkles
   links:
-    - label: Suivez-nous sur Instagram
-      to: https://instagram.com/megurumi_creative
+    - label: Suivez-nous sur YouTube
+      to: https://www.youtube.com/@megurumi_creative
       size: xl
       color: black
-      icon: i-heroicons-camera
+      icon: i-simple-icons-youtube
       trailing: true
-sections:
-  - title: Créations faites à la main
-    description:
-      Découvrez une collection de créations uniques au crochet, des amigurumis adorables aux accessoires élégants, tous fabriqués avec amour et créativité.
-    image: /img/landing/creations.png
-    id: features
-    align: left
-features:
-  title: Pourquoi choisir Megurumi Créatif ?
+social:
+  id: social
+  title: Créations faites à la main
   description:
-    Découvrez ce qui fait de Megurumi Créatif l'endroit idéal pour les amateurs de crochet à la recherche d'inspiration et de connexion.
-  items:
-    - title: Designs uniques
-      description:
-        Chaque création est unique, fabriquée avec soin et attention aux détails.
-      icon: i-heroicons-star
-      color: blue
-    - title: Haute qualité
-      description: Seuls les meilleurs matériaux sont utilisés pour garantir des créations durables et magnifiques.
-      icon: i-heroicons-check
-      color: cyan
-    - title: Livraison rapide
-      description: Profitez d'une livraison rapide et fiable pour toutes vos commandes de crochet.
-      icon: i-heroicons-truck
-      color: primary
-    - title: Axé sur la communauté
-      description:
-        Faites partie d'une communauté grandissante qui partage votre passion pour le crochet et la créativité.
-      icon: i-heroicons-user-group
-      color: purple
-    - title: Amusant et créatif
-      description:
-        Des designs fantaisistes aux objets pratiques, il y en a pour tous les goûts.
-      icon: i-heroicons-sparkles
-      color: fuchsia
-    - title: Achats sécurisés
-      description: Achetez en toute confiance, en sachant que vos données sont en sécurité avec nous.
-      icon: i-heroicons-lock-closed
-      color: pink
+    Découvrez une collection de créations au crochet uniques, des amigurumis adorables aux accessoires élégants, tous fabriqués avec amour et créativité.
+  image: /img/landing/creations.png
+  align: left
 cta:
-  title: Commencez votre aventure au crochet
+  title: Commencez votre aventure Megurumi
   description:
-    Explorez des créations uniques, apprenez de nouvelles techniques et connectez-vous avec une communauté qui partage votre passion pour le crochet.
+    Explorez des créations uniques, apprenez de nouvelles techniques et connectez-vous avec une communauté partageant votre passion pour le crochet.
   links:
-    - label: Boutique
+    - label: Achetez maintenant
       size: xl
-      to: /landing/shop
+      to: /
       color: gray
-    - label: Rejoignez la communauté
+      icon: i-heroicons-shopping-bag
+    - label: Explorez les créations
       size: xl
-      to: /auth/signup
+      to: /
       color: black
       icon: i-heroicons-arrow-right-20-solid
       trailing: true

@@ -60,6 +60,14 @@ export default defineNuxtConfig({
     preset: "vercel",
     prerender: {
       crawlLinks: true,
+      routes: [
+        "/",
+        "/fr",
+        "/landing/terms",
+        "/fr/landing/terms",
+        "/landing/policy",
+        "/fr/landing/policy",
+      ],
     },
   },
   pwa: {
@@ -238,7 +246,7 @@ export default defineNuxtConfig({
           sizes: "1024x1024",
           type: "image/png",
           purpose: "any maskable",
-        }
+        },
       ],
     },
     workbox: {
@@ -270,6 +278,6 @@ export default defineNuxtConfig({
     viewer: false,
   },
   typescript: {
-    strict: false,
+    strict: true,
   },
-})
+});
