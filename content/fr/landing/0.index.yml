@@ -51,12 +51,12 @@ cta:
   links:
     - label: Achetez maintenant
       size: xl
-      to: /
+      to: /landing/creations
       color: gray
       icon: i-heroicons-shopping-bag
     - label: Explorez les créations
       size: xl
-      to: /
+      to: /landing/creations
       color: black
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
