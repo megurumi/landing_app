@@ -63,6 +63,8 @@ export default defineNuxtConfig({
       routes: [
         "/",
         "/fr",
+        "/landing/creations",
+        "/fr/landing/creations",
         "/landing/terms",
         "/fr/landing/terms",
         "/landing/policy",
