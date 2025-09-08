@@ -8,7 +8,7 @@ const scrollY = ref(0);
 const { data: page } = await useAsyncData(
   "index",
   () => queryContent(`/${locale.value}/landing`).findOne(),
-  { watch: [locale] }
+  { watch: [locale] },
 );
 
 if (!page.value) {
@@ -58,7 +58,7 @@ const socials = [
     url: "https://www.facebook.com/megurumicreative",
     icon: "i-simple-icons-facebook",
   },
-]
+];
 </script>
 
 <template>
@@ -120,6 +120,14 @@ const socials = [
           class="flex items-center justify-start w-full max-w-sm rounded-full px-8 py-6 shadow-lg"
         />
       </div>
+    </ULandingSection>
+
+    <ULandingSection
+      :title="page.creations.title"
+      :description="page.creations.description"
+      :align="page.creations.align"
+    >
+      <LandingGallery />
     </ULandingSection>
 
     <ULandingSection>

@@ -1,24 +1,13 @@
 title: Megurumi Creations
-description:
-  Enjoy the art of crochet with Megurumi Creations. Explore unique handmade creations, get inspired, and connect with fellow crochet enthusiasts.
-posts:
-  - permalink_id: DG-0YBDRWhT
-  - permalink_id: DHBgZx6Rs_I
-  - permalink_id: DHD-vjGxNTh
-  - permalink_id: DHGV6YKxJR5
-  - permalink_id: DHJCLdqx_ai
-  - permalink_id: DHLhFsHROG2
-  - permalink_id: DHOSupbRnCE
-  - permalink_id: DHQx8NhR64P
-  - permalink_id: DHTUPsbRTYh
-  - permalink_id: DHV3YmYxbv_
-  - permalink_id: DHW0MJKSPqh
-  - permalink_id: DHYXqOzxddU
-  - permalink_id: DHbd3P9xeI_
-  - permalink_id: DHe3cGWtQRf
-  - permalink_id: DHhUpveSP0w
-  - permalink_id: DHlU9cnRvwC
-  - permalink_id: DHn-bTNRGMQ
-  - permalink_id: DHv3SCuxXSU
-  - permalink_id: DH01vVsRaXo
-  - permalink_id: DHrfogsyaa4
+description: |
+  ✨ Find free tutorials for all my creations on my YouTube channel!
+  If you'd like to support my work and help me keep creating free content, any support means the world to me 💕
+  Once tested and polished, my patterns are available in my Etsy shop, and some are already up!
+  Thank you for following along and being part of my creative journey. Happy crocheting! 🧶💫
+links:
+  - label: Instagram
+    url: "https://www.instagram.com/megurumi_creative"
+    icon: "mdi:instagram"
+  - label: Etsy Shop
+    url: "https://www.etsy.com/ca/shop/MegurumiCreative"
+    icon: "mdi:etsy"
