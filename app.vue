@@ -13,26 +13,23 @@ useHead({
     { name: "author", content: "Megurumi" },
   ],
   link: [
-    { rel: "icon", type: "image/png", href: "/favicon.ico" },
+    { rel: "icon", type: "image/png", href: "/favicon.png" },
     { rel: "canonical", href: config.public.NUXT_APP_DOMAIN },
   ],
   htmlAttrs: {
     lang: () => locale.value,
   },
 });
+
 useSeoMeta({
   titleTemplate: "%s | Megurumi",
   description: t("description"),
   ogLocale: () => locale.value,
   ogDescription: () => t("description"),
-  ogImage: "",
+  ogImage: "/img/hero.png",
   ogImageAlt: "Megurumi",
   ogTitle: () => t("title"),
   ogUrl: "https://megurumi.ca",
-  twitterTitle: () => t("title"),
-  twitterDescription: () => t("description"),
-  twitterImage: "",
-  twitterCard: "summary_large_image",
   themeColor: "#6366f1",
 });
 </script>

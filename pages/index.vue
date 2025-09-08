@@ -36,29 +36,6 @@ function onScroll() {
 
 onMounted(() => window.addEventListener("scroll", onScroll));
 onUnmounted(() => window.removeEventListener("scroll", onScroll));
-
-const socials = [
-  {
-    label: "YouTube",
-    url: "https://www.youtube.com/@Megurumi_creative",
-    icon: "i-simple-icons-youtube",
-  },
-  {
-    label: "TikTok",
-    url: "https://www.tiktok.com/@megurumi_creative",
-    icon: "i-simple-icons-tiktok",
-  },
-  {
-    label: "Instagram",
-    url: "https://www.instagram.com/megurumi_creative",
-    icon: "i-simple-icons-instagram",
-  },
-  {
-    label: "Facebook",
-    url: "https://www.facebook.com/megurumicreative",
-    icon: "i-simple-icons-facebook",
-  },
-];
 </script>
 
 <template>

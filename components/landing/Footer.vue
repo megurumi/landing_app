@@ -93,7 +93,7 @@ const socials = [
     "legal": "Mentions légales",
     "copyright": "Droits d'auteur © Megurumi Inc. {date}. Tous droits réservés.",
     "terms": "Terme et condition",
-    "policy": "Politique d'utilsation"
+    "policy": "Politique d'utilisation"
   }
 }
 </i18n>

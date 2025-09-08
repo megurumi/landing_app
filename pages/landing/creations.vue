@@ -31,9 +31,9 @@ const { hero, posts } = useInstagram();
 <template>
   <UContainer class="mb-20">
     <UPageHero
-      :title="page.title"
-      :description="page.description"
-      :links="page.links"
+      :title="page?.title"
+      :description="page?.description"
+      :links="page?.links"
       headline="My official releases!"
       orientation="horizontal"
     >
