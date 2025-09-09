@@ -8,7 +8,7 @@ const scrollY = ref(0);
 const { data: page } = await useAsyncData(
   "index",
   () => queryContent(`/${locale.value}/landing`).findOne(),
-  { watch: [locale] }
+  { watch: [locale] },
 );
 
 if (!page.value) {
@@ -36,29 +36,6 @@ function onScroll() {
 
 onMounted(() => window.addEventListener("scroll", onScroll));
 onUnmounted(() => window.removeEventListener("scroll", onScroll));
-
-const socials = [
-  {
-    label: "YouTube",
-    url: "https://www.youtube.com/@Megurumi_creative",
-    icon: "i-simple-icons-youtube",
-  },
-  {
-    label: "TikTok",
-    url: "https://www.tiktok.com/@megurumi_creative",
-    icon: "i-simple-icons-tiktok",
-  },
-  {
-    label: "Instagram",
-    url: "https://www.instagram.com/megurumi_creative",
-    icon: "i-simple-icons-instagram",
-  },
-  {
-    label: "Facebook",
-    url: "https://www.facebook.com/megurumicreative",
-    icon: "i-simple-icons-facebook",
-  },
-]
 </script>
 
 <template>
@@ -79,7 +56,7 @@ const socials = [
             name="i-heroicons-chevron-down"
             class="h-6 w-6 relative -bottom-20 transition-opacity duration-1000 cursor-pointer"
             :class="{ 'opacity-0': scrollY > 50 }"
-            @click="router.push(localePath(`/#${page.social.id}`))"
+            @click="router.push(localePath(`/#${page.creations.id}`))"
           />
         </div>
       </template>
@@ -94,11 +71,19 @@ const socials = [
     </ULandingHero>
 
     <ULandingSection
+      :id="page.creations.id"
+      :title="page.creations.title"
+      :description="page.creations.description"
+      :align="page.creations.align"
+    >
+      <LandingGallery />
+    </ULandingSection>
+
+    <ULandingSection
       :id="page.social.id"
       :title="page.social.title"
       :description="page.social.description"
       :align="page.social.align"
-      class="relative"
     >
       <template #headline>
         <NuxtImg
@@ -109,7 +94,7 @@ const socials = [
         />
       </template>
 
-      <div class="flex flex-col gap-4 items-center justify-end">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-auto">
         <UButton
           v-for="social in page.social.links"
           :key="social.label"

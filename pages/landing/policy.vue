@@ -25,12 +25,12 @@ useSeoMeta({
 <template>
   <UContainer class="mb-20">
     <UPageHero
-      :title="page.title"
-      :description="page.description"
+      :title="page?.title"
+      :description="page?.description"
     />
 
     <div
-      v-for="section in page.sections"
+      v-for="section in page?.sections"
       :key="section.title"
       class="py-8"
     >

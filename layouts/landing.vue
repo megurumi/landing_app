@@ -6,9 +6,9 @@ const { locale } = useI18n()
 const { data: navigations } = await useAsyncData("navigation", () => fetchContentNavigation())
 
 const navigation = computed(() => {
-  const navItems = navigations.value.find((navigation) => navigation._path === `/${locale.value}`)
+  const navItems = navigations.value?.find((navigation) => navigation._path === `/${locale.value}`)
     ?.children
-  if (!navItems.length) return []
+  if (!navItems?.length) return []
 
   return navItems.map((item) => {
     if (locale.value === "en") {
@@ -29,9 +29,5 @@ provide("navigation", navigation)
     </UMain>
 
     <LandingFooter />
-
-    <ClientOnly>
-      <LazyUContentSearch :navigation="navigation" />
-    </ClientOnly>
   </div>
 </template>
