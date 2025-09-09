@@ -23,12 +23,12 @@
           {{ t("description") }}
         </p>
         <div class="mt-10">
-          <nuxt-link
+          <NuxtLink
             :to="localePath('/')"
             class="text-sm font-semibold leading-7 text-primary-600 dark:text-primary-400"
           >
             <span aria-hidden="true">&larr;</span> {{ t("button") }}
-          </nuxt-link>
+          </NuxtLink>
         </div>
       </div>
     </main>

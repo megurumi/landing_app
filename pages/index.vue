@@ -56,7 +56,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
             name="i-heroicons-chevron-down"
             class="h-6 w-6 relative -bottom-20 transition-opacity duration-1000 cursor-pointer"
             :class="{ 'opacity-0': scrollY > 50 }"
-            @click="router.push(localePath(`/#${page.social.id}`))"
+            @click="router.push(localePath(`/#${page.creations.id}`))"
           />
         </div>
       </template>
@@ -71,11 +71,19 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
     </ULandingHero>
 
     <ULandingSection
+      :id="page.creations.id"
+      :title="page.creations.title"
+      :description="page.creations.description"
+      :align="page.creations.align"
+    >
+      <LandingGallery />
+    </ULandingSection>
+
+    <ULandingSection
       :id="page.social.id"
       :title="page.social.title"
       :description="page.social.description"
       :align="page.social.align"
-      class="relative"
     >
       <template #headline>
         <NuxtImg
@@ -86,7 +94,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
         />
       </template>
 
-      <div class="flex flex-col gap-4 items-center justify-end">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-auto">
         <UButton
           v-for="social in page.social.links"
           :key="social.label"
@@ -97,14 +105,6 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
           class="flex items-center justify-start w-full max-w-sm rounded-full px-8 py-6 shadow-lg"
         />
       </div>
-    </ULandingSection>
-
-    <ULandingSection
-      :title="page.creations.title"
-      :description="page.creations.description"
-      :align="page.creations.align"
-    >
-      <LandingGallery />
     </ULandingSection>
 
     <ULandingSection>
