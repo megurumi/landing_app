@@ -85,13 +85,13 @@ const socials = [
 {
   "en": {
     "legal": "Legal",
-    "copyright": "Copyright © Megurumi Inc. {date}. All rights reserved.",
+    "copyright": "Copyright © Megurumi Creative {date}. All rights reserved.",
     "terms": "Terms and Condition",
     "policy": "Policy of use"
   },
   "fr": {
     "legal": "Mentions légales",
-    "copyright": "Droits d'auteur © Megurumi Inc. {date}. Tous droits réservés.",
+    "copyright": "Droits d'auteur © Megurumi Creative {date}. Tous droits réservés.",
     "terms": "Terme et condition",
     "policy": "Politique d'utilisation"
   }
