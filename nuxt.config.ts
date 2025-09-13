@@ -3,11 +3,15 @@ export default defineNuxtConfig({
     layoutTransition: {
       name: "layout",
     },
+    head: {
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+    }
   },
   colorMode: {
     preference: "system",
   },
-  compatibilityDate: "2024-09-07",
+  compatibilityDate: "2024-11-01",
   devtools: {
     enabled: process.env.NODE_ENV !== "production",
   },
@@ -16,24 +20,32 @@ export default defineNuxtConfig({
     baseUrl: process.env.NUXT_APP_DOMAIN,
     defaultLocale: "en",
     detectBrowserLanguage: false,
+    langDir: 'locales/',
+    lazy: true,
     locales: [
       {
         code: "en",
-        file: "en.json",
         name: "English",
       },
       {
         code: "fr",
-        file: "fr.json",
         name: "Français",
       },
     ],
-    langDir: "lang/",
-    lazy: true,
     strategy: "prefix_except_default",
   },
   image: {
     provider: process.env.NODE_ENV === "production" ? "vercel" : "ipx",
+    format: ['webp'],
+    quality: 80,
+    screens: {
+      'xs': 320,
+      'sm': 640,
+      'md': 768,
+      'lg': 1024,
+      'xl': 1280,
+      'xxl': 1536,
+    }
   },
   modules: [
     "@nuxt/content",
@@ -42,7 +54,6 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxt/image",
     "@nuxt/ui",
-    "@nuxtjs/i18n",
     "@nuxtjs/sitemap",
     "@nuxtjs/device",
     "@pinia/nuxt",
@@ -54,23 +65,84 @@ export default defineNuxtConfig({
     experimental: {
       openAPI: true,
     },
-    future: {
-      nativeSWR: true,
-    },
     preset: "vercel",
-    prerender: {
-      crawlLinks: true,
-      routes: [
-        "/",
-        "/fr",
-        "/landing/creations",
-        "/fr/landing/creations",
-        "/landing/terms",
-        "/fr/landing/terms",
-        "/landing/policy",
-        "/fr/landing/policy",
-      ],
+  },
+  // Enable SSR (which is better for SEO than prerendering)
+  ssr: true,
+  // Enhanced Sitemap Configuration
+  sitemap: {
+    siteUrl: process.env.NUXT_APP_DOMAIN || 'https://megurumi.com',
+    gzip: true,
+    exclude: [
+      '/preview/**',
+      '/admin/**',
+      '/api/**',
+      '/__nuxt_error'
+    ],
+    routes: async () => {
+      // Base static routes
+      const staticRoutes = [
+        {
+          url: '/',
+          changefreq: 'weekly',
+          priority: 1.0,
+          lastmod: new Date().toISOString(),
+        },
+        {
+          url: '/landing/creations',
+          changefreq: 'daily',
+          priority: 0.9,
+          lastmod: new Date().toISOString(),
+        },
+        {
+          url: '/landing/terms',
+          changefreq: 'monthly',
+          priority: 0.3,
+          lastmod: new Date().toISOString(),
+        },
+        {
+          url: '/landing/policy',
+          changefreq: 'monthly',
+          priority: 0.3,
+          lastmod: new Date().toISOString(),
+        }
+      ];
+
+      // Add French versions if i18n is enabled
+      const frenchRoutes = [
+        {
+          url: '/fr',
+          changefreq: 'weekly',
+          priority: 0.8,
+          lastmod: new Date().toISOString(),
+        },
+        {
+          url: '/fr/landing/creations',
+          changefreq: 'daily',
+          priority: 0.8,
+          lastmod: new Date().toISOString(),
+        },
+        {
+          url: '/fr/landing/terms',
+          changefreq: 'monthly',
+          priority: 0.2,
+          lastmod: new Date().toISOString(),
+        },
+        {
+          url: '/fr/landing/policy',
+          changefreq: 'monthly',
+          priority: 0.2,
+          lastmod: new Date().toISOString(),
+        }
+      ];
+
+      return [...staticRoutes, ...frenchRoutes];
     },
+    defaults: {
+      changefreq: 'weekly',
+      priority: 0.5,
+      lastmod: new Date().toISOString(),
+    }
   },
   pwa: {
     registerType: "autoUpdate",

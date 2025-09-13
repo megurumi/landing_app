@@ -1,11 +1,45 @@
+# Megurumi Creative - Robots.txt
 # https://www.robotstxt.org/robotstxt.html
 
 User-agent: *
 Allow: /
 
-Disallow: /landing/policy/
-Disallow: /fr/landing/policy/
-Disallow: /landing/terms/
-Disallow: /fr/landing/terms/
+# Allow important SEO pages but with lower priority
+Allow: /landing/policy/
+Allow: /fr/landing/policy/
+Allow: /landing/terms/
+Allow: /fr/landing/terms/
+
+# Disallow unnecessary pages and technical paths
 Disallow: /transition
 Disallow: /fr/transition
+Disallow: /api/
+Disallow: /admin/
+Disallow: /preview/
+Disallow: /_nuxt/
+Disallow: /__nuxt_error
+
+# Allow specific crawlers for social media
+User-agent: facebookexternalhit/1.1
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap location
+Sitemap: https://megurumi.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
