@@ -21,16 +21,19 @@ export default defineNuxtConfig({
     baseUrl: process.env.NUXT_APP_DOMAIN,
     defaultLocale: "en",
     detectBrowserLanguage: false,
-    langDir: 'locales/',
-    lazy: true,
+    langDir: "locales",
     locales: [
       {
         code: "en",
+        file: "en.json",
         name: "English",
+        language: 'en-CA'
       },
       {
         code: "fr",
+        file: "fr.json",
         name: "Français",
+        language: 'fr-CA'
       },
     ],
     strategy: "prefix_except_default",
