@@ -10,12 +10,43 @@ hero:
     label: Explorez l'art du crochet
     icon: i-heroicons-sparkles
   links:
-    - label: Suivez-nous sur YouTube
+    - label: Suivez moi sur YouTube
       to: https://www.youtube.com/@megurumi_creative
       size: xl
       color: black
       icon: i-simple-icons-youtube
       trailing: true
+      target: _blank
+gallery:
+  id: gallery
+  title: gallery title
+  description: gallery description
+  link: 
+    label: Voir mes dernières créations !
+    to: /landing/creations
+  products:
+  - key: kimmie
+    image: img/creations/kimmie.png
+    caption: |
+      From furry yarn versions (hello, realistic mouse vibes 🐭✨), to colorful, classic, and even “field mouse” looks,
+      each one brought their own personality to life.
+  - key: gordon
+    image: img/creations/gordon.png
+    caption: |
+      From a spooky zombie Gordon 🧟‍♂️, to a Frankenstein-inspired creature 🧠⚡️, to classic pink, brown, white piggies 🐷🤎🤍
+      and even a stylish Gordon with a mini watermelon bag 🍉👜, each version was full of personality and charm.
+  - key: ezra
+    image: img/creations/ezra.png
+    caption: |
+      From Spyro-inspired colors to icy blues, fiery reds, and even softer pastel shades, Ezra looks stunning
+      in every version! Some experimented with eyelid placement, giving him expressions that ranged from his
+      signature grumpy look to sleepy, fiery, dreamy, or even sweetly tired.
+  - key: kissy
+    image: img/creations/kissy.png
+    caption: |
+      🦇 From classic black bats to purple, pastel, and colorful versions, every Kissy turned out absolutely adorable!
+      Some went for embroidered eyes, some used felt, others chose bigger safety eyes ! and each gave Kissy her own
+      unique charm. 🥰
 social:
   id: social
   title: Créations faites à la main
@@ -49,11 +80,12 @@ cta:
   description:
     Explorez des créations uniques, apprenez de nouvelles techniques et connectez-vous avec une communauté partageant votre passion pour le crochet.
   links:
-    - label: Achetez maintenant
+    - label: Achetez Sur Etsy
       size: xl
-      to: /landing/creations
+      to: https://www.etsy.com/ca/shop/MegurumiCreative
       color: gray
       icon: i-heroicons-shopping-bag
+      target: _blank
     - label: Explorez les créations
       size: xl
       to: /landing/creations

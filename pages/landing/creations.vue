@@ -4,7 +4,7 @@ const { locale } = useI18n();
 const { data: page } = await useAsyncData(
   "creations",
   () => queryContent(`/${locale.value}/landing/creations`).findOne(),
-  { watch: [locale] }
+  { watch: [locale] },
 );
 if (!page.value) {
   throw createError({
@@ -24,53 +24,69 @@ useSeoMeta({
   description: page.value.description,
   ogDescription: page.value.description,
 });
-
-useHead({
-  script: [
-    {
-      src: "//www.instagram.com/embed.js",
-      async: true,
-      defer: true,
-    },
-  ],
-});
-
-if (window.instgrm) {
-  window.instgrm.Embeds.process();
-}
 </script>
 
 <template>
   <UContainer class="mb-20">
-    <UPageHero :title="page.title" :description="page.description" />
-
-    <UPageGrid class="relative grid grid-cols-1 gap-8">
-      <blockquote
-        v-for="post in page.posts"
-        class="instagram-media instagram-card"
-        :data-instgrm-permalink="`https://www.instagram.com/reel/${post.permalink_id}/?utm_source=ig_embed&amp;utm_campaign=loading`"
-        data-instgrm-version="14"
-        style="
-          background: #fff;
-          border: 0;
-          border-radius: 3px;
-          box-shadow:
-            0 0 1px 0 rgba(0, 0, 0, 0.5),
-            0 1px 10px 0 rgba(0, 0, 0, 0.15);
-          margin: 1px;
-          max-width: 540px;
-          min-width: 326px;
-          padding: 0;
-          width: 99.375%;
-          width: -webkit-calc(100% - 2px);
-          width: calc(100% - 2px);
-        "
+    <UPageHero
+      :title="page?.title"
+      :description="page?.description"
+      :links="page?.links"
+      headline="My official releases!"
+      orientation="horizontal"
+    >
+      <NuxtImg
+        :src="page?.hero.image"
+        :alt="page?.hero.caption"
+        class="w-[16rem] h-[16rem] object-fit mx-auto rounded-full"
       />
-    </UPageGrid>
+    </UPageHero>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <UCard
+        v-for="product in page?.products"
+        :key="product.key"
+        class="overflow-hidden hover:shadow-lg transition-shadow"
+      >
+        <template #header>
+          <NuxtImg
+            :src="product.image"
+            :alt="product.caption"
+            class="w-full h-80 object-cover object-center rounded-md"
+          />
+        </template>
+
+        <p class="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
+          {{ product.caption }}
+        </p>
+
+        <template #footer>
+          <div class="flex justify-end w-full">
+            <UButton
+              v-if="product.instagram"
+              :to="product.instagram"
+              target="_blank"
+              color="gray"
+              variant="ghost"
+              size="sm"
+              icon="i-simple-icons-instagram"
+            >
+              View on Instagram
+            </UButton>
+            <UButton
+              v-if="product.etsy"
+              :to="product.etsy"
+              target="_blank"
+              color="gray"
+              variant="ghost"
+              size="sm"
+              icon="i-simple-icons-etsy"
+            >
+              Shop on Etsy
+            </UButton>
+          </div>
+        </template>
+      </UCard>
+    </div>
   </UContainer>
 </template>
-
-<style scoped>
-.instagram-card {
-}
-</style>

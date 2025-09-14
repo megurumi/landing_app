@@ -42,7 +42,7 @@
       </div>
     </footer>
     <div
-      class="hidden lg:relative lg:col-start-2 lg:row-start-1 lg:row-end-4 lg:block lg:flex lg:justify-center lg:items-center"
+      class="hidden lg:relative lg:col-start-2 lg:row-start-1 lg:row-end-4 lg:flex lg:justify-center lg:items-center"
     >
       <NuxtImg
         src="/img/brand/error.png"

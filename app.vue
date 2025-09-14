@@ -13,7 +13,7 @@ useHead({
     { name: "author", content: "Megurumi" },
   ],
   link: [
-    { rel: "icon", type: "image/png", href: "/favicon.ico" },
+    { rel: "icon", type: "image/png", href: "/favicon.png" },
     { rel: "canonical", href: config.public.NUXT_APP_DOMAIN },
   ],
   htmlAttrs: {
@@ -25,13 +25,13 @@ useSeoMeta({
   description: t("description"),
   ogLocale: () => locale.value,
   ogDescription: () => t("description"),
-  ogImage: "",
+  ogImage: "/img/hero.png",
   ogImageAlt: "Megurumi",
   ogTitle: () => t("title"),
   ogUrl: "https://megurumi.ca",
   twitterTitle: () => t("title"),
   twitterDescription: () => t("description"),
-  twitterImage: "",
+  twitterImage: "/img/hero.png",
   twitterCard: "summary_large_image",
   themeColor: "#6366f1",
 });
@@ -51,12 +51,12 @@ useSeoMeta({
 <i18n lang="json">
 {
   "en": {
-    "title": "Canadian Citizenship Preparation: Tests, Study Materials & Quizzes",
-    "description": "Prepare for Canadian Citizenship with our interactive web application. Access a comprehensive set of practice tests, study materials, and quizzes to help you ace Megurumi exam. Get ready for a successful Canadian citizenship journey with us."
+    "title": "Megurumi Creative",
+    "description": "Enjoy the art of crochet with Megurumi Creative. Explore unique handmade creations, get inspired, and connect with crochet enthusiasts."
   },
   "fr": {
-    "title": "Préparation à la Citoyenneté Canadienne: Tests, Matériel d'Étude & Quiz",
-    "description": "Préparez-vous à la citoyenneté canadienne avec notre application web interactive. Accédez à une série complète de tests de pratique, de matériel d'étude et de quiz pour vous aider à réussir votre examen de citoyenneté. Préparez-vous pour un parcours réussi vers la citoyenneté canadienne avec nous."
+    "title": "Megurumi Creative",
+    "description": "Profitez de l'art du crochet avec Megurumi Créatif. Explorez des créations uniques faites à la main, inspirez-vous et connectez-vous avec des passionnés de crochet."
   }
 }
 </i18n>

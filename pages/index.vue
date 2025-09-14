@@ -36,29 +36,6 @@ function onScroll() {
 
 onMounted(() => window.addEventListener("scroll", onScroll));
 onUnmounted(() => window.removeEventListener("scroll", onScroll));
-
-const socials = [
-  {
-    label: "YouTube",
-    url: "https://www.youtube.com/@Megurumi_creative",
-    icon: "i-simple-icons-youtube",
-  },
-  {
-    label: "TikTok",
-    url: "https://www.tiktok.com/@megurumi_creative",
-    icon: "i-simple-icons-tiktok",
-  },
-  {
-    label: "Instagram",
-    url: "https://www.instagram.com/megurumi_creative",
-    icon: "i-simple-icons-instagram",
-  },
-  {
-    label: "Facebook",
-    url: "https://www.facebook.com/megurumicreative",
-    icon: "i-simple-icons-facebook",
-  },
-]
 </script>
 
 <template>
@@ -79,7 +56,7 @@ const socials = [
             name="i-heroicons-chevron-down"
             class="h-6 w-6 relative -bottom-20 transition-opacity duration-1000 cursor-pointer"
             :class="{ 'opacity-0': scrollY > 50 }"
-            @click="router.push(localePath(`/#${page.social.id}`))"
+            @click="router.push(localePath(`/#${page.gallery.id}`))"
           />
         </div>
       </template>
@@ -92,6 +69,33 @@ const socials = [
         />
       </template>
     </ULandingHero>
+
+    <ULandingSection
+      :id="page.gallery.id"
+      :title="page.gallery.title"
+      :description="page.gallery.description"
+    >
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <UCard
+          v-for="product in page.gallery.products"
+          :key="product.key"
+          class="overflow-hidden hover:shadow-lg transition-shadow"
+        >
+          <NuxtImg
+            :src="product.image"
+            :alt="product.caption"
+            class="w-full h-80 object-cover object-center rounded-md"
+          />
+        </UCard>
+      </div>
+      <NuxtLink
+        :to="page.gallery.link.to"
+        class="ml-auto flex items-center text-sm font-semibold leading-7 text-primary-600 dark:text-primary-400"
+      >
+        <UIcon name="i-heroicons-arrow-right-20-solid" class="h-6 w-6 mr-2" />
+        <span>{{ page.gallery.link.label }}</span>
+      </NuxtLink>
+    </ULandingSection>
 
     <ULandingSection
       :id="page.social.id"
