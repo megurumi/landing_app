@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+  ssr: true,
   app: {
     layoutTransition: {
       name: "layout",
@@ -54,6 +55,7 @@ export default defineNuxtConfig({
     "@nuxt/fonts",
     "@nuxt/image",
     "@nuxt/ui",
+    "@nuxtjs/i18n",
     "@nuxtjs/sitemap",
     "@nuxtjs/device",
     "@pinia/nuxt",
@@ -66,83 +68,6 @@ export default defineNuxtConfig({
       openAPI: true,
     },
     preset: "vercel",
-  },
-  // Enable SSR (which is better for SEO than prerendering)
-  ssr: true,
-  // Enhanced Sitemap Configuration
-  sitemap: {
-    siteUrl: process.env.NUXT_APP_DOMAIN || 'https://megurumi.com',
-    gzip: true,
-    exclude: [
-      '/preview/**',
-      '/admin/**',
-      '/api/**',
-      '/__nuxt_error'
-    ],
-    routes: async () => {
-      // Base static routes
-      const staticRoutes = [
-        {
-          url: '/',
-          changefreq: 'weekly',
-          priority: 1.0,
-          lastmod: new Date().toISOString(),
-        },
-        {
-          url: '/landing/creations',
-          changefreq: 'daily',
-          priority: 0.9,
-          lastmod: new Date().toISOString(),
-        },
-        {
-          url: '/landing/terms',
-          changefreq: 'monthly',
-          priority: 0.3,
-          lastmod: new Date().toISOString(),
-        },
-        {
-          url: '/landing/policy',
-          changefreq: 'monthly',
-          priority: 0.3,
-          lastmod: new Date().toISOString(),
-        }
-      ];
-
-      // Add French versions if i18n is enabled
-      const frenchRoutes = [
-        {
-          url: '/fr',
-          changefreq: 'weekly',
-          priority: 0.8,
-          lastmod: new Date().toISOString(),
-        },
-        {
-          url: '/fr/landing/creations',
-          changefreq: 'daily',
-          priority: 0.8,
-          lastmod: new Date().toISOString(),
-        },
-        {
-          url: '/fr/landing/terms',
-          changefreq: 'monthly',
-          priority: 0.2,
-          lastmod: new Date().toISOString(),
-        },
-        {
-          url: '/fr/landing/policy',
-          changefreq: 'monthly',
-          priority: 0.2,
-          lastmod: new Date().toISOString(),
-        }
-      ];
-
-      return [...staticRoutes, ...frenchRoutes];
-    },
-    defaults: {
-      changefreq: 'weekly',
-      priority: 0.5,
-      lastmod: new Date().toISOString(),
-    }
   },
   pwa: {
     registerType: "autoUpdate",
