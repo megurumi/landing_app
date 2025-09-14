@@ -6,13 +6,13 @@
     <NuxtImg
       class="w-[30px] lg:w-[40px]"
       src="/img/brand/outlined.png"
-      alt="YC"
+      alt="Megurumi Creative"
     />
     <p
       class="font-bold"
       :class="`text-${size}`"
     >
-      Megurumi
+      Megurumi Creative
     </p>
   </NuxtLink>
 </template>
