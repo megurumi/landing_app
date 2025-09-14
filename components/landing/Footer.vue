@@ -5,8 +5,12 @@ const localePath = useLocalePath()
 
 const links = computed(() => [
   {
-    label: "Megurumi",
+    label: "Megurumi Creative",
     children: [
+      {
+        label: t("creations"),
+        to: localePath("/landing/creations"),
+      },
       {
         label: t("policy"),
         to: localePath("/landing/policy"),
@@ -21,24 +25,24 @@ const links = computed(() => [
 
 const socials = [
   {
-    label: "YouTube",
-    url: "https://www.youtube.com/@Megurumi_creative",
-    icon: "i-simple-icons-youtube",
-  },
-  {
-    label: "TikTok",
-    url: "https://www.tiktok.com/@megurumi_creative",
-    icon: "i-simple-icons-tiktok",
-  },
-  {
     label: "Instagram",
     url: "https://www.instagram.com/megurumi_creative",
     icon: "i-simple-icons-instagram",
   },
   {
+    label: "YouTube",
+    url: "https://www.youtube.com/@Megurumi_creative",
+    icon: "i-simple-icons-youtube",
+  },
+  {
     label: "Facebook",
     url: "https://www.facebook.com/megurumicreative",
     icon: "i-simple-icons-facebook",
+  },
+  {
+    label: "TikTok",
+    url: "https://www.tiktok.com/@megurumi_creative",
+    icon: "i-simple-icons-tiktok",
   },
 ]
 </script>
@@ -85,13 +89,15 @@ const socials = [
 {
   "en": {
     "legal": "Legal",
-    "copyright": "Copyright © Megurumi Inc. {date}. All rights reserved.",
+    "copyright": "Copyright © Megurumi Creative {date}. All rights reserved.",
+    "creations": "Creations",
     "terms": "Terms and Condition",
     "policy": "Policy of use"
   },
   "fr": {
     "legal": "Mentions légales",
-    "copyright": "Droits d'auteur © Megurumi Inc. {date}. Tous droits réservés.",
+    "copyright": "Droits d'auteur © Megurumi Creative {date}. Tous droits réservés.",
+    "creations": "Créations",
     "terms": "Terme et condition",
     "policy": "Politique d'utilisation"
   }

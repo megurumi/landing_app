@@ -2,11 +2,11 @@
 ## Journey to become a crochet creator 
 
 ## License
-This project is licensed under the Megurumi Inc. Proprietary License - see the [LICENSE](./LICENSE.md) file for details.
+This project is licensed under the Megurumi Creative Proprietary License - see the [LICENSE](./LICENSE.md) file for details.
 
 ## Setup
 
-- Copy `.env.local` in `.env` to run the project
+- Copy `.env.example` in `.env` to run the project
 - `pnpm`
 - `pnpm dev`
 
