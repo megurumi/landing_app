@@ -61,6 +61,7 @@ const socials = [
               :key="link.url"
               :to="link.url"
               target="_blank"
+              :aria-label="`Visit our ${link.label} social page`"
             >
               <UIcon
                 :name="link.icon"
