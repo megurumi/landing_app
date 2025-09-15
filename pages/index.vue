@@ -2,6 +2,7 @@
 const { locale } = useI18n();
 const router = useRouter();
 const localePath = useLocalePath();
+const viewport = useViewport();
 
 const scrollY = ref(0);
 
@@ -135,6 +136,9 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       <ULandingCTA
         v-bind="page.cta"
         class="bg-gray-100/50 dark:bg-gray-800/50"
+        :ui="{
+          links: 'flex flex-col sm:flex-row gap-3',
+        }"
       />
     </ULandingSection>
   </div>
