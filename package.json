@@ -15,7 +15,7 @@
     "typecheck": "nuxt typecheck"
   },
   "engines": {
-    "node": ">=20"
+    "node": "^20.19.0"
   },
   "devDependencies": {
     "@nuxt/content": "^2.13.2",
