@@ -19,15 +19,16 @@ hero:
       target: _blank
 gallery:
   id: gallery
-  title: My Latest Creations
+  title: My Latest Handmade Creations
+  description:
+    Explore a collection of unique crochet creations, from adorable amigurumi to stylish accessories, all crafted with love and creativity.
   link: 
     label: See all my creations!
     to: /landing/creations
 social:
   id: social
-  title: Handmade Creations
-  description:
-    Explore a collection of unique crochet creations, from adorable amigurumi to stylish accessories, all crafted with love and creativity.
+  title: Follow Me!
+  description: Be the first to know when I share a new video or pattern. Thanks for following along!
   image: /img/landing/creations.png
   align: left
   links:

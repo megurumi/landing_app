@@ -36,6 +36,16 @@ export default defineNuxtConfig({
   },
   image: {
     provider: process.env.NODE_ENV === "production" ? "vercel" : "ipx",
+    quality: 75,
+    format: ["webp", "jpeg"],
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+    },
   },
   modules: [
     "@nuxt/content",

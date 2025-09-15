@@ -1,3 +1,27 @@
+<script setup lang="ts">
+definePageMeta({
+  name: "landing",
+  layout: "transition",
+});
+
+const router = useRouter();
+const viewport = useViewport();
+const localePath = useLocalePath();
+
+onMounted(() => {
+  const brandAnimation = document.getElementById("brand-animation");
+  return brandAnimation
+    ? brandAnimation.addEventListener("animationend", () =>
+        redirect("/dashboard")
+      )
+    : redirect("/dashboard");
+});
+
+function redirect(to: string) {
+  return router.replace(localePath(to));
+}
+</script>
+
 <template>
   <div class="h-screen w-full flex items-center justify-center">
     <svg v-if="viewport.isGreaterOrEquals('tablet')" width="750" height="100">
@@ -24,30 +48,6 @@
     />
   </div>
 </template>
-
-<script setup lang="ts">
-definePageMeta({
-  name: "landing",
-  layout: "transition",
-});
-
-const router = useRouter();
-const viewport = useViewport();
-const localePath = useLocalePath();
-
-onMounted(() => {
-  const brandAnimation = document.getElementById("brand-animation");
-  return brandAnimation
-    ? brandAnimation.addEventListener("animationend", () =>
-        redirect("/dashboard")
-      )
-    : redirect("/dashboard");
-});
-
-function redirect(to: string) {
-  return router.replace(localePath(to));
-}
-</script>
 
 <style scoped>
 .fill-rect {

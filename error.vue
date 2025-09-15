@@ -51,6 +51,8 @@
       <NuxtImg
         src="/img/brand/error.png"
         format="webp"
+        quality="80"
+        sizes="250px"
         class="w-[250px]"
         alt="Megurumi Creative Error Icon"
       />

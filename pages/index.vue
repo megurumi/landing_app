@@ -2,7 +2,6 @@
 const { locale } = useI18n();
 const router = useRouter();
 const localePath = useLocalePath();
-const viewport = useViewport();
 
 const scrollY = ref(0);
 
@@ -71,6 +70,8 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
         <NuxtImg
           src="/img/landing/hero.png"
           format="webp"
+          quality="80"
+          sizes="sm:380px md:400px xl:450px"
           alt="Your Creative Partner"
           class="neon mx-auto w-250px] md:w-[400px] xl:w-[450px] rounded-3xl"
         />
@@ -82,7 +83,18 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       :title="page.gallery.title"
       :description="page.gallery.description"
     >
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <template #headline>
+        <NuxtImg
+          :src="page.social.image"
+          :alt="page.social.title"
+          format="webp"
+          quality="80"
+          sizes="150px"
+          fit="cover"
+          class="w-[150px]"
+        />
+      </template>
+      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
         <UCard
           v-for="product in [...creations?.products].reverse().slice(0, 4)"
           :key="product.key"
@@ -92,6 +104,8 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
             :src="product.image"
             :alt="product.caption"
             format="webp"
+            quality="80"
+            sizes="sm:348px md:348px lg:348px"
             class="w-full h-80 object-cover object-center rounded-md"
           />
         </UCard>
@@ -109,20 +123,9 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       :id="page.social.id"
       :title="page.social.title"
       :description="page.social.description"
-      :align="page.social.align"
       class="relative"
     >
-      <template #headline>
-        <NuxtImg
-          :src="page.social.image"
-          :alt="page.social.title"
-          format="webp"
-          fit="cover"
-          class="w-[150px]"
-        />
-      </template>
-
-      <div class="flex flex-col gap-4 items-center justify-end">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <UButton
           v-for="social in page.social.links"
           v-bind="social"

@@ -2,6 +2,13 @@ title: Libère ta créativité avec le crochet
 description:
   Plonge dans mon univers du crochet avec de magnifiques créations faites main, des tutoriels,
   et des personnes qui partagent ta passion pour le fait-main.
+links:
+  - label: Achetez Sur Etsy
+    size: xl
+    to: https://www.etsy.com/ca/shop/MegurumiCreative
+    color: gray
+    icon: i-heroicons-shopping-bag
+    target: _blank
 hero:
   image: img/brand/hero.png
   caption: |
