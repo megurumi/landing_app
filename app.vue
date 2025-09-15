@@ -26,13 +26,14 @@ useSeoMeta({
   description: t("description"),
   ogLocale: locale.value,
   ogDescription: t("description"),
-  ogImage: "/img/landing/hero.png",
+  ogImage: "https://megurumi.com/img/landing/hero.png",
   ogImageAlt: "Megurumi",
+  ogSiteName: "Megurumi Creative",
   ogTitle: t("title"),
-  ogUrl: "https://megurumi.ca",
+  ogUrl: "https://megurumi.com",
   twitterTitle: t("title"),
   twitterDescription: t("description"),
-  twitterImage: "/img/landing/hero.png",
+  twitterImage: "https://megurumi.com/img/landing/hero.png",
   twitterCard: "summary_large_image",
   themeColor: "#6366f1",
 });
@@ -52,12 +53,12 @@ useSeoMeta({
 <i18n lang="json">
 {
   "en": {
-    "title": "Megurumi Creative",
-    "description": "Enjoy the art of crochet with Megurumi Creative. Explore unique handmade creations, get inspired, and connect with crochet enthusiasts."
+    "title": "Enjoy the art of crochet with Megurumi Creative",
+    "description": "Explore unique handmade creations, get inspired, and connect with crochet enthusiasts."
   },
   "fr": {
-    "title": "Megurumi Creative",
-    "description": "Profitez de l'art du crochet avec Megurumi Créatif. Explorez des créations uniques faites à la main, inspirez-vous et connectez-vous avec des passionnés de crochet."
+    "title": "Profitez de l'art du crochet avec Megurumi Creative. ",
+    "description": "Explorez des créations uniques faites à la main, inspirez-vous et connectez-vous avec des passionnés de crochet."
   }
 }
 </i18n>
