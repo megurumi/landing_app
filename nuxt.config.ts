@@ -47,7 +47,6 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@nuxtjs/sitemap",
     "@nuxtjs/device",
-    "@pinia/nuxt",
     "@vite-pwa/nuxt",
     "@vueuse/nuxt",
     "nuxt-viewport",

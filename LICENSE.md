@@ -1,6 +1,6 @@
 # Megurumi Creative Proprietary License
 
-© 2024 Megurumi Creative All rights reserved.
+© 2025 Megurumi Creative All rights reserved.
 
 Permission is granted to employees of Megurumi Creative to use, modify, and develop this software ("Software") for internal purposes only, under the conditions of their Non-Disclosure Agreement (NDA).
 

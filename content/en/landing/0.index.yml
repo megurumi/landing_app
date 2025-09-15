@@ -19,34 +19,10 @@ hero:
       target: _blank
 gallery:
   id: gallery
-  title: My gallery
-  description: Explore my world of crochet
+  title: My Latest Creations
   link: 
-    label: See my latest creations!
+    label: See all my creations!
     to: /landing/creations
-  products:
-    - key: kimmie
-      image: img/creations/kimmie.png
-      caption: |
-        From furry yarn versions (hello, realistic mouse vibes 🐭✨), to colorful, classic, and even “field mouse” looks,
-        each one brought their own personality to life.
-    - key: gordon
-      image: img/creations/gordon.png
-      caption: |
-        From a spooky zombie Gordon 🧟‍♂️, to a Frankenstein-inspired creature 🧠⚡️, to classic pink, brown, white piggies 🐷🤎🤍
-        and even a stylish Gordon with a mini watermelon bag 🍉👜, each version was full of personality and charm.
-    - key: ezra
-      image: img/creations/ezra.png
-      caption: |
-        From Spyro-inspired colors to icy blues, fiery reds, and even softer pastel shades, Ezra looks stunning
-        in every version! Some experimented with eyelid placement, giving him expressions that ranged from his
-        signature grumpy look to sleepy, fiery, dreamy, or even sweetly tired.
-    - key: kissy
-      image: img/creations/kissy.png
-      caption: |
-        🦇 From classic black bats to purple, pastel, and colorful versions, every Kissy turned out absolutely adorable!
-        Some went for embroidered eyes, some used felt, others chose bigger safety eyes ! and each gave Kissy her own
-        unique charm. 🥰
 social:
   id: social
   title: Handmade Creations

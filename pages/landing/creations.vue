@@ -1,6 +1,10 @@
 <script setup lang="ts">
 const { locale } = useI18n();
 
+definePageMeta({
+  layout: "landing",
+});
+
 const { data: page } = await useAsyncData(
   "creations",
   () => queryContent(`/${locale.value}/landing/creations`).findOne(),
@@ -13,11 +17,6 @@ if (!page.value) {
     fatal: true,
   });
 }
-
-definePageMeta({
-  layout: "landing",
-});
-
 useSeoMeta({
   title: page.value.title,
   ogTitle: page.value.title,
@@ -44,7 +43,7 @@ useSeoMeta({
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <UCard
-        v-for="product in page?.products"
+        v-for="product in [...page?.products].reverse()"
         :key="product.key"
         class="overflow-hidden hover:shadow-lg transition-shadow"
       >

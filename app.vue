@@ -20,18 +20,19 @@ useHead({
     lang: () => locale.value,
   },
 });
+
 useSeoMeta({
   titleTemplate: "%s | Megurumi",
   description: t("description"),
-  ogLocale: () => locale.value,
-  ogDescription: () => t("description"),
-  ogImage: "/img/hero.png",
+  ogLocale: locale.value,
+  ogDescription: t("description"),
+  ogImage: "/img/landing/hero.png",
   ogImageAlt: "Megurumi",
-  ogTitle: () => t("title"),
+  ogTitle: t("title"),
   ogUrl: "https://megurumi.ca",
-  twitterTitle: () => t("title"),
-  twitterDescription: () => t("description"),
-  twitterImage: "/img/hero.png",
+  twitterTitle: t("title"),
+  twitterDescription: t("description"),
+  twitterImage: "/img/landing/hero.png",
   twitterCard: "summary_large_image",
   themeColor: "#6366f1",
 });

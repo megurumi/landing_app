@@ -2,7 +2,7 @@ title: Unleash Your Creativity with Crochet
 description:
   Dive into my world of crochet with stunning handmade creations, tutorials, and people that shares your passion for crafting.
 hero:
-  image: img/creations/hero.png
+  image: img/brand/hero.png
   caption: |
     ✨ Find free tutorials for all my creations on my YouTube channel: @megurumi_creative!
     (Link in bio, or DM me if you can't find it!)
@@ -97,3 +97,10 @@ products:
     instagram: https://www.instagram.com/p/DNyhWBWXgDY
     etsy: https://www.etsy.com/ca/listing/4362532379/kissy-the-bat-crochet-pattern-amigurumi
 
+  - key: andy
+    image: img/creations/andy.png
+    caption: |
+      Andy has a funny look, with mismatched safety eyes, which gives him loads of personality.
+      A perfect spooky friend for Halloween decoration or a unique gift all year round! 🎃🧟
+    instagram: https://www.instagram.com/p/DOlgz8RjUAv
+    etsy: https://www.etsy.com/ca/listing/4369278765/andy-the-creature-monster-crochet

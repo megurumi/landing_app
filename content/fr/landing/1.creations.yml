@@ -3,7 +3,7 @@ description:
   Plonge dans mon univers du crochet avec de magnifiques créations faites main, des tutoriels,
   et des personnes qui partagent ta passion pour le fait-main.
 hero:
-  image: img/creations/hero.png
+  image: img/brand/hero.png
   caption: |
     ✨ Retrouve des tutoriels gratuits pour toutes mes créations sur ma chaîne YouTube : @megurumi_creative !
     (Lien dans la bio, ou envoie-moi un message si tu ne le trouves pas !)
@@ -103,3 +103,11 @@ products:
       de plus grands yeux de sécurité ! et chacune a donné à Kissy son charme unique. 🥰
     instagram: https://www.instagram.com/p/DNyhWBWXgDY
     etsy: https://www.etsy.com/ca/listing/4362532379/kissy-the-bat-crochet-pattern-amigurumi
+
+  - key: andy
+    image: img/creations/andy.png
+    caption: |
+      Andy a un look amusant, avec des yeux de sécurité dépareillés, ce qui lui donne beaucoup de personnalité.
+      Un ami effrayant parfait pour la décoration d'Halloween ou un cadeau unique toute l'année ! 🎃🧟
+    instagram: https://www.instagram.com/p/DOlgz8RjUAv
+    etsy: https://www.etsy.com/ca/listing/4369278765/andy-the-creature-monster-crochet

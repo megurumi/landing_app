@@ -10,7 +10,6 @@ const { data: page } = await useAsyncData(
   () => queryContent(`/${locale.value}/landing`).findOne(),
   { watch: [locale] }
 );
-
 if (!page.value) {
   throw createError({
     statusCode: 404,
@@ -18,6 +17,12 @@ if (!page.value) {
     fatal: true,
   });
 }
+
+const { data: creations } = await useAsyncData(
+  "creations",
+  () => queryContent(`/${locale.value}/landing/creations`).findOne(),
+  { watch: [locale] }
+);
 
 definePageMeta({
   layout: "landing",
@@ -77,7 +82,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
     >
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <UCard
-          v-for="product in page.gallery.products"
+          v-for="product in [...creations?.products].reverse().slice(0, 4)"
           :key="product.key"
           class="overflow-hidden hover:shadow-lg transition-shadow"
         >
