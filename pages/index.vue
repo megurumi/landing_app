@@ -73,7 +73,6 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
           format="webp"
           alt="Your Creative Partner"
           class="neon mx-auto w-250px] md:w-[400px] xl:w-[450px] rounded-3xl"
-          preload
         />
       </template>
     </ULandingHero>
