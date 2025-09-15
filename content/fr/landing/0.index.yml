@@ -19,8 +19,8 @@ hero:
       target: _blank
 gallery:
   id: gallery
-  title: gallery title
-  description: gallery description
+  title: Ma gallerie
+  description: Explore mon monde de crochet
   link: 
     label: Voir mes dernières créations !
     to: /landing/creations
