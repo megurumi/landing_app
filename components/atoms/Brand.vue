@@ -4,26 +4,22 @@
     :to="localePath('/')"
   >
     <NuxtImg
-      class="w-[30px] lg:w-[40px]"
       src="/img/brand/outlined.png"
-      alt="Megurumi Creative"
+      class="w-[30px] lg:w-[40px]"
+      format="webp"
+      alt="Megurumi Creative Brand Icon"
     />
-    <p
-      class="font-bold"
-      :class="`text-${size}`"
-    >
-      Megurumi Creative
-    </p>
+    <p class="font-bold" :class="`text-${size}`">Megurumi Creative</p>
   </NuxtLink>
 </template>
 
 <script lang="ts" setup>
-const localePath = useLocalePath()
+const localePath = useLocalePath();
 
 defineProps({
   size: {
     type: String,
     default: "2xl",
   },
-})
+});
 </script>

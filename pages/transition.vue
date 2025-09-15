@@ -1,18 +1,8 @@
 <template>
   <div class="h-screen w-full flex items-center justify-center">
-    <svg
-      v-if="viewport.isGreaterOrEquals('tablet')"
-      width="750"
-      height="100"
-    >
+    <svg v-if="viewport.isGreaterOrEquals('tablet')" width="750" height="100">
       <defs>
-        <mask
-          id="text-mask"
-          x="0"
-          y="0"
-          width="100%"
-          height="100%"
-        >
+        <mask id="text-mask" x="0" y="0" width="100%" height="100%">
           <rect
             class="fill-rect"
             id="brand-animation"
@@ -23,20 +13,14 @@
           />
         </mask>
       </defs>
-      <text
-        x="20"
-        y="70"
-        class="text"
-        mask="url(#text-mask)"
-      >
-        Megurumi
-      </text>
+      <text x="20" y="70" class="text" mask="url(#text-mask)">Megurumi Creative</text>
     </svg>
     <NuxtImg
       v-else
       src="/img/brand/outlined.png"
+      format="webp"
       class="w-[60px] lg:w-[80px]"
-      alt="Megurumi"
+      alt="Megurumi Creative Brand Outlined Icon"
     />
   </div>
 </template>
@@ -45,21 +29,23 @@
 definePageMeta({
   name: "landing",
   layout: "transition",
-})
+});
 
-const router = useRouter()
-const viewport = useViewport()
-const localePath = useLocalePath()
+const router = useRouter();
+const viewport = useViewport();
+const localePath = useLocalePath();
 
 onMounted(() => {
-  const brandAnimation = document.getElementById("brand-animation")
+  const brandAnimation = document.getElementById("brand-animation");
   return brandAnimation
-    ? brandAnimation.addEventListener("animationend", () => redirect("/dashboard"))
-    : redirect("/dashboard")
-})
+    ? brandAnimation.addEventListener("animationend", () =>
+        redirect("/dashboard")
+      )
+    : redirect("/dashboard");
+});
 
 function redirect(to: string) {
-  return router.replace(localePath(to))
+  return router.replace(localePath(to));
 }
 </script>
 

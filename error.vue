@@ -11,7 +11,9 @@
       class="mx-auto w-full max-w-7xl px-6 py-24 sm:py-32 lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:px-8"
     >
       <div class="max-w-lg">
-        <p class="text-base font-semibold leading-8 text-primary-600 dark:text-primary-400">
+        <p
+          class="text-base font-semibold leading-8 text-primary-600 dark:text-primary-400"
+        >
           {{ t("head") }}
         </p>
         <h1
@@ -33,7 +35,9 @@
       </div>
     </main>
     <footer class="self-end lg:col-span-2 lg:col-start-1 lg:row-start-3">
-      <div class="border-t border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 py-10">
+      <div
+        class="border-t border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 py-10"
+      >
         <nav
           class="mx-auto flex w-full max-w-7xl items-center gap-x-4 px-6 text-sm leading-7 text-gray-600 dark:text-gray-400 lg:px-8"
         >
@@ -46,21 +50,22 @@
     >
       <NuxtImg
         src="/img/brand/error.png"
+        format="webp"
         class="w-[250px]"
-        alt="Error"
+        alt="Megurumi Creative Error Icon"
       />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
-const localePath = useLocalePath()
+const { t } = useI18n();
+const localePath = useLocalePath();
 
 useSeoMeta({
   title: t("title"),
   description: t("description"),
-})
+});
 </script>
 
 <i18n lang="json">

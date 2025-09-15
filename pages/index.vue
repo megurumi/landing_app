@@ -70,8 +70,10 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       <template #headline>
         <NuxtImg
           src="/img/landing/hero.png"
+          format="webp"
           alt="Your Creative Partner"
           class="neon mx-auto w-250px] md:w-[400px] xl:w-[450px] rounded-3xl"
+          preload
         />
       </template>
     </ULandingHero>
@@ -90,6 +92,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
           <NuxtImg
             :src="product.image"
             :alt="product.caption"
+            format="webp"
             class="w-full h-80 object-cover object-center rounded-md"
           />
         </UCard>
@@ -114,6 +117,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
         <NuxtImg
           :src="page.social.image"
           :alt="page.social.title"
+          format="webp"
           fit="cover"
           class="w-[150px]"
         />
@@ -122,8 +126,9 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       <div class="flex flex-col gap-4 items-center justify-end">
         <UButton
           v-for="social in page.social.links"
-          :key="social.label"
           v-bind="social"
+          :key="social.label"
+          :aria-label="`Visit us on ${social.label}`"
           target="_blank"
           color="white"
           variant="solid"

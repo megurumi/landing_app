@@ -8,7 +8,7 @@ definePageMeta({
 const { data: page } = await useAsyncData(
   "creations",
   () => queryContent(`/${locale.value}/landing/creations`).findOne(),
-  { watch: [locale] },
+  { watch: [locale] }
 );
 if (!page.value) {
   throw createError({
@@ -31,12 +31,12 @@ useSeoMeta({
       :title="page?.title"
       :description="page?.description"
       :links="page?.links"
-      headline="My official releases!"
       orientation="horizontal"
     >
       <NuxtImg
         :src="page?.hero.image"
         :alt="page?.hero.caption"
+        format="webp"
         class="w-[16rem] h-[16rem] object-fit mx-auto rounded-full"
       />
     </UPageHero>
@@ -51,6 +51,7 @@ useSeoMeta({
           <NuxtImg
             :src="product.image"
             :alt="product.caption"
+            format="webp"
             class="w-full h-80 object-cover object-center rounded-md"
           />
         </template>
