@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { Analytics } from "@vercel/analytics/nuxt";
-import { SpeedInsights } from "@vercel/speed-insights/nuxt";
+import { SpeedInsights } from '@vercel/speed-insights/vue';
 
 const { t, locale } = useI18n();
 const config = useRuntimeConfig();
