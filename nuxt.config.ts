@@ -14,6 +14,9 @@ export default defineNuxtConfig({
   extends: ["@nuxt/ui-pro"],
   i18n: {
     baseUrl: process.env.NUXT_APP_DOMAIN,
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
     defaultLocale: "en",
     detectBrowserLanguage: false,
     locales: [
@@ -28,7 +31,6 @@ export default defineNuxtConfig({
         name: "Français",
       },
     ],
-    langDir: "lang/",
     lazy: true,
     strategy: "prefix_except_default",
   },
