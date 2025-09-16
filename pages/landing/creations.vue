@@ -28,6 +28,91 @@ useSeoMeta({
   ogDescription: page.value.description,
 });
 
+const productSchemas = computed(() => {
+  if (!page.value?.products) return [];
+
+  return page.value.products.map((product: any) =>
+    defineProduct({
+      name: `${product.key.charAt(0).toUpperCase() + product.key.slice(1)} - Crochet Pattern`,
+      description: product.caption
+        .replace(/[🐋💙✨🐢💚🐥🎉😍🦊🐘💜🐭🐷💕🐉🦇🥰🎃🧟]/g, "")
+        .trim(),
+      image: `https://megurumi.com/${product.image}`,
+      brand: true,
+      category: "Arts & Crafts",
+      offers: product.etsy
+        ? {
+            "@type": "Offer",
+            url: product.etsy,
+            availability: "https://schema.org/InStock",
+            priceCurrency: "CAD",
+            seller: {
+              "@type": "Organization",
+              name: "Megurumi Creative",
+            },
+          }
+        : undefined,
+      additionalProperty: [
+        {
+          "@type": "PropertyValue",
+          name: "Skill Level",
+          value: "Beginner to Intermediate",
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Craft Type",
+          value: "Amigurumi Crochet Pattern",
+        },
+        {
+          "@type": "PropertyValue",
+          name: "Language",
+          value: "English",
+        },
+      ],
+    })
+  );
+});
+
+useSchemaOrg([
+  defineWebPage({
+    "@type": "CollectionPage",
+    name: page.value.title,
+    description: page.value.description,
+    url: "https://megurumi.com/landing/creations",
+    breadcrumb: {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://megurumi.com",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Creations",
+          item: "https://megurumi.com/landing/creations",
+        },
+      ],
+    },
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: page.value?.products?.length || 0,
+      itemListElement:
+        page.value?.products?.map((product: any, index: number) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          item: {
+            "@type": "Product",
+            "@id": `https://megurumi.com/landing/creations#${product.key}`,
+          },
+        })) || [],
+    },
+  }),
+  ...productSchemas.value,
+]);
+
 function onScroll() {
   scrollY.value = window.scrollY;
 }

@@ -82,6 +82,7 @@ export default defineNuxtConfig({
     "@vite-pwa/nuxt",
     "@vueuse/nuxt",
     "nuxt-viewport",
+    "nuxt-schema-org",
   ],
   nitro: {
     experimental: {

@@ -45,6 +45,38 @@ useSeoMeta({
   msapplicationConfig: "/browserconfig.xml",
   keywords: t("keywords"),
 });
+
+useSchemaOrg([
+  defineOrganization({
+    name: 'Megurumi Creative',
+    url: config.public.NUXT_APP_DOMAIN,
+    logo: 'https://megurumi.com/img/brand/filled.png',
+    description: t("description"),
+    foundingDate: '2024',
+    sameAs: [
+      'https://www.youtube.com/@megurumi_creative',
+      'https://www.instagram.com/megurumi_creative',
+      'https://www.tiktok.com/@megurumi_creative',
+      'https://www.facebook.com/megurumicreative',
+      'https://www.etsy.com/ca/shop/MegurumiCreative'
+    ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer service',
+      availableLanguage: ['English', 'French']
+    },
+    address: {
+      '@type': 'PostalAddress',
+      addressCountry: 'CA'
+    }
+  }),
+  defineWebSite({
+    name: 'Megurumi Creative',
+    url: config.public.NUXT_APP_DOMAIN,
+    description: t("description"),
+    inLanguage: ['en', 'fr'],
+  })
+]);
 </script>
 
 <template>

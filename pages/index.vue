@@ -35,6 +35,30 @@ useSeoMeta({
   ogDescription: page.value.description,
 });
 
+useSchemaOrg([
+  defineWebPage({
+    '@type': 'WebPage',
+    name: page.value.title,
+    description: page.value.description,
+    url: 'https://megurumi.com',
+    mainEntity: {
+      '@type': 'Organization',
+      '@id': 'https://megurumi.com/#organization'
+    },
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: 'https://megurumi.com'
+        }
+      ]
+    }
+  })
+]);
+
 function onScroll() {
   scrollY.value = window.scrollY;
 }
