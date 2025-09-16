@@ -17,7 +17,7 @@ hero:
     Once tested and polished, my patterns are available in my Etsy shop, and some are already up!
     Thank you for following along and being part of my creative journey. Happy crocheting! 🧶💫
 products:
-  - key: barnabe
+  - id: barnabe
     image: img/creations/barnabe.png
     caption: |
       🐋💙 Meet Barnabé the Whale! With his soft curves and friendly face, he's the perfect
@@ -25,7 +25,7 @@ products:
     instagram: https://www.instagram.com/p/DJUaNUytTsx
     etsy: https://www.etsy.com/ca/listing/4298995429/barnabe-the-whale-crochet-pattern
 
-  - key: shelly
+  - id: shelly
     image: img/creations/shelly.png
     caption: |
       ✨ Shelly the Turtle is here! 🐢✨ With her sweet little shell and gentle personality,
@@ -34,7 +34,7 @@ products:
     instagram: https://www.instagram.com/p/DJJ6UVIt_Qp/
     etsy: https://www.etsy.com/ca/listing/1906170787/shelly-the-turtle-crochet-pattern
 
-  - key: kevin
+  - id: kevin
     image: img/creations/kevin.png
     caption: |
       🐥 Kevin is the most versatile little friend — depending on your colors and mood,
@@ -42,7 +42,7 @@ products:
     instagram: https://www.instagram.com/p/DJJ6UVIt_Qp/
     etsy: https://www.etsy.com/ca/listing/4302012705/kevin-the-chick-crochet-pattern
 
-  - key: lola
+  - id: lola
     image: img/creations/lola.png
     caption: |
       ✨ Lola the Owl shines in every version — bold, pastel, cotton, or plush — each one
@@ -50,7 +50,7 @@ products:
     instagram: https://www.instagram.com/p/DJ4MHazNc3q
     etsy: https://www.etsy.com/ca/listing/4305832049/lola-the-owl-crochet-pattern-amigurumi
 
-  - key: lenny
+  - id: lenny
     image: img/creations/lenny.png
     caption: |
       🎉 Lenny the Octopus may take patience with his 8 legs, but the reward is a playful,
@@ -58,7 +58,7 @@ products:
     instagram: https://www.instagram.com/p/DKuY9-1gXyw
     etsy: https://www.etsy.com/ca/listing/4313034236/lenny-the-octopus-crochet-pattern
 
-  - key: roxanne
+  - id: roxanne
     image: img/creations/roxanne.png
     caption: |
       🦊 Roxanne the Red Panda is playful and vibrant, with fun color changes that challenge
@@ -66,7 +66,7 @@ products:
     instagram: https://www.instagram.com/p/DLKm4vrgts5
     etsy: https://www.etsy.com/ca/listing/4323125630/roxanne-the-red-panda-crochet-pattern
 
-  - key: marcus
+  - id: marcus
     image: img/creations/marcus.png
     caption: |
       🐘 Marcus the Elephant is a gentle giant who looks amazing in any shade, from soft pastels
@@ -74,7 +74,7 @@ products:
     instagram: https://www.instagram.com/p/DLuh3ylP4MB
     etsy: https://www.etsy.com/ca/listing/4330248020/marcus-the-elephant-crochet-pattern
 
-  - key: kimmie
+  - id: kimmie
     image: img/creations/kimmie.png
     caption: |
       🐭 Kimmie the Mouse can be fluffy and realistic, colorful and playful, or anything in between,
@@ -82,7 +82,7 @@ products:
     instagram: https://www.instagram.com/p/DMfgdTgzvR2
     etsy: https://www.etsy.com/ca/listing/4338959771/kimmie-the-mouse-crochet-pattern
 
-  - key: gordon
+  - id: gordon
     image: img/creations/gordon.png
     caption: |
       🐷 Gordon the Pig is endlessly fun, whether he's a spooky zombie, a Frankenstein creature,
@@ -90,7 +90,7 @@ products:
     instagram: https://www.instagram.com/p/
     etsy: https://www.etsy.com/ca/listing/4347606426/gordon-the-pig-crochet-pattern-amigurumi
 
-  - key: ezra
+  - id: ezra
     image: img/creations/ezra.png
     caption: |
       🐉 Ezra the Dragon is magical in every shade — from fiery reds to icy blues, pastel dreams
@@ -98,7 +98,7 @@ products:
     instagram: https://www.instagram.com/p/DNyhWBWXgDY
     etsy: https://www.etsy.com/ca/listing/4357214323/ezra-the-dragon-crochet-pattern
 
-  - key: kissy
+  - id: kissy
     image: img/creations/kissy.png
     caption: |
       🦇 Kissy the Bat is cute in every style — classic black, colorful pastels, embroidered eyes,
@@ -106,7 +106,7 @@ products:
     instagram: https://www.instagram.com/p/DNyhWBWXgDY
     etsy: https://www.etsy.com/ca/listing/4362532379/kissy-the-bat-crochet-pattern-amigurumi
 
-  - key: andy
+  - id: andy
     image: img/creations/andy.png
     caption: |
       🎃 Andy the Creature is spooky, quirky, and full of personality with his mismatched eyes,

@@ -121,7 +121,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
         <NuxtImg
           v-for="product in [...creations?.products].reverse().slice(0, 4)"
-          :key="product.key"
+          :key="product.id"
           :src="product.image"
           :alt="`${product.caption} - Handcrafted crochet creation by Megurumi Creative`"
           preset="card"

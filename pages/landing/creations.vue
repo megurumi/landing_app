@@ -33,7 +33,7 @@ const productSchemas = computed(() => {
 
   return page.value.products.map((product: any) =>
     defineProduct({
-      name: `${product.key.charAt(0).toUpperCase() + product.key.slice(1)} - Crochet Pattern`,
+      name: `${product.id.charAt(0).toUpperCase() + product.id.slice(1)} - Crochet Pattern`,
       description: product.caption
         .replace(/[🐋💙✨🐢💚🐥🎉😍🦊🐘💜🐭🐷💕🐉🦇🥰🎃🧟]/g, "")
         .trim(),
@@ -105,7 +105,7 @@ useSchemaOrg([
           position: index + 1,
           item: {
             "@type": "Product",
-            "@id": `https://megurumi.com/landing/creations#${product.key}`,
+            "@id": `https://megurumi.com/landing/creations#${product.id}`,
           },
         })) || [],
     },
@@ -164,12 +164,13 @@ const latestProducts = computed(() => [...page.value?.products].reverse());
     >
       <UCard
         v-for="product in latestProducts"
-        :key="product.key"
+        :key="product.id"
+        :id="product.id"
         class="overflow-hidden hover:shadow-lg transition-shadow"
         :ui="{
           header: { padding: 'p-0 sm:p-0' },
           body: { padding: 'px-2 py-4 sm:p-4' },
-          footer: { padding: 'px-2 py-2 sm:p-2' },
+          footer: { padding: 'px-2 py-1' },
         }"
       >
         <template #header>

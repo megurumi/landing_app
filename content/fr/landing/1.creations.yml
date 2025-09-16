@@ -19,7 +19,7 @@ hero:
     et certains le sont déjà !
     Merci de suivre mon aventure créative et d'en faire partie. Joyeux crochet ! 🧶💫
 products:
-  - key: barnabe
+  - id: barnabe
     image: img/creations/barnabe.png
     caption: |
       🐋💙 Voici Barnabé la Baleine ! Avec ses formes douces et son air amical,
@@ -27,7 +27,7 @@ products:
     instagram: https://www.instagram.com/p/DJUaNUytTsx
     etsy: https://www.etsy.com/ca/listing/4298995429/barnabe-the-whale-crochet-pattern
 
-  - key: shelly
+  - id: shelly
     image: img/creations/shelly.png
     caption: |
       ✨ Shelly la Tortue est arrivée ! 🐢✨ Avec sa jolie carapace et sa personnalité douce,
@@ -36,7 +36,7 @@ products:
     instagram: https://www.instagram.com/p/DJJ6UVIt_Qp/
     etsy: https://www.etsy.com/ca/listing/1906170787/shelly-the-turtle-crochet-pattern
 
-  - key: kevin
+  - id: kevin
     image: img/creations/kevin.png
     caption: |
       🐥 Kevin est le petit ami le plus polyvalent — selon les couleurs et ton inspiration,
@@ -44,7 +44,7 @@ products:
     instagram: https://www.instagram.com/p/DJJ6UVIt_Qp/
     etsy: https://www.etsy.com/ca/listing/4302012705/kevin-the-chick-crochet-pattern
 
-  - key: lola
+  - id: lola
     image: img/creations/lola.png
     caption: |
       ✨ Lola la Chouette brille dans toutes ses versions — vives, pastel, coton ou peluche —
@@ -52,7 +52,7 @@ products:
     instagram: https://www.instagram.com/p/DJ4MHazNc3q
     etsy: https://www.etsy.com/ca/listing/4305832049/lola-the-owl-crochet-pattern-amigurumi
 
-  - key: lenny
+  - id: lenny
     image: img/creations/lenny.png
     caption: |
       🎉 Lenny le Poulpe demande un peu de patience avec ses 8 pattes, mais au final,
@@ -60,7 +60,7 @@ products:
     instagram: https://www.instagram.com/p/DKuY9-1gXyw
     etsy: https://www.etsy.com/ca/listing/4313034236/lenny-the-octopus-crochet-pattern
 
-  - key: roxanne
+  - id: roxanne
     image: img/creations/roxanne.png
     caption: |
       🦊 Roxanne le Panda Roux est espiègle et coloré, avec des changements de couleur amusants
@@ -68,7 +68,7 @@ products:
     instagram: https://www.instagram.com/p/DLKm4vrgts5
     etsy: https://www.etsy.com/ca/listing/4323125630/roxanne-the-red-panda-crochet-pattern
 
-  - key: marcus
+  - id: marcus
     image: img/creations/marcus.png
     caption: |
       🐘 Marcus l'Éléphant est un doux géant qui est superbe dans toutes les couleurs,
@@ -76,7 +76,7 @@ products:
     instagram: https://www.instagram.com/p/DLuh3ylP4MB
     etsy: https://www.etsy.com/ca/listing/4330248020/marcus-the-elephant-crochet-pattern
 
-  - key: kimmie
+  - id: kimmie
     image: img/creations/kimmie.png
     caption: |
       🐭 Kimmie la Souris peut être douce et réaliste, colorée et joyeuse, ou tout autre style,
@@ -84,7 +84,7 @@ products:
     instagram: https://www.instagram.com/p/DMfgdTgzvR2
     etsy: https://www.etsy.com/ca/listing/4338959771/kimmie-the-mouse-crochet-pattern
 
-  - key: gordon
+  - id: gordon
     image: img/creations/gordon.png
     caption: |
       🐷 Gordon le Cochon est un vrai caméléon : zombie effrayant, créature façon Frankenstein,
@@ -92,7 +92,7 @@ products:
     instagram: https://www.instagram.com/p/
     etsy: https://www.etsy.com/ca/listing/4347606426/gordon-the-pig-crochet-pattern-amigurumi
 
-  - key: ezra
+  - id: ezra
     image: img/creations/ezra.png
     caption: |
       🐉 Ezra le Dragon est magique dans toutes les couleurs — rouge flamboyant, bleu glacé,
@@ -100,7 +100,7 @@ products:
     instagram: https://www.instagram.com/p/DNyhWBWXgDY
     etsy: https://www.etsy.com/ca/listing/4357214323/ezra-the-dragon-crochet-pattern
 
-  - key: kissy
+  - id: kissy
     image: img/creations/kissy.png
     caption: |
       🦇 Kissy la Chauve-Souris est adorable dans toutes ses versions — noire classique, pastel colorée,
@@ -108,7 +108,7 @@ products:
     instagram: https://www.instagram.com/p/DNyhWBWXgDY
     etsy: https://www.etsy.com/ca/listing/4362532379/kissy-the-bat-crochet-pattern-amigurumi
 
-  - key: andy
+  - id: andy
     image: img/creations/andy.png
     caption: |
       🎃 Andy la Créature est à la fois effrayant et attachant avec ses yeux dépareillés,
