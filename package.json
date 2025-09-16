@@ -25,7 +25,7 @@
     "@nuxtjs/device": "^3.2.4",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@types/node": "^22.7.5",
-    "@vite-pwa/nuxt": "^0.10.5",
+    "@vite-pwa/nuxt": "^1.0.4",
     "@vueuse/components": "^11.1.0",
     "@vueuse/core": "^11.1.0",
     "@vueuse/nuxt": "^11.1.0",
@@ -50,7 +50,7 @@
     "@nuxtjs/sitemap": "^6.1.1",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
-    "nuxt": "^3.13.2",
+    "nuxt": "^3.16.0",
     "nuxt-viewport": "^2.2.0"
   }
 }
