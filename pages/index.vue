@@ -68,11 +68,11 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
 
       <template #headline>
         <NuxtImg
+          preset="hero" 
           src="/img/landing/hero.png"
-          preset="hero"
-          sizes="225px md:225px xl:225px"
           alt="Your Creative Partner - Megurumi Creative showcasing handcrafted crochet amigurumi and accessories"
-          class="neon mx-auto rounded-3xl"
+          sizes="225px md:280px xl:440px"
+          class="w-[225px] md:w-[280px] xl:w-[400px] neon mx-auto rounded-3xl"
           loading="eager"
           fetchpriority="high"
         />
@@ -89,26 +89,22 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
           :src="page.social.image"
           :alt="`${page.social.title} - Profile image for Megurumi Creative social media`"
           preset="logo"
-          sizes="150px"
-          class="rounded-xl"
+          sizes="100px"
+          class="w-[150px] rounded-xl"
           loading="lazy"
         />
       </template>
-      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
-        <UCard
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        <NuxtImg
           v-for="product in [...creations?.products].reverse().slice(0, 4)"
           :key="product.key"
-          class="overflow-hidden hover:shadow-lg transition-shadow"
-        >
-          <NuxtImg
-            :src="product.image"
-            :alt="`${product.caption} - Handcrafted crochet creation by Megurumi Creative`"
-            preset="card"
-            sizes="320px sm:348px md:348px lg:250px xl:300px"
-            class="w-full h-80 object-cover object-center rounded-md"
-            loading="lazy"
-          />
-        </UCard>
+          :src="product.image"
+          :alt="`${product.caption} - Handcrafted crochet creation by Megurumi Creative`"
+          preset="card"
+          sizes="180px sm:280px"
+          class="w-full h-auto max-h-80 object-cover object-center rounded-md"
+          loading="lazy"
+        />
       </div>
       <NuxtLink
         :to="page.gallery.link.to"

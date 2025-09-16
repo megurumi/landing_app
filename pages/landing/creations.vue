@@ -75,20 +75,25 @@ const latestProducts = computed(() => [...page.value?.products].reverse());
 
     <div
       id="products"
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-20"
+      class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 pt-20"
     >
       <UCard
         v-for="product in latestProducts"
         :key="product.key"
         class="overflow-hidden hover:shadow-lg transition-shadow"
+        :ui="{
+          header: { padding: 'p-0 sm:p-0' },
+          body: { padding: 'px-2 py-4 sm:p-4' },
+          footer: { padding: 'px-2 py-2 sm:p-2' },
+        }"
       >
         <template #header>
           <NuxtImg
             :src="product.image"
             :alt="`${product.caption} - Unique crochet creation available at Megurumi Creative`"
             preset="card"
-            sizes="240px lg:348px"
-            class="w-full h-80 object-cover object-center rounded-md"
+            sizes="180px sm:286px"
+            class="w-full h-auto max-h-80 object-cover object-center"
             loading="lazy"
           />
         </template>
@@ -105,22 +110,20 @@ const latestProducts = computed(() => [...page.value?.products].reverse());
               target="_blank"
               color="gray"
               variant="ghost"
-              size="sm"
+              size="lg"
               icon="i-simple-icons-instagram"
-            >
-              View on Instagram
-            </UButton>
+              aria-label="View on Instagram"
+            />
             <UButton
               v-if="product.etsy"
               :to="product.etsy"
               target="_blank"
               color="gray"
               variant="ghost"
-              size="sm"
-              icon="i-simple-icons-etsy"
-            >
-              Shop on Etsy
-            </UButton>
+              size="lg"
+              icon="i-heroicons-shopping-bag"
+              aria-label="Shop on Etsy"
+            />
           </div>
         </template>
       </UCard>

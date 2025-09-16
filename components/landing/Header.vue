@@ -7,7 +7,7 @@ const localePath = useLocalePath()
     :to="localePath('/')"
   >
     <template #logo>
-      <AtomsBrand />
+      <AtomsBrand class="px-2" />
     </template>
   </UHeader>
 </template>
