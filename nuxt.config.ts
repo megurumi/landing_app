@@ -36,7 +36,7 @@ export default defineNuxtConfig({
   },
   image: {
     provider: process.env.NODE_ENV === "production" ? "vercel" : "ipx",
-    quality: 80,
+    quality: 65,
     format: ["avif", "webp", "jpeg"],
     screens: {
       xs: 320,
@@ -51,20 +51,20 @@ export default defineNuxtConfig({
       hero: {
         modifiers: {
           format: "avif,webp,jpeg",
-          quality: 85,
+          quality: 70,
         },
       },
       card: {
         modifiers: {
           format: "avif,webp,jpeg",
-          quality: 80,
+          quality: 65,
           fit: "cover",
         },
       },
       logo: {
         modifiers: {
           format: "avif,webp,png",
-          quality: 90,
+          quality: 75,
         },
       },
     },

@@ -70,9 +70,9 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
         <NuxtImg
           src="/img/landing/hero.png"
           preset="hero"
-          sizes="sm:380px md:400px xl:450px"
+          sizes="225px md:225px xl:225px"
           alt="Your Creative Partner - Megurumi Creative showcasing handcrafted crochet amigurumi and accessories"
-          class="neon mx-auto w-250px] md:w-[400px] xl:w-[450px] rounded-3xl"
+          class="neon mx-auto rounded-3xl"
           loading="eager"
           fetchpriority="high"
         />
@@ -90,7 +90,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
           :alt="`${page.social.title} - Profile image for Megurumi Creative social media`"
           preset="logo"
           sizes="150px"
-          class="w-[150px]"
+          class="rounded-xl"
           loading="lazy"
         />
       </template>
@@ -104,7 +104,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
             :src="product.image"
             :alt="`${product.caption} - Handcrafted crochet creation by Megurumi Creative`"
             preset="card"
-            sizes="sm:348px md:348px lg:348px"
+            sizes="320px sm:348px md:348px lg:250px xl:300px"
             class="w-full h-80 object-cover object-center rounded-md"
             loading="lazy"
           />
