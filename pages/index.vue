@@ -69,11 +69,12 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       <template #headline>
         <NuxtImg
           src="/img/landing/hero.png"
-          format="webp"
-          quality="80"
+          preset="hero"
           sizes="sm:380px md:400px xl:450px"
-          alt="Your Creative Partner"
+          alt="Your Creative Partner - Megurumi Creative showcasing handcrafted crochet amigurumi and accessories"
           class="neon mx-auto w-250px] md:w-[400px] xl:w-[450px] rounded-3xl"
+          loading="eager"
+          fetchpriority="high"
         />
       </template>
     </ULandingHero>
@@ -86,12 +87,11 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       <template #headline>
         <NuxtImg
           :src="page.social.image"
-          :alt="page.social.title"
-          format="webp"
-          quality="80"
+          :alt="`${page.social.title} - Profile image for Megurumi Creative social media`"
+          preset="logo"
           sizes="150px"
-          fit="cover"
           class="w-[150px]"
+          loading="lazy"
         />
       </template>
       <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
@@ -102,11 +102,11 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
         >
           <NuxtImg
             :src="product.image"
-            :alt="product.caption"
-            format="webp"
-            quality="80"
+            :alt="`${product.caption} - Handcrafted crochet creation by Megurumi Creative`"
+            preset="card"
             sizes="sm:348px md:348px lg:348px"
             class="w-full h-80 object-cover object-center rounded-md"
+            loading="lazy"
           />
         </UCard>
       </div>

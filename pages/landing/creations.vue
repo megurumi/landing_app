@@ -48,11 +48,12 @@ const latestProducts = computed(() => [...page.value?.products].reverse());
       <template #headline>
         <NuxtImg
           :src="page?.hero.image"
-          :alt="page?.hero.caption"
-          format="webp"
-          quality="80"
+          :alt="`${page?.hero.caption} - Megurumi Creative crochet artist profile`"
+          preset="logo"
           sizes="200px"
           class="object-fit mx-auto rounded-full"
+          loading="eager"
+          fetchpriority="high"
         />
       </template>
       <div
@@ -84,11 +85,11 @@ const latestProducts = computed(() => [...page.value?.products].reverse());
         <template #header>
           <NuxtImg
             :src="product.image"
-            :alt="product.caption"
-            format="webp"
-            quality="80"
+            :alt="`${product.caption} - Unique crochet creation available at Megurumi Creative`"
+            preset="card"
             sizes="240px lg:348px"
             class="w-full h-80 object-cover object-center rounded-md"
+            loading="lazy"
           />
         </template>
 

@@ -6,10 +6,11 @@
     <NuxtImg
       src="/img/brand/outlined.png"
       class="w-[30px] lg:w-[40px]"
-      format="webp"
-      quality="90"
+      preset="logo"
       sizes="sm:30px lg:40px"
-      alt="Megurumi Creative Brand Icon"
+      alt="Megurumi Creative - Handcrafted Crochet Brand Logo"
+      loading="eager"
+      fetchpriority="high"
     />
     <p class="font-bold" :class="`text-${size}`">Megurumi Creative</p>
   </NuxtLink>
