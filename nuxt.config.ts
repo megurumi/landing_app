@@ -1,9 +1,4 @@
 export default defineNuxtConfig({
-  app: {
-    layoutTransition: {
-      name: "layout",
-    },
-  },
   colorMode: {
     preference: "system",
   },
