@@ -5,17 +5,18 @@ User-agent: *
 Allow: /
 
 # Allow important SEO pages but with lower priority
+Allow: /sitemap.xml
+Allow: /__sitemap__/en.xml
+Allow: /__sitemap__/fr.xml
 Allow: /landing/policy/
 Allow: /fr/landing/policy/
 Allow: /landing/terms/
 Allow: /fr/landing/terms/
+Allow: /landing/creations/
+Allow: /fr/landing/creations/
 
 # Disallow unnecessary pages and technical paths
-Disallow: /transition
-Disallow: /fr/transition
 Disallow: /api/
-Disallow: /admin/
-Disallow: /preview/
 Disallow: /_nuxt/
 Disallow: /__nuxt_error
 
