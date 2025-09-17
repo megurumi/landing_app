@@ -103,6 +103,9 @@ export default defineNuxtConfig({
         "/fr/landing/terms",
         "/landing/policy",
         "/fr/landing/policy",
+        "/sitemap_index.xml",
+        "/__sitemap__/en.xml",
+        "/__sitemap__/fr.xml",
       ],
     },
   },
@@ -309,6 +312,14 @@ export default defineNuxtConfig({
   site: {
     url: process.env.NUXT_APP_DOMAIN,
     name: "Megurumi Creative",
+  },
+  sitemap: {
+    autoLastmod: true,
+    defaults: {
+      changefreq: 'daily',
+      priority: 0.8,
+      lastmod: new Date().toISOString(),
+    },
   },
   tailwindcss: {
     viewer: false,
