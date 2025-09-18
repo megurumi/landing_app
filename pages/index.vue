@@ -83,7 +83,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
             name="i-heroicons-chevron-down"
             class="h-6 w-6 relative -bottom-20 transition-opacity duration-1000 cursor-pointer"
             :class="{ 'opacity-0': scrollY > 50 }"
-            @click="router.push(localePath(`/#${page.gallery.id}`))"
+            @click="router.push(localePath('/') + `#${page.gallery.id}`)"
           />
         </div>
       </template>
@@ -129,7 +129,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
         />
       </div>
       <NuxtLink
-        :to="page.gallery.link.to"
+        :to="localePath(page.gallery.link.to)"
         class="ml-auto flex items-center text-sm font-semibold leading-7 text-primary-600 dark:text-primary-400"
       >
         <UIcon name="i-heroicons-arrow-right-20-solid" class="h-6 w-6 mr-2" />

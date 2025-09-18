@@ -8,6 +8,10 @@ const links = computed(() => [
     label: t("brand"),
     children: [
       {
+        label: t("home"),
+        to: localePath("/"),
+      },
+      {
         label: t("creations"),
         to: localePath("/landing/creations"),
       },

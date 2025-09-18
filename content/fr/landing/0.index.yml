@@ -65,7 +65,7 @@ cta:
       target: _blank
     - label: Explorez les créations
       size: xl
-      to: /landing/creations
+      to: /fr/landing/creations
       color: black
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
