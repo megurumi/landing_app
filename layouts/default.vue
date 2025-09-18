@@ -51,7 +51,7 @@ provide("navigation", navigation)
 const links = computed(() => {
   return [
     {
-      label: t("default"),
+      label: t("brand"),
       to: localePath("/"),
       icon: "i-heroicons-home",
       exact: true,
@@ -59,14 +59,3 @@ const links = computed(() => {
   ]
 })
 </script>
-
-<i18n lang="json">
-{
-  "en": {
-    "default": "Megurumi Creative",
-  },
-  "fr": {
-    "default": "Megurumi Creative",
-  }
-}
-</i18n>

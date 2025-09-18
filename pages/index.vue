@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const { locale } = useI18n();
+const { t, locale } = useI18n();
+const config = useRuntimeConfig();
 const router = useRouter();
 const localePath = useLocalePath();
 
@@ -40,11 +41,8 @@ useSchemaOrg([
     '@type': 'WebPage',
     name: page.value.title,
     description: page.value.description,
-    url: 'https://megurumi.com',
-    mainEntity: {
-      '@type': 'Organization',
-      '@id': 'https://megurumi.com/#organization'
-    },
+    url: `${config.public.NUXT_APP_DOMAIN}${localePath('/')}`,
+    inLanguage: locale.value,
     breadcrumb: {
       '@type': 'BreadcrumbList',
       itemListElement: [
@@ -52,10 +50,10 @@ useSchemaOrg([
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://megurumi.com'
+          item: `${config.public.NUXT_APP_DOMAIN}${localePath('/')}`
         }
       ]
-    }
+    },
   })
 ]);
 
@@ -92,9 +90,9 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
 
       <template #headline>
         <NuxtImg
+          :alt="t('profile_alt')"
           preset="hero" 
           src="/img/landing/hero.png"
-          alt="Your Creative Partner - Megurumi Creative showcasing handcrafted crochet amigurumi and accessories"
           sizes="225px md:280px xl:440px"
           class="w-[225px] md:w-[280px] xl:w-[400px] neon mx-auto rounded-3xl"
           loading="eager"
@@ -111,7 +109,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       <template #headline>
         <NuxtImg
           :src="page.social.image"
-          :alt="`${page.social.title} - Profile image for Megurumi Creative social media`"
+          :alt="`${page.social.title} - ${t('social_alt')}`"
           preset="logo"
           sizes="100px"
           class="w-[150px] rounded-xl"
@@ -123,7 +121,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
           v-for="product in [...creations?.products].reverse().slice(0, 4)"
           :key="product.id"
           :src="product.image"
-          :alt="`${product.caption} - Handcrafted crochet creation by Megurumi Creative`"
+          :alt="`${product.caption} - ${t('social_alt')}`"
           preset="card"
           sizes="180px sm:280px"
           class="w-full h-auto max-h-80 object-cover object-center rounded-md"
@@ -150,7 +148,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
           v-for="social in page.social.links"
           v-bind="social"
           :key="social.label"
-          :aria-label="`Visit us on ${social.label}`"
+          :aria-label="t('visit_our', { social: social.label })"
           target="_blank"
           color="white"
           variant="solid"
@@ -212,3 +210,20 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
   }
 }
 </style>
+
+<i18n lang="json">
+{
+  "en": {
+    "profile_alt": "Your Creative Partner - Megurumi Creative showcases handcrafted crochet amigurumi and accessories",
+    "social_alt": "Profile image for Megurumi Creative social media",
+    "product_alt": "Handcrafted crochet creation by Megurumi Creative",
+    "visit_our": "Visit our {social} social page"
+  },
+  "fr": {
+    "profile_alt": "Ton partenaire créatif - Megurumi Creative présente des amigurumis et accessoires en crochet faits à la main",
+    "social_alt": "Image de profil pour les réseaux sociaux de Megurumi Creative",
+    "product_alt": "Création de crochet faite à la main par Megurumi Creative",
+    "visit_our": "Visitez notre page sociale {social}"
+  }
+}
+</i18n>
