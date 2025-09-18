@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const { locale } = useI18n()
+const { t, locale } = useI18n()
+const config = useRuntimeConfig();
+const localePath = useLocalePath();
 
 const { data: page } = await useAsyncData(
   "terms",
@@ -20,6 +22,32 @@ useSeoMeta({
   description: page.value.description,
   ogDescription: page.value.description,
 })
+
+useSchemaOrg([
+  defineWebPage({
+    "@type": "CollectionPage",
+    name: page.value.title,
+    description: page.value.description,
+    url: `${config.public.NUXT_APP_DOMAIN}${localePath('/landing/terms')}`,
+    breadcrumb: {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: t("home"),
+          item: `${config.public.NUXT_APP_DOMAIN}${localePath('/')}`,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: t("terms"),
+          item: `${config.public.NUXT_APP_DOMAIN}${localePath('/landing/terms')}`,
+        },
+      ],
+    },
+  }),
+]);
 </script>
 
 <template>

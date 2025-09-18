@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const { locale } = useI18n();
+const { t, locale } = useI18n();
+const config = useRuntimeConfig();
 const router = useRouter();
 const localePath = useLocalePath();
 
@@ -21,6 +22,50 @@ if (!page.value) {
     fatal: true,
   });
 }
+
+const productSchemas = computed(() => {
+  if (!page.value?.products) return [];
+
+  return page.value.products.map((product: any) =>
+    defineProduct({
+      name: `${product.name} - ${t("pattern")}`,
+      description: product.caption
+        .replace(/[🐋💙✨🐢💚🐥🎉😍🦊🐘💜🐭🐷💕🐉🦇🥰🎃🧟]/g, "")
+        .trim(),
+      image: `${config.public.NUXT_APP_DOMAIN}/${product.image}`,
+      brand: true,
+      category: t("category"),
+      offers: {
+        "@type": "Offer",
+        url: product.etsy,
+        availability: "https://schema.org/InStock",
+        priceCurrency: "CAD",
+        seller: {
+          "@type": "Organization",
+          name: t("seller_name"),
+        },
+      },
+      additionalProperty: [
+        {
+          "@type": "PropertyValue",
+          name: t("skill_level"),
+          value: t("skill_level_value"),
+        },
+        {
+          "@type": "PropertyValue",
+          name: t("craft_type"),
+          value: t("craft_type_value"),
+        },
+        {
+          "@type": "PropertyValue",
+          name: t("language"),
+          value: t("language_value"),
+        },
+      ],
+    })
+  );
+});
+
 useSeoMeta({
   title: page.value.title,
   ogTitle: page.value.title,
@@ -28,71 +73,26 @@ useSeoMeta({
   ogDescription: page.value.description,
 });
 
-const productSchemas = computed(() => {
-  if (!page.value?.products) return [];
-
-  return page.value.products.map((product: any) =>
-    defineProduct({
-      name: `${product.id.charAt(0).toUpperCase() + product.id.slice(1)} - Crochet Pattern`,
-      description: product.caption
-        .replace(/[🐋💙✨🐢💚🐥🎉😍🦊🐘💜🐭🐷💕🐉🦇🥰🎃🧟]/g, "")
-        .trim(),
-      image: `https://megurumi.com/${product.image}`,
-      brand: true,
-      category: "Arts & Crafts",
-      offers: product.etsy
-        ? {
-            "@type": "Offer",
-            url: product.etsy,
-            availability: "https://schema.org/InStock",
-            priceCurrency: "CAD",
-            seller: {
-              "@type": "Organization",
-              name: "Megurumi Creative",
-            },
-          }
-        : undefined,
-      additionalProperty: [
-        {
-          "@type": "PropertyValue",
-          name: "Skill Level",
-          value: "Beginner to Intermediate",
-        },
-        {
-          "@type": "PropertyValue",
-          name: "Craft Type",
-          value: "Amigurumi Crochet Pattern",
-        },
-        {
-          "@type": "PropertyValue",
-          name: "Language",
-          value: "English",
-        },
-      ],
-    })
-  );
-});
-
 useSchemaOrg([
   defineWebPage({
     "@type": "CollectionPage",
     name: page.value.title,
     description: page.value.description,
-    url: "https://megurumi.com/landing/creations",
+    url: `${config.public.NUXT_APP_DOMAIN}${localePath('/landing/creations')}`,
     breadcrumb: {
       "@type": "BreadcrumbList",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
-          name: "Home",
-          item: "https://megurumi.com",
+          name: t("home"),
+          item: `${config.public.NUXT_APP_DOMAIN}${localePath('/')}`,
         },
         {
           "@type": "ListItem",
           position: 2,
           name: "Creations",
-          item: "https://megurumi.com/landing/creations",
+          item: `${config.public.NUXT_APP_DOMAIN}${localePath('/landing/creations')}`,
         },
       ],
     },
@@ -105,9 +105,9 @@ useSchemaOrg([
           position: index + 1,
           item: {
             "@type": "Product",
-            "@id": `https://megurumi.com/landing/creations#${product.id}`,
+            "@id": `${config.public.NUXT_APP_DOMAIN}${localePath('/landing/creations')}#${product.id}`,
           },
-        })) || [],
+        })),
     },
   }),
   ...productSchemas.value,
@@ -133,7 +133,7 @@ const latestProducts = computed(() => [...page.value?.products].reverse());
       <template #headline>
         <NuxtImg
           :src="page?.hero.image"
-          :alt="`${page?.hero.caption} - Megurumi Creative crochet artist profile`"
+          :alt="`${page?.hero.caption} - ${t('profile_alt')}`"
           preset="logo"
           sizes="200px"
           class="object-fit mx-auto rounded-full"
@@ -176,7 +176,7 @@ const latestProducts = computed(() => [...page.value?.products].reverse());
         <template #header>
           <NuxtImg
             :src="product.image"
-            :alt="`${product.caption} - Unique crochet creation available at Megurumi Creative`"
+            :alt="`${product.caption} -  ${t('product_alt')}`"
             preset="card"
             sizes="180px sm:286px"
             class="w-full h-auto max-h-80 object-cover object-center"
@@ -193,22 +193,22 @@ const latestProducts = computed(() => [...page.value?.products].reverse());
             <UButton
               v-if="product.instagram"
               :to="product.instagram"
+              :aria-label="t('aria_label_instagram')"
               target="_blank"
               color="gray"
               variant="ghost"
               size="lg"
               icon="i-simple-icons-instagram"
-              aria-label="View on Instagram"
             />
             <UButton
               v-if="product.etsy"
               :to="product.etsy"
+              :aria-label="t('aria_label_etsy')"
               target="_blank"
               color="gray"
               variant="ghost"
               size="lg"
               icon="i-heroicons-shopping-bag"
-              aria-label="Shop on Etsy"
             />
           </div>
         </template>
@@ -216,3 +216,38 @@ const latestProducts = computed(() => [...page.value?.products].reverse());
     </div>
   </UContainer>
 </template>
+
+<i18n lang="json">
+{
+  "en": {
+    "pattern": "Crochet Pattern",
+    "category": "Arts & Crafts",
+    "skill_level": "Skill Level",
+    "skill_level_value": "Beginner to Expert",
+    "craft_type": "Craft Type",
+    "craft_type_value": "Amigurumi Crochet Pattern",
+    "language": "Language",
+    "language_value": "English",
+    "seller_name": "Megurumi Creative",
+    "profile_alt": "Crochet Artist & Designer",
+    "product_alt": "Handcrafted crochet creation by Megurumi Creative",
+    "aria_label_instagram": "View on Instagram",
+    "aria_label_etsy": "Shop on Etsy"
+  },
+  "fr": {
+    "pattern": "Patron de Crochet",
+    "category": "Arts et Artisanat",
+    "skill_level": "Niveau de Compétence",
+    "skill_level_value": "Débutant à Expert",
+    "craft_type": "Type d'Artisanat",
+    "craft_type_value": "Patron de Crochet Amigurumi",
+    "language": "Langue",
+    "language_value": "Français",
+    "seller_name": "Megurumi Creative",
+    "profile_alt": "Artiste et Designer de Crochet",
+    "product_alt": "Création de crochet faite à la main par Megurumi Creative",
+    "aria_label_instagram": "Voir sur Instagram",
+    "aria_label_etsy": "Acheter sur Etsy"
+  }
+}
+</i18n>

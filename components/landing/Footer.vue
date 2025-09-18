@@ -5,8 +5,12 @@ const localePath = useLocalePath()
 
 const links = computed(() => [
   {
-    label: "Megurumi Creative",
+    label: t("brand"),
     children: [
+      {
+        label: t("home"),
+        to: localePath("/"),
+      },
       {
         label: t("creations"),
         to: localePath("/landing/creations"),
@@ -90,17 +94,11 @@ const socials = [
 {
   "en": {
     "legal": "Legal",
-    "copyright": "Copyright © Megurumi Creative {date}. All rights reserved.",
-    "creations": "My Creations",
-    "terms": "Terms and Condition",
-    "policy": "Policy of use"
+    "copyright": "Copyright © Megurumi Creative {date}. All rights reserved."
   },
   "fr": {
     "legal": "Mentions légales",
-    "copyright": "Droits d'auteur © Megurumi Creative {date}. Tous droits réservés.",
-    "creations": "Mes Créations",
-    "terms": "Terme et condition",
-    "policy": "Politique d'utilisation"
+    "copyright": "Droits d'auteur © Megurumi Creative {date}. Tous droits réservés."
   }
 }
 </i18n>
