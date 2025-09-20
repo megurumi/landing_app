@@ -1,13 +1,6 @@
 title: Unleash Your Creativity with Crochet
 description:
   Dive into my world of crochet with stunning handmade creations, tutorials, and a community that shares your passion for crafting.
-links:
-  - label: Buy On Etsy
-    size: xl
-    to: https://www.etsy.com/ca/shop/MegurumiCreative
-    color: black
-    icon: i-heroicons-shopping-bag
-    target: _blank
 hero:
   image: img/brand/hero.png
   caption: |
@@ -22,94 +15,201 @@ products:
     caption: |
       🐋💙 Meet Barnabé the Whale! With his soft curves and friendly face, he's the perfect
       ocean companion and such a joy to bring to life in yarn.
-    instagram: https://www.instagram.com/p/DJUaNUytTsx
-    etsy: https://www.etsy.com/ca/listing/4298995429/barnabe-the-whale-crochet-pattern
-
+    links:
+      - id: youtube
+        label: Watch on YouTube Barnabe playlist
+        to: https://www.youtube.com/watch?v=_n6dR6qlIu8&list=PL8tgm60WDRRQRQnMb4I5YVDqn7hAuH9bD
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested On Etsy
+        to: https://www.etsy.com/ca/listing/4298995429/barnabe-the-whale-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
   - id: shelly
     image: img/creations/shelly.png
     caption: |
       ✨ Shelly the Turtle is here! 🐢✨ With her sweet little shell and gentle personality,
       she's a fun and relaxing project to make, and turns into an adorable companion that's
       perfect for gifting or keeping as your own handmade treasure. 💚
-    instagram: https://www.instagram.com/p/DJJ6UVIt_Qp/
-    etsy: https://www.etsy.com/ca/listing/1906170787/shelly-the-turtle-crochet-pattern
+    links:
+      - id: youtube
+        label: Watch on YouTube Shelly playlist
+        to: https://www.youtube.com/watch?v=DGzz7Ov-5Q8&list=PL8tgm60WDRRR4SiP_p02lQgck-HYhPoDL
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested On Etsy
+        to: https://www.etsy.com/ca/listing/1906170787/shelly-the-turtle-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: kevin
     image: img/creations/kevin.png
     caption: |
       🐥 Kevin is the most versatile little friend — depending on your colors and mood,
       he can be a goose, a canary, or a chick, always bringing charm and smiles!
-    instagram: https://www.instagram.com/p/DJJ6UVIt_Qp/
-    etsy: https://www.etsy.com/ca/listing/4302012705/kevin-the-chick-crochet-pattern
+    links:
+      - id: youtube
+        label: Watch on YouTube Kevin playlist
+        to: https://www.youtube.com/watch?v=sptx4Fc0u5c&list=PL8tgm60WDRRSsAHtqY3_f_doZsJ80vPq3
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested On Etsy
+        to: https://www.etsy.com/ca/listing/4302012705/kevin-the-chick-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: lola
     image: img/creations/lola.png
     caption: |
       ✨ Lola the Owl shines in every version — bold, pastel, cotton, or plush — each one
       bursting with personality and unique charm, especially with all those creative eyes! 😍
-    instagram: https://www.instagram.com/p/DJ4MHazNc3q
-    etsy: https://www.etsy.com/ca/listing/4305832049/lola-the-owl-crochet-pattern-amigurumi
+    links:
+      - id: youtube
+        label: Watch on YouTube Lola playlist
+        to: https://www.youtube.com/watch?v=sMn3iaXOxmc&list=PL8tgm60WDRRS7K30oQd2T6XRMmtDDqv3x
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested On Etsy
+        to: https://www.etsy.com/ca/listing/4305832049/lola-the-owl-crochet-pattern-amigurumi
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: lenny
     image: img/creations/lenny.png
     caption: |
       🎉 Lenny the Octopus may take patience with his 8 legs, but the reward is a playful,
       cuddly sea creature that's full of character and worth every stitch! 🐙😍
-    instagram: https://www.instagram.com/p/DKuY9-1gXyw
-    etsy: https://www.etsy.com/ca/listing/4313034236/lenny-the-octopus-crochet-pattern
+    links:
+      - id: youtube
+        label: Watch on YouTube Lenny playlist
+        to: https://www.youtube.com/watch?v=MYGPSd7i_FI&list=PL8tgm60WDRRT72jx-hwmkWj4tzW70HHl2
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested On Etsy
+        to: https://www.etsy.com/ca/listing/4313034236/lenny-the-octopus-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: roxanne
     image: img/creations/roxanne.png
     caption: |
       🦊 Roxanne the Red Panda is playful and vibrant, with fun color changes that challenge
       your skills and reward you with a stunning little friend full of charm. 😍
-    instagram: https://www.instagram.com/p/DLKm4vrgts5
-    etsy: https://www.etsy.com/ca/listing/4323125630/roxanne-the-red-panda-crochet-pattern
+    links:
+      - id: youtube
+        label: Watch on YouTube Roxanne playlist
+        to: https://www.youtube.com/watch?v=zUf_vKkP_Rc&list=PL8tgm60WDRRQvdlueYWQKGjWww6L0dVgX
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested On Etsy
+        to: https://www.etsy.com/ca/listing/4323125630/roxanne-the-red-panda-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: marcus
     image: img/creations/marcus.png
     caption: |
       🐘 Marcus the Elephant is a gentle giant who looks amazing in any shade, from soft pastels
       to bold colors, each version carrying its own sweet and whimsical personality. 💜
-    instagram: https://www.instagram.com/p/DLuh3ylP4MB
-    etsy: https://www.etsy.com/ca/listing/4330248020/marcus-the-elephant-crochet-pattern
+    links:
+      - id: youtube
+        label: Watch on YouTube Marcus playlist
+        to: https://www.youtube.com/watch?v=uTDjeXkIJS8&list=PL8tgm60WDRRRWvUSDBKvoeGKU0c1oP6qi
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested On Etsy
+        to: https://www.etsy.com/ca/listing/4330248020/marcus-the-elephant-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: kimmie
     image: img/creations/kimmie.png
     caption: |
       🐭 Kimmie the Mouse can be fluffy and realistic, colorful and playful, or anything in between,
       always transforming into an adorable little companion full of charm. ✨
-    instagram: https://www.instagram.com/p/DMfgdTgzvR2
-    etsy: https://www.etsy.com/ca/listing/4338959771/kimmie-the-mouse-crochet-pattern
+    links:
+      - id: youtube
+        label: Watch on YouTube Kimmie playlist
+        to: https://www.youtube.com/watch?v=R5DO2yPDMd0&list=PL8tgm60WDRRRWNE95ZzgA0mHM2_5kQSZw
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested On Etsy
+        to: https://www.etsy.com/ca/listing/4338959771/kimmie-the-mouse-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: gordon
     image: img/creations/gordon.png
     caption: |
       🐷 Gordon the Pig is endlessly fun, whether he's a spooky zombie, a Frankenstein creature,
       or a classic pink piggy — every version shows off his quirky and lovable personality. 💕
-    instagram: https://www.instagram.com/p/
-    etsy: https://www.etsy.com/ca/listing/4347606426/gordon-the-pig-crochet-pattern-amigurumi
+    links:
+      - id: youtube
+        label: Watch on YouTube Gordon playlist
+        to: https://www.youtube.com/watch?v=s6hemu0cpvI&list=PL8tgm60WDRRTMkuOIa5O50oAVetU_X1mT
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested On Etsy
+        to: https://www.etsy.com/ca/listing/4347606426/gordon-the-pig-crochet-pattern-amigurumi
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: ezra
     image: img/creations/ezra.png
     caption: |
       🐉 Ezra the Dragon is magical in every shade — from fiery reds to icy blues, pastel dreams
       to grumpy expressions — he's always a showstopper with unique personality. ✨
-    instagram: https://www.instagram.com/p/DNyhWBWXgDY
-    etsy: https://www.etsy.com/ca/listing/4357214323/ezra-the-dragon-crochet-pattern
+    links:
+      - id: youtube
+        label: Watch on YouTube Ezra playlist
+        to: https://www.youtube.com/watch?v=QVtSJp_2PDM&list=PL8tgm60WDRRQlycAWBNGkiX1Lq7ptZH7k
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested On Etsy
+        to: https://www.etsy.com/ca/listing/4357214323/ezra-the-dragon-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: kissy
     image: img/creations/kissy.png
     caption: |
       🦇 Kissy the Bat is cute in every style — classic black, colorful pastels, embroidered eyes,
       or oversized safety eyes — she always brings her own unique, lovable charm. 🥰
-    instagram: https://www.instagram.com/p/DNyhWBWXgDY
-    etsy: https://www.etsy.com/ca/listing/4362532379/kissy-the-bat-crochet-pattern-amigurumi
+    links:
+      - id: youtube
+        label: Watch on YouTube Kissy playlist
+        to: https://www.youtube.com/watch?v=SmUnzilrUi8&list=PL8tgm60WDRRRD47cUAJbSJif8itcgeNgd
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested On Etsy
+        to: https://www.etsy.com/ca/listing/4362532379/kissy-the-bat-crochet-pattern-amigurumi
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: andy
     image: img/creations/andy.png
     caption: |
       🎃 Andy the Creature is spooky, quirky, and full of personality with his mismatched eyes,
       making him a perfect Halloween friend or a unique companion all year round! 🧟
-    instagram: https://www.instagram.com/p/DOlgz8RjUAv
-    etsy: https://www.etsy.com/ca/listing/4369278765/andy-the-creature-monster-crochet
+    links:
+      - id: youtube
+        label: Watch on YouTube Andy playlist
+        to: https://www.youtube.com/watch?v=nrhLUdXlxT0&list=PL8tgm60WDRRQbkxReUcxPt6PoYzFBmr0t
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested On Etsy
+        to: https://www.etsy.com/ca/listing/4369278765/andy-the-creature-monster-crochet
+        icon: i-simple-icons-etsy
+        target: _blank

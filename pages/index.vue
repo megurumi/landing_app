@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { track } from '@vercel/analytics';
+
 const { t, locale } = useI18n();
 const config = useRuntimeConfig();
 const router = useRouter();
@@ -80,7 +82,11 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
 
       <template #links>
         <div class="flex flex-col gap-4 items-center justify-end">
-          <UButton v-for="link in page.hero.links" v-bind="link" />
+          <UButton
+            v-for="link in page.hero.links"
+            v-bind="link"
+            @click.stop="track('click_cta_landing_hero')"
+          />
           <UIcon
             name="i-heroicons-chevron-down"
             class="h-6 w-6 relative -bottom-20 transition-opacity duration-1000 cursor-pointer"
@@ -144,6 +150,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       <NuxtLink
         :to="localePath(page.gallery.link.to)"
         class="relative bottom-12 lg:bottom-20 ml-auto flex items-center text-lg font-semibold leading-7 text-primary-600 dark:text-primary-400 hover:underline"
+        @click.stop="track('click_cta_landing_see_gallery')"
       >
         <UIcon name="i-heroicons-arrow-right-20-solid" class="h-6 w-6 mr-2" />
         <span>{{ page.gallery.link.label }}</span>
@@ -172,8 +179,9 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
        <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
          <ULandingCard
            v-for="social in page.social.links"
-           :aria-label="t('visit_our_social', { social: social.label })"
            v-bind="social"
+           :aria-label="t('visit_our_social', { social: social.label })"
+           @click.stop="track('click_cta_landing_social', { social: social.id })"
          />
       </div>
     </ULandingSection>

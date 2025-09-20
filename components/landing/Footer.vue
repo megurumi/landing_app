@@ -1,9 +1,11 @@
 <script setup lang="ts">
+import { socials } from '@/utils/socials'
+
 const { t } = useI18n()
 const viewport = useViewport()
 const localePath = useLocalePath()
 
-const links = computed(() => [
+const links = computed(() => [    
   {
     label: t("brand"),
     children: [
@@ -32,49 +34,6 @@ const links = computed(() => [
     ],
   },
 ])
-
-const socials = [
-  {
-    label: "YouTube",
-    url: "https://www.youtube.com/@Megurumi_creative",
-    icon: "i-simple-icons-youtube",
-  },
-  {
-    label: "Instagram",
-    url: "https://www.instagram.com/megurumi_creative",
-    icon: "i-simple-icons-instagram",
-  },
-  {
-    label: "Facebook",
-    url: "https://www.facebook.com/megurumicreative",
-    icon: "i-simple-icons-facebook",
-  },
-  {
-    label: "Etsy",
-    url: "https://www.etsy.com/ca/shop/MegurumiCreative",
-    icon: "i-simple-icons-etsy",
-  },
-  {
-    label: "Ravelry",
-    url: "https://www.ravelry.com/designers/megurumi-creative",
-    icon: "i-simple-icons-ravelry",
-  },
-  {
-    label: "Tedooo",
-    url: "https://www.tedooo.com/user/6811260e3a88d9c8757fcb41",
-    icon: "i-simple-icons-julia",
-  },
-  {
-    label: "Ko-fi",
-    url: "https://ko-fi.com/megurumi_creative",
-    icon: "i-simple-icons-kofi",
-  },
-  {
-    label: "TikTok",
-    url: "https://www.tiktok.com/@megurumi_creative",
-    icon: "i-simple-icons-tiktok",
-  },
-]
 </script>
 
 <template>
