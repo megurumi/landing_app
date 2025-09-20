@@ -1,13 +1,6 @@
 title: Libère ta créativité avec le crochet
 description:
   Plonge dans mon univers du crochet avec de magnifiques créations faites main, des tutoriels, et une communauté qui partage ta passion pour l'art du fil.
-links:
-  - label: Acheter sur Etsy
-    size: xl
-    to: https://www.etsy.com/ca/shop/MegurumiCreative
-    color: black
-    icon: i-heroicons-shopping-bag
-    target: _blank
 hero:
   image: img/brand/hero.png
   caption: |
@@ -24,94 +17,201 @@ products:
     caption: |
       🐋💙 Voici Barnabé la Baleine ! Avec ses formes douces et son air amical,
       il est le compagnon parfait de l'océan et un vrai plaisir à réaliser au crochet.
-    instagram: https://www.instagram.com/p/DJUaNUytTsx
-    etsy: https://www.etsy.com/ca/listing/4298995429/barnabe-the-whale-crochet-pattern
-
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Barnabé
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRQRQnMb4I5YVDqn7hAuH9bD
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Barnabé sur Etsy
+        to: https://www.etsy.com/ca/listing/4298995429/barnabe-the-whale-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
   - id: shelly
     image: img/creations/shelly.png
     caption: |
       ✨ Shelly la Tortue est arrivée ! 🐢✨ Avec sa jolie carapace et sa personnalité douce,
       elle est un projet apaisant à réaliser et devient une adorable compagne,
       parfaite à offrir ou à garder comme petit trésor fait main. 💚
-    instagram: https://www.instagram.com/p/DJJ6UVIt_Qp/
-    etsy: https://www.etsy.com/ca/listing/1906170787/shelly-the-turtle-crochet-pattern
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Shelly
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRR4SiP_p02lQgck-HYhPoDL
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Shelly sur Etsy
+        to: https://www.etsy.com/ca/listing/1906170787/shelly-the-turtle-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: kevin
     image: img/creations/kevin.png
     caption: |
       🐥 Kevin est le petit ami le plus polyvalent — selon les couleurs et ton inspiration,
       il peut devenir une oie, un canari ou un poussin, toujours plein de charme et de malice !
-    instagram: https://www.instagram.com/p/DJJ6UVIt_Qp/
-    etsy: https://www.etsy.com/ca/listing/4302012705/kevin-the-chick-crochet-pattern
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Kevin
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRSsAHtqY3_f_doZsJ80vPq3
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Kevin sur Etsy
+        to: https://www.etsy.com/ca/listing/4302012705/kevin-the-chick-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: lola
     image: img/creations/lola.png
     caption: |
       ✨ Lola la Chouette brille dans toutes ses versions — vives, pastel, coton ou peluche —
-      chacune déborde de personnalité et d'originalité, surtout avec vos yeux créatifs ! 😍
-    instagram: https://www.instagram.com/p/DJ4MHazNc3q
-    etsy: https://www.etsy.com/ca/listing/4305832049/lola-the-owl-crochet-pattern-amigurumi
+      chacune déborde de personnalité et d'originalité, surtout avec tous ces yeux créatifs ! 😍
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Lola
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRS7K30oQd2T6XRMmtDDqv3x
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Lola sur Etsy
+        to: https://www.etsy.com/ca/listing/4305832049/lola-the-owl-crochet-pattern-amigurumi
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: lenny
     image: img/creations/lenny.png
     caption: |
-      🎉 Lenny le Poulpe demande un peu de patience avec ses 8 pattes, mais au final,
-      c’est une créature marine câline et pleine de caractère, qui vaut chaque maille ! 🐙😍
-    instagram: https://www.instagram.com/p/DKuY9-1gXyw
-    etsy: https://www.etsy.com/ca/listing/4313034236/lenny-the-octopus-crochet-pattern
+      🎉 Lenny le Poulpe demande un peu de patience avec ses 8 pattes, mais la récompense est une
+      créature marine câline et pleine de caractère, qui vaut chaque maille ! 🐙😍
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Lenny
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRT72jx-hwmkWj4tzW70HHl2
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Lenny sur Etsy
+        to: https://www.etsy.com/ca/listing/4313034236/lenny-the-octopus-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: roxanne
     image: img/creations/roxanne.png
     caption: |
-      🦊 Roxanne le Panda Roux est espiègle et coloré, avec des changements de couleur amusants
-      qui mettent tes compétences au défi et récompensent ton travail par un ami plein de charme. 😍
-    instagram: https://www.instagram.com/p/DLKm4vrgts5
-    etsy: https://www.etsy.com/ca/listing/4323125630/roxanne-the-red-panda-crochet-pattern
+      🦊 Roxanne le Panda Roux est espiègle et colorée, avec des changements de couleur amusants
+      qui mettent tes compétences au défi et te récompensent avec un petit ami plein de charme. 😍
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Roxanne
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRQvdlueYWQKGjWww6L0dVgX
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Roxanne sur Etsy
+        to: https://www.etsy.com/ca/listing/4323125630/roxanne-the-red-panda-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: marcus
     image: img/creations/marcus.png
     caption: |
-      🐘 Marcus l'Éléphant est un doux géant qui est superbe dans toutes les couleurs,
-      des pastels tendres aux teintes vives, chaque version ayant sa propre personnalité pleine de tendresse. 💜
-    instagram: https://www.instagram.com/p/DLuh3ylP4MB
-    etsy: https://www.etsy.com/ca/listing/4330248020/marcus-the-elephant-crochet-pattern
+      🐘 Marcus l'Éléphant est un doux géant qui est superbe dans toutes les nuances, des pastels
+      tendres aux couleurs vives, chaque version ayant sa propre personnalité douce et fantaisiste. 💜
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Marcus
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRRWvUSDBKvoeGKU0c1oP6qi
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Marcus sur Etsy
+        to: https://www.etsy.com/ca/listing/4330248020/marcus-the-elephant-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: kimmie
     image: img/creations/kimmie.png
     caption: |
-      🐭 Kimmie la Souris peut être douce et réaliste, colorée et joyeuse, ou tout autre style,
+      🐭 Kimmie la Souris peut être douce et réaliste, colorée et joyeuse, ou tout ce qu'il y a entre les deux,
       se transformant toujours en un adorable petit compagnon plein de charme. ✨
-    instagram: https://www.instagram.com/p/DMfgdTgzvR2
-    etsy: https://www.etsy.com/ca/listing/4338959771/kimmie-the-mouse-crochet-pattern
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Kimmie
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRRWNE95ZzgA0mHM2_5kQSZw
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Kimmie sur Etsy
+        to: https://www.etsy.com/ca/listing/4338959771/kimmie-the-mouse-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: gordon
     image: img/creations/gordon.png
     caption: |
-      🐷 Gordon le Cochon est un vrai caméléon : zombie effrayant, créature façon Frankenstein,
-      ou simple petit cochon rose classique — chaque version montre sa personnalité drôle et attachante. 💕
-    instagram: https://www.instagram.com/p/
-    etsy: https://www.etsy.com/ca/listing/4347606426/gordon-the-pig-crochet-pattern-amigurumi
+      🐷 Gordon le Cochon est infiniment amusant, qu'il soit un zombie effrayant, une créature façon Frankenstein,
+      ou un classique petit cochon rose — chaque version montre sa personnalité drôle et attachante. 💕
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Gordon
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRTMkuOIa5O50oAVetU_X1mT
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Gordon sur Etsy
+        to: https://www.etsy.com/ca/listing/4347606426/gordon-the-pig-crochet-pattern-amigurumi
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: ezra
     image: img/creations/ezra.png
     caption: |
-      🐉 Ezra le Dragon est magique dans toutes les couleurs — rouge flamboyant, bleu glacé,
-      pastel rêveur ou regard grognon — toujours spectaculaire et unique en personnalité. ✨
-    instagram: https://www.instagram.com/p/DNyhWBWXgDY
-    etsy: https://www.etsy.com/ca/listing/4357214323/ezra-the-dragon-crochet-pattern
+      🐉 Ezra le Dragon est magique dans toutes les nuances — rouge flamboyant, bleu glacé, rêves
+      pastel ou expressions grognon — il est toujours spectaculaire avec une personnalité unique. ✨
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite d'Ezra
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRQlycAWBNGkiX1Lq7ptZH7k
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé d'Ezra sur Etsy
+        to: https://www.etsy.com/ca/listing/4357214323/ezra-the-dragon-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: kissy
     image: img/creations/kissy.png
     caption: |
-      🦇 Kissy la Chauve-Souris est adorable dans toutes ses versions — noire classique, pastel colorée,
-      avec des yeux brodés ou de grands yeux de sécurité — elle apporte toujours son charme unique. 🥰
-    instagram: https://www.instagram.com/p/DNyhWBWXgDY
-    etsy: https://www.etsy.com/ca/listing/4362532379/kissy-the-bat-crochet-pattern-amigurumi
+      🦇 Kissy la Chauve-Souris est adorable dans tous les styles — noire classique, pastels colorés,
+      yeux brodés ou grands yeux de sécurité — elle apporte toujours son charme unique et attachant. 🥰
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Kissy
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRRD47cUAJbSJif8itcgeNgd
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Kissy sur Etsy
+        to: https://www.etsy.com/ca/listing/4362532379/kissy-the-bat-crochet-pattern-amigurumi
+        icon: i-simple-icons-etsy
+        target: _blank
 
   - id: andy
     image: img/creations/andy.png
     caption: |
-      🎃 Andy la Créature est à la fois effrayant et attachant avec ses yeux dépareillés,
-      parfait comme ami d'Halloween ou comme compagnon original toute l'année ! 🧟
-    instagram: https://www.instagram.com/p/DOlgz8RjUAv
-    etsy: https://www.etsy.com/ca/listing/4369278765/andy-the-creature-monster-crochet
+      🎃 Andy la Créature est effrayant, original et plein de personnalité avec ses yeux dépareillés,
+      en faisant un parfait ami d'Halloween ou un compagnon unique toute l'année ! 🧟
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite d'Andy
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRQbkxReUcxPt6PoYzFBmr0t
+        icon: i-simple-icons-youtube
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé d'Andy sur Etsy
+        to: https://www.etsy.com/ca/listing/4369278765/andy-the-creature-monster-crochet
+        icon: i-simple-icons-etsy
+        target: _blank

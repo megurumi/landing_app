@@ -1,22 +1,11 @@
 title: Megurumi Creative
 description:
   Enjoy the art of crochet with Megurumi Creative. Explore unique handmade creations, get inspired, and connect with crochet enthusiasts.
-navigation: false
+navigation: true
 hero:
   title: Unleash Your Creativity with Crochet
   description:
     Dive into my world of crochet with stunning handmade creations, tutorials, and people that shares your passion for crafting.
-  headline:
-    label: Explore the art of crochet
-    icon: i-heroicons-sparkles
-  links:
-    - label: Follow me on YouTube
-      to: https://www.youtube.com/@megurumi_creative
-      size: xl
-      color: black
-      icon: i-simple-icons-youtube
-      trailing: true
-      target: _blank
 gallery:
   id: gallery
   title: My Latest Handmade Creations
@@ -86,10 +75,11 @@ cta:
       target: _blank
     - label: Beginner practices
       size: xl
-      to: /landing/beginner
+      to: https://www.youtube.com/playlist?list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
       color: blue
       icon: i-heroicons-play
       trailing: true
+      target: _blank
     - label: Explore Creations
       size: xl
       to: /landing/creations

@@ -82,15 +82,10 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
 
       <template #links>
         <div class="flex flex-col gap-4 items-center justify-end">
-          <UButton
-            v-for="link in page.hero.links"
-            v-bind="link"
-            @click.stop="track('click_cta_landing_hero')"
-          />
           <UIcon
             name="i-heroicons-chevron-down"
             class="h-6 w-6 relative -bottom-20 transition-opacity duration-1000 cursor-pointer"
-            :class="{ 'opacity-0': scrollY > 50 }"
+            :class="{ 'opacity-0': scrollY > 80 }"
             @click="router.push(localePath('/') + `#${page.gallery.id}`)"
           />
         </div>
