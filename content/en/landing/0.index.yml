@@ -84,6 +84,12 @@ cta:
       color: gray
       icon: i-heroicons-shopping-bag
       target: _blank
+    - label: Beginner practices
+      size: xl
+      to: /landing/beginner
+      color: blue
+      icon: i-heroicons-play
+      trailing: true
     - label: Explore Creations
       size: xl
       to: /landing/creations

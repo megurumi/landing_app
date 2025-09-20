@@ -217,20 +217,25 @@ const etsy = computed(() => socials.find((social) => social.id === "etsy"));
 
         <template #footer>
           <div class="flex justify-end w-full">
-            <UButton
+            <UTooltip
               v-for="link in product.links"
-              :to="link.url"
-              :aria-label="link.label"
-              target="_blank"
-              color="primary"
-              variant="ghost"
-              size="lg"
-              @click.stop="track('click_cta_creations_product', { product: product.id })"
+              :key="link.id"
+              :text="link.label"
             >
-              <template #trailing>
-              <UIcon v-if="link?.icon" :name="link?.icon" :size="20" />
-            </template>
-          </UButton>
+              <UButton  
+                :to="link.url"
+                :aria-label="link.label"
+                target="_blank"
+                color="primary"
+                variant="ghost"
+                size="lg"
+                @click.stop="track('click_cta_creations_product', { product: product.id })"
+              >
+                <template #trailing>
+                <UIcon v-if="link?.icon" :name="link?.icon" :size="20" />
+              </template>
+            </UButton>
+            </UTooltip>
           </div>
         </template>
       </UCard>
