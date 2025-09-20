@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import { socials } from '@/utils/socials';
+import { track } from '@vercel/analytics';
+
 const { t, locale } = useI18n();
 const config = useRuntimeConfig();
-const router = useRouter();
 const localePath = useLocalePath();
 
 const scrollY = ref(0);
@@ -121,6 +123,9 @@ onMounted(() => window.addEventListener("scroll", onScroll));
 onUnmounted(() => window.removeEventListener("scroll", onScroll));
 
 const latestProducts = computed(() => [...page.value?.products].reverse());
+
+const youtube = computed(() => socials.find((social) => social.id === "youtube"));
+const etsy = computed(() => socials.find((social) => social.id === "etsy"));
 </script>
 
 <template>
@@ -146,14 +151,36 @@ const latestProducts = computed(() => [...page.value?.products].reverse());
       />
 
       <template #links>
-        <div class="flex flex-col gap-4 items-center justify-end">
-          <UButton v-for="link in page?.links" v-bind="link" />
-          <UIcon
-            name="i-heroicons-chevron-down"
-            class="h-6 w-6 relative -bottom-20 transition-opacity duration-1000 cursor-pointer"
-            :class="{ 'opacity-0': scrollY > 50 }"
-            @click="router.push(localePath(`/landing/creations#products`))"
-          />
+        <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+          <!-- YouTube playlists CTA -->
+          <UButton
+            :to="youtube?.url + '/playlists'"
+            target="_blank"
+            color="red"
+            variant="solid"
+            size="xl"
+            @click.stop="track('click_cta_creations_youtube')"
+          >
+            {{ t("cta_youtube") }}
+            <template #trailing>
+              <UIcon v-if="youtube?.icon" :name="youtube?.icon" :size="20" />
+            </template>
+          </UButton>
+
+          <!-- Etsy CTA -->
+          <UButton
+            :to="etsy?.url"
+            target="_blank"
+            color="primary"
+            variant="solid"
+            size="xl"
+            @click.stop="track('click_cta_creations_etsy')"
+          >
+            {{ t("cta_etsy") }}
+            <template #trailing>
+              <UIcon v-if="etsy?.icon" :name="etsy?.icon" :size="20" />
+            </template>
+          </UButton>
         </div>
       </template>
     </ULandingHero>
@@ -190,26 +217,25 @@ const latestProducts = computed(() => [...page.value?.products].reverse());
 
         <template #footer>
           <div class="flex justify-end w-full">
-            <UButton
-              v-if="product.instagram"
-              :to="product.instagram"
-              :aria-label="t('aria_label_instagram')"
-              target="_blank"
-              color="primary"
-              variant="ghost"
-              size="lg"
-              icon="i-simple-icons-instagram"
-            />
-            <UButton
-              v-if="product.etsy"
-              :to="product.etsy"
-              :aria-label="t('aria_label_etsy')"
-              target="_blank"
-              color="primary"
-              variant="ghost"
-              size="lg"
-              icon="i-heroicons-shopping-bag"
-            />
+            <UTooltip
+              v-for="link in product.links"
+              :key="link.id"
+              :text="link.label"
+            >
+              <UButton  
+                :to="link.url"
+                :aria-label="link.label"
+                target="_blank"
+                color="primary"
+                variant="ghost"
+                size="lg"
+                @click.stop="track('click_cta_creations_product', { product: product.id })"
+              >
+                <template #trailing>
+                <UIcon v-if="link?.icon" :name="link?.icon" :size="20" />
+              </template>
+            </UButton>
+            </UTooltip>
           </div>
         </template>
       </UCard>
@@ -231,8 +257,8 @@ const latestProducts = computed(() => [...page.value?.products].reverse());
     "seller_name": "Megurumi Creative",
     "profile_alt": "Crochet Artist & Designer",
     "product_alt": "Handcrafted crochet creation by Megurumi Creative",
-    "aria_label_instagram": "View on Instagram",
-    "aria_label_etsy": "Shop on Etsy"
+    "cta_youtube": "Follow Free Tutorials Pattern!",
+    "cta_etsy": "Buy Community-Tested Pattern."
   },
   "fr": {
     "pattern": "Patron de Crochet",
@@ -246,8 +272,6 @@ const latestProducts = computed(() => [...page.value?.products].reverse());
     "seller_name": "Megurumi Creative",
     "profile_alt": "Artiste et Designer de Crochet",
     "product_alt": "Création de crochet faite à la main par Megurumi Creative",
-    "aria_label_instagram": "Voir sur Instagram",
-    "aria_label_etsy": "Acheter sur Etsy"
   }
 }
 </i18n>

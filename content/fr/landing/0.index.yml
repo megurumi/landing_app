@@ -1,25 +1,14 @@
 title: Megurumi Creative
 description:
   Profitez de l'art du crochet avec Megurumi Creative. Explorez des créations uniques faites à la main, inspirez-vous et connectez-vous avec des passionnés de crochet.
-navigation: false
+navigation: true
 hero:
   title: Libérez votre créativité avec le crochet
   description:
     Plongez dans mon univers de crochet avec des créations faites à la main, des tutoriels époustouflants et des personnes partageant votre passion pour l'artisanat.
-  headline:
-    label: Explorez l'art du crochet
-    icon: i-heroicons-sparkles
-  links:
-    - label: Suivez moi sur YouTube
-      to: https://www.youtube.com/@megurumi_creative
-      size: xl
-      color: black
-      icon: i-simple-icons-youtube
-      trailing: true
-      target: _blank
 gallery:
   id: gallery
-  title: Mes Dernière Créations Maison
+  title: Mes Dernières Créations Faites Main
   image: /img/landing/gallery.png
   description:
     Découvrez une collection de créations au crochet uniques, des amigurumis adorables aux accessoires élégants, tous fabriqués avec amour et créativité.
@@ -28,7 +17,7 @@ gallery:
     to: /landing/creations
 social:
   id: social
-  title: Suit moi!
+  title: Suivez-moi !
   description: Sois parmi les premiers à découvrir mes nouvelles vidéos et patrons. Merci de suivre mon aventure !
   image: /img/landing/social.png
   align: left
@@ -74,7 +63,7 @@ social:
       icon: i-simple-icons-tiktok
       target: _blank
 cta:
-  title: Commencez votre aventure Megurumi
+  title: Commencez votre Aventure Megurumi
   description:
     Explorez des créations uniques, apprenez de nouvelles techniques et connectez-vous avec une communauté partageant votre passion pour le crochet.
   links:
@@ -84,9 +73,16 @@ cta:
       color: gray
       icon: i-heroicons-shopping-bag
       target: _blank
+    - label: Pratiques débutant
+      size: xl
+      to: https://www.youtube.com/playlist?list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+      color: blue
+      icon: i-heroicons-play
+      trailing: true
+      target: _blank
     - label: Explorez les créations
       size: xl
-      to: /fr/landing/creations
+      to: /landing/creations
       color: primary
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
