@@ -80,6 +80,7 @@ export default defineNuxtConfig({
     "@vite-pwa/nuxt",
     "@vueuse/nuxt",
     "nuxt-viewport",
+    "nuxt-site-config",
     "nuxt-schema-org",
   ],
   nitro: {
@@ -114,7 +115,7 @@ export default defineNuxtConfig({
       short_name: "Megurumi",
       description:
         "Explore a collection of unique crochet creations, from adorable amigurumi to stylish accessories, all crafted with love and creativity.",
-      theme_color: "#6366f1",
+      theme_color: "#28484d",
       icons: [
         {
           src: "/img/pwa/16.png",
@@ -325,4 +326,7 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
   },
+  uiPro: {
+    license: process.env.NUXT_UI_PRO_LICENSE,
+  }
 });

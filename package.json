@@ -52,6 +52,7 @@
     "@vercel/speed-insights": "^1.2.0",
     "nuxt": "^3.16.0",
     "nuxt-schema-org": "^5.0.6",
+    "nuxt-site-config": "^3.2.8",
     "nuxt-viewport": "^2.2.0"
   }
 }

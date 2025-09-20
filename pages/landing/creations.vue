@@ -170,7 +170,7 @@ const latestProducts = computed(() => [...page.value?.products].reverse());
         :ui="{
           header: { padding: 'p-0 sm:p-0' },
           body: { padding: 'px-2 py-4 sm:p-4' },
-          footer: { padding: 'px-2 py-1' },
+          footer: { padding: 'px-2 sm:px-2 py-1' },
         }"
       >
         <template #header>
@@ -195,7 +195,7 @@ const latestProducts = computed(() => [...page.value?.products].reverse());
               :to="product.instagram"
               :aria-label="t('aria_label_instagram')"
               target="_blank"
-              color="gray"
+              color="primary"
               variant="ghost"
               size="lg"
               icon="i-simple-icons-instagram"
@@ -205,7 +205,7 @@ const latestProducts = computed(() => [...page.value?.products].reverse());
               :to="product.etsy"
               :aria-label="t('aria_label_etsy')"
               target="_blank"
-              color="gray"
+              color="primary"
               variant="ghost"
               size="lg"
               icon="i-heroicons-shopping-bag"

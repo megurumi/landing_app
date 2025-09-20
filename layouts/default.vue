@@ -15,12 +15,6 @@
           :links="links"
           :ui="{ base: 'py-2.5', label: 'ml-2 text-[16px]' }"
         />
-
-        <template #footer>
-          <div class="w-full flex-col justify-between">
-            <ProfileNavDropdown />
-          </div>
-        </template>
       </UDashboardSidebar>
     </UDashboardPanel>
 

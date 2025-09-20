@@ -41,8 +41,8 @@ useSeoMeta({
   twitterDescription: t("description"),
   twitterImage: `${config.public.NUXT_APP_DOMAIN}/img/landing/hero.png`,
   twitterCard: "summary_large_image",
-  themeColor: "#6366f1",
-  msapplicationTileColor: "#6366f1",
+  themeColor: "#28484d",
+  msapplicationTileColor: "#28484d",
   msapplicationConfig: "/browserconfig.xml",
   keywords: t("keywords"),
 });

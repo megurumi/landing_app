@@ -3,6 +3,7 @@ const { t, locale } = useI18n();
 const config = useRuntimeConfig();
 const router = useRouter();
 const localePath = useLocalePath();
+const viewport = useViewport();
 
 const scrollY = ref(0);
 
@@ -67,6 +68,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
 
 <template>
   <div v-if="page">
+    <!-- HERO -->
     <ULandingHero
       :title="page.hero.title"
       :description="page.hero.description"
@@ -90,7 +92,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
 
       <template #headline>
         <NuxtImg
-          :alt="t('profile_alt')"
+          :alt="t('hero_alt')"
           preset="hero" 
           src="/img/landing/hero.png"
           sizes="225px md:280px xl:440px"
@@ -101,6 +103,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       </template>
     </ULandingHero>
 
+    <!-- GALLERY -->
     <ULandingSection
       :id="page.gallery.id"
       :title="page.gallery.title"
@@ -108,8 +111,18 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
     >
       <template #headline>
         <NuxtImg
-          :src="page.social.image"
-          :alt="`${page.social.title} - ${t('social_alt')}`"
+          :src="page.gallery.image"
+          :alt="`${page.gallery.title} - ${t('gallery_alt')}`"
+          preset="logo"
+          sizes="100px"
+          class="w-[150px] rounded-xl"
+          loading="lazy"
+        />
+      </template>
+      <template #header>
+        <NuxtImg
+          :src="page.gallery.image"
+          :alt="`${page.gallery.title} - ${t('gallery_alt')}`"
           preset="logo"
           sizes="100px"
           class="w-[150px] rounded-xl"
@@ -121,7 +134,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
           v-for="product in [...creations?.products].reverse().slice(0, 4)"
           :key="product.id"
           :src="product.image"
-          :alt="`${product.caption} - ${t('social_alt')}`"
+          :alt="`${product.caption} - ${t('gallery_caption_alt')}`"
           preset="card"
           sizes="180px sm:280px"
           class="w-full h-auto max-h-80 object-cover object-center rounded-md"
@@ -130,33 +143,42 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       </div>
       <NuxtLink
         :to="localePath(page.gallery.link.to)"
-        class="ml-auto flex items-center text-sm font-semibold leading-7 text-primary-600 dark:text-primary-400"
+        class="relative bottom-12 lg:bottom-20 ml-auto flex items-center text-lg font-semibold leading-7 text-primary-600 dark:text-primary-400 hover:underline"
       >
         <UIcon name="i-heroicons-arrow-right-20-solid" class="h-6 w-6 mr-2" />
         <span>{{ page.gallery.link.label }}</span>
       </NuxtLink>
     </ULandingSection>
 
-    <ULandingSection
+    <!-- SOCIALS -->
+    <ULandingSection 
       :id="page.social.id"
       :title="page.social.title"
       :description="page.social.description"
-      class="relative"
+      :align="viewport.isGreaterThan('tablet') ? 'left' : 'center'"
     >
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <UButton
-          v-for="social in page.social.links"
-          v-bind="social"
-          :key="social.label"
-          :aria-label="t('visit_our', { social: social.label })"
-          target="_blank"
-          color="white"
-          variant="solid"
-          class="flex items-center justify-start w-full max-w-sm rounded-full px-8 py-6 shadow-lg"
-        />
+      <template #headline>
+        <NuxtImg
+          :alt="t('social_alt')"
+          :src="page.social.image"
+          preset="card"
+          sizes="280px"
+          class="w-[280px] h-auto object-cover object-center rounded-md mb-8"
+          loading="eager"
+          fetchpriority="high"
+        />        
+      </template>
+    
+       <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+         <ULandingCard
+           v-for="social in page.social.links"
+           :aria-label="t('visit_our_social', { social: social.label })"
+           v-bind="social"
+         />
       </div>
     </ULandingSection>
 
+    <!-- CTA -->
     <ULandingSection>
       <ULandingCTA
         v-bind="page.cta"
@@ -195,35 +217,21 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
 }
 </style>
 
-<style>
-.neon {
-  animation: neonPulse 3s infinite;
-}
-
-@keyframes neonPulse {
-  0%,
-  100% {
-    filter: saturate(2);
-  }
-  50% {
-    filter: saturate(1);
-  }
-}
-</style>
-
 <i18n lang="json">
 {
   "en": {
-    "profile_alt": "Your Creative Partner - Megurumi Creative showcases handcrafted crochet amigurumi and accessories",
-    "social_alt": "Profile image for Megurumi Creative social media",
-    "product_alt": "Handcrafted crochet creation by Megurumi Creative",
-    "visit_our": "Visit our {social} social page"
+    "hero_alt": "Creative Partner - Megurumi Creative showcases handcrafted crochet amigurumi and accessories",
+    "gallery_alt": "Megurumi Creative Gallery",
+    "gallery_caption_alt": "Gallery image for Megurumi Creative's creations",
+    "social_alt": "Your Creative Partner - Megurumi Creative showcases handcrafted crochet amigurumi and accessories",
+    "visit_our_social": "Visit our {social} social page"
   },
   "fr": {
-    "profile_alt": "Ton partenaire créatif - Megurumi Creative présente des amigurumis et accessoires en crochet faits à la main",
-    "social_alt": "Image de profil pour les réseaux sociaux de Megurumi Creative",
-    "product_alt": "Création de crochet faite à la main par Megurumi Creative",
-    "visit_our": "Visitez notre page sociale {social}"
+    "hero_alt": "Partenaire créatif - Megurumi Creative présente des amigurumis et accessoires en crochet faits à la main",
+    "gallery_alt": "Gallery Megurumi Creative",
+    "gallery_caption_alt": "Image de gallery pour les créations de Megurumi Creative",
+    "social_alt": "Ton partenaire créatif - Megurumi Creative présente des amigurumis et accessoires en crochet faits à la main",
+    "visit_our_social": "Visitez notre page sociale {social}"
   }
 }
 </i18n>

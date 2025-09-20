@@ -5,7 +5,7 @@ links:
   - label: Buy On Etsy
     size: xl
     to: https://www.etsy.com/ca/shop/MegurumiCreative
-    color: gray
+    color: black
     icon: i-heroicons-shopping-bag
     target: _blank
 hero:

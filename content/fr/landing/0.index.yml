@@ -20,6 +20,7 @@ hero:
 gallery:
   id: gallery
   title: Mes Dernière Créations Maison
+  image: /img/landing/gallery.png
   description:
     Découvrez une collection de créations au crochet uniques, des amigurumis adorables aux accessoires élégants, tous fabriqués avec amour et créativité.
   link: 
@@ -29,29 +30,49 @@ social:
   id: social
   title: Suit moi!
   description: Sois parmi les premiers à découvrir mes nouvelles vidéos et patrons. Merci de suivre mon aventure !
-  image: /img/landing/creations.png
+  image: /img/landing/social.png
   align: left
   links:
-    - label: YouTube
-      to: https://www.youtube.com/@Megurumi_creative
-      size: xl
-      color: black
+    - title: YouTube
       icon: i-simple-icons-youtube
-    - label: TikTok
-      to: https://www.tiktok.com/@megurumi_creative
-      size: xl
-      color: black
-      icon: i-simple-icons-tiktok
-    - label: Instagram
+      to: https://www.youtube.com/@Megurumi_creative
+      color: primary
+      target: _blank
+    - title: Instagram
       to: https://www.instagram.com/megurumi_creative
-      size: xl
-      color: black
+      color: primary
       icon: i-simple-icons-instagram
-    - label: Facebook
+      target: _blank
+    - title: Facebook
       to: https://www.facebook.com/megurumicreative
-      size: xl
-      color: black
+      color: primary
       icon: i-simple-icons-facebook
+      target: _blank
+    - title: Etsy
+      to: https://www.etsy.com/ca/shop/MegurumiCreative
+      color: primary
+      icon: i-simple-icons-etsy
+      target: _blank
+    - title: Ravelry
+      to: https://www.ravelry.com/designers/megurumi-creative
+      color: primary
+      icon: i-simple-icons-ravelry
+      target: _blank
+    - title: Tedooo
+      to: https://www.tedooo.com/user/6811260e3a88d9c8757fcb41
+      color: primary
+      icon: i-simple-icons-julia
+      target: _blank
+    - title: Ko-fi
+      to: https://ko-fi.com/megurumi_creative
+      color: primary
+      icon: i-simple-icons-kofi
+      target: _blank
+    - title: TikTok
+      to: https://www.tiktok.com/@megurumi_creative
+      color: primary
+      icon: i-simple-icons-tiktok
+      target: _blank
 cta:
   title: Commencez votre aventure Megurumi
   description:
@@ -66,6 +87,6 @@ cta:
     - label: Explorez les créations
       size: xl
       to: /fr/landing/creations
-      color: black
+      color: primary
       icon: i-heroicons-arrow-right-20-solid
       trailing: true

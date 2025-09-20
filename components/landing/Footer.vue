@@ -15,6 +15,12 @@ const links = computed(() => [
         label: t("creations"),
         to: localePath("/landing/creations"),
       },
+
+    ],
+  },
+  {
+    label: t("about"),
+    children: [
       {
         label: t("policy"),
         to: localePath("/landing/policy"),
@@ -29,19 +35,39 @@ const links = computed(() => [
 
 const socials = [
   {
-    label: "Instagram",
-    url: "https://www.instagram.com/megurumi_creative",
-    icon: "i-simple-icons-instagram",
-  },
-  {
     label: "YouTube",
     url: "https://www.youtube.com/@Megurumi_creative",
     icon: "i-simple-icons-youtube",
   },
   {
+    label: "Instagram",
+    url: "https://www.instagram.com/megurumi_creative",
+    icon: "i-simple-icons-instagram",
+  },
+  {
     label: "Facebook",
     url: "https://www.facebook.com/megurumicreative",
     icon: "i-simple-icons-facebook",
+  },
+  {
+    label: "Etsy",
+    url: "https://www.etsy.com/ca/shop/MegurumiCreative",
+    icon: "i-simple-icons-etsy",
+  },
+  {
+    label: "Ravelry",
+    url: "https://www.ravelry.com/designers/megurumi-creative",
+    icon: "i-simple-icons-ravelry",
+  },
+  {
+    label: "Tedooo",
+    url: "https://www.tedooo.com/user/6811260e3a88d9c8757fcb41",
+    icon: "i-simple-icons-julia",
+  },
+  {
+    label: "Ko-fi",
+    url: "https://ko-fi.com/megurumi_creative",
+    icon: "i-simple-icons-kofi",
   },
   {
     label: "TikTok",
@@ -64,8 +90,8 @@ const socials = [
               v-for="link in socials"
               :key="link.url"
               :to="link.url"
-              target="_blank"
               :aria-label="`Visit our ${link.label} social page`"
+              target="_blank"
             >
               <UIcon
                 :name="link.icon"
@@ -93,10 +119,12 @@ const socials = [
 <i18n lang="json">
 {
   "en": {
+    "about": "About",
     "legal": "Legal",
     "copyright": "Copyright © Megurumi Creative {date}. All rights reserved."
   },
   "fr": {
+    "about": "À propos",
     "legal": "Mentions légales",
     "copyright": "Droits d'auteur © Megurumi Creative {date}. Tous droits réservés."
   }
