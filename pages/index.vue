@@ -91,7 +91,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
                   alt="Diane"
                 />
                 <UAvatar
-                src="/img/testimonials/Paula.png"
+                src="/img/testimonials/paula.png"
                 alt="Paula"
                 />
                 <UAvatar
