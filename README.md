@@ -1,5 +1,4 @@
 # Megurumi - Landing
-## Journey to become a crochet creator 
 
 ## License
 This project is licensed under the Megurumi Creative Proprietary License - see the [LICENSE](./LICENSE.md) file for details.

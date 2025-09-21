@@ -14,10 +14,13 @@ const links = computed(() => [
         to: localePath("/"),
       },
       {
+        label: t("basics"),
+        to: localePath("/landing/basics"),
+      },
+      {
         label: t("creations"),
         to: localePath("/landing/creations"),
       },
-
     ],
   },
   {
@@ -70,7 +73,7 @@ const links = computed(() => [
 
     <template #right>
       <UColorModeSelect />
-      <AtomsLocalePicker />
+      <AtomsLocaleSelect />
     </template>
   </UFooter>
 </template>

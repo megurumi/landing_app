@@ -1,0 +1,136 @@
+title: Crochet Basics
+description:
+  Learn the essentials of crochet with quick and easy tutorials. Perfect for beginners who want to master the basics step by step! 🧶
+hero:
+  image: img/brand/hero.png
+  caption:
+    Learn the essentials of crochet with quick and easy tutorials. Perfect for beginners who want to master the basics step by step! 🧶
+videos:
+  - id: magic_ring
+    image: img/basics/magic_ring.png
+    caption: |
+      Here's the Magic Ring, example with 6 single crochet: MR, 6 sc
+    tooltip: Watch on YouTube Free Magic Ring Basic
+    to: https://www.youtube.com/watch?v=4-Pa3hbHAks&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+    icon: "i-simple-icons-youtube"
+    target: _blank
+  
+  - id: single_crochet
+    image: img/basics/single_crochet.png
+    caption: |
+      Here's the Single Crochet: Insert, Yarn over or under, Pull up a loop, Yarn over or under again, Pull through both loops
+    tooltip: Watch on YouTube Free Single Crochet Basic
+    to: https://www.youtube.com/watch?v=6aOOm5wmO-o&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+    icon: "i-simple-icons-youtube"
+    target: _blank
+  
+  - id: decrease
+    image: img/basics/decrease.png
+    caption: |
+      Here's the Decrease: Insert, Yarn Over or Under, Pull up a loop, insert into the next stitch, Yarn Over or Under again, Pull up a loop, Yarn Over or Under and pull through all 3 loops
+    tooltip: Watch on YouTube Free Decrease Basic
+    to: https://www.youtube.com/watch?v=jStKgNfy96s&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+    icon: "i-simple-icons-youtube"
+    target: _blank
+  
+  - id: increase
+    image: img/basics/increase.png
+    caption: |
+      Here's the Increase: Make 2 single crochets in the same stitch
+    tooltip: Watch on YouTube Free Magic Increase Basic
+    to: https://www.youtube.com/watch?v=PE0igmHEANQ&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+    icon: "i-simple-icons-youtube"
+    target: _blank  
+  
+  - id: chain
+    image: img/basics/chain.png
+    caption: |      
+      Here's the Chain: Yarn over, Pull the yarn through the loop
+      Repeat these steps until you have the number of chains you need.
+    tooltip: Watch on YouTube Free Chain Basic
+    to: https://www.youtube.com/watch?v=D-oZrEeHzS0&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+    icon: "i-simple-icons-youtube"
+    target: _blank
+
+  - id: yarn_under
+    image: img/basics/yarn_under.png
+    caption: |      
+      Yarn Under: Insert the hook, Bring the yarn under the hook, Pull the yarn through the stitch
+    tooltip: Watch on YouTube Free Yarn Under Basic
+    to: https://www.youtube.com/watch?v=O8h6C5ae1M4&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+    icon: "i-simple-icons-youtube"
+    target: _blank
+  
+  - id: yarn_over
+    image: img/basics/yarn_over.png
+    caption: |      
+      Yarn Over: Insert the hook, Wrap the yarn over the hook, Pull the yarn through the stitch
+    tooltip: Watch on YouTube Free Yarn Over Basic
+    to: https://www.youtube.com/watch?v=vSkKAXMAyfI&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8&
+    icon: "i-simple-icons-youtube"
+    target: _blank
+    
+  - id: invisible_decrease
+    image: img/basics/invisible_decrease.png
+    caption: |      
+      Here's the Invisible Decrease: Insert the hook into the front loop of the first stitch, then
+      into the front loop of the next stitch, Yarn Over or Under, Pull through the first two loops,
+      Yarn Over or Under again, Pull through both loops.
+    tooltip: Watch on YouTube Free Invisible Decrease Basic
+    to: https://www.youtube.com/watch?v=vSkKAXMAyfI&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8&
+    icon: "i-simple-icons-youtube"
+    target: _blank
+  
+  - id: color_change
+    image: img/basics/color_change.png
+    caption: |      
+      Here's the Color Change: On the last stitch before changing color, stop before the final yarn
+      over and make that last yarn over with the new color to finish the stitch, then continue working 
+      only with the new color.
+    tooltip: Watch on YouTube Free Color Change Basic
+    to: https://www.youtube.com/watch?v=xkWJDE0MnYU&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+    icon: "i-simple-icons-youtube"
+    target: _blank
+  
+  - id: double_crochet
+    image: img/basics/double_crochet.png
+    caption: |      
+      Here's the Double Crochet: Yarn over, insert hook, pull up a loop, yarn over, pull through 2,
+      yarn over, pull through 2.
+    tooltip: Watch on YouTube Free Double Crochet Basic
+    to: https://www.youtube.com/watch?v=5HCTxsjdUfw&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+    icon: "i-simple-icons-youtube"
+    target: _blank
+  
+  - id: half_double_crochet
+    image: img/basics/half_double_crochet.png
+    caption: |      
+      Here's the Half Double Crochet: Yarn over, insert hook, pull up a loop, yarn over, pull
+      through all 3 loops.
+    tooltip: Watch on YouTube Free Half Double Crochet Basic
+    to: https://www.youtube.com/watch?v=c-GGTyqgsaU&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+    icon: "i-simple-icons-youtube"
+    target: _blank
+
+  - id: bobble_stitch
+    image: img/basics/bobble_stitch.png
+    caption: |      
+      Here's the Bobble (5dc Bobble): Yarn over, insert hook, pull up a loop, yarn over, pull 
+      through 2 → repeat 5 times in the same stitch. You should have 6 loops on your hook. Yarn
+      over, pull through all loops.
+    tooltip: Watch on YouTube Free Bobble Stitch Basic
+    to: https://www.youtube.com/watch?v=vQHpUjnULHA&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+    icon: "i-simple-icons-youtube"
+    target: _blank
+  
+  - id: triple_crochet
+    image: img/basics/triple_crochet.png
+    caption: |      
+      Here's the Triple Crochet (Treble): Yarn over twice, insert hook into the stitch, yarn over and pull
+      up a loop (you now have 4 loops on your hook). Yarn over, pull through 2 loops → yarn over,
+      pull through 2 loops → yarn over, pull through the last 2 loops.
+    tooltip: Watch on YouTube Free Tripe Crochet (Treble) Basic
+    to: https://www.youtube.com/watch?v=ikyUSjB7uuA&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+    icon: "i-simple-icons-youtube"
+    target: _blank
+  

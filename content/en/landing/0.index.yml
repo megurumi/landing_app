@@ -75,7 +75,7 @@ cta:
       target: _blank
     - label: Beginner practices
       size: xl
-      to: https://www.youtube.com/playlist?list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+      to: /landing/basics
       color: blue
       icon: i-heroicons-play
       trailing: true

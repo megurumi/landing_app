@@ -1,0 +1,161 @@
+title: Bases du Crochet
+description:
+  Apprenez les essentiels du crochet avec des tutoriels rapides et faciles. Parfait pour les débutants qui veulent maétriser les bases étape par étape ! >é
+hero:
+  image: img/brand/hero.png
+  caption:
+    Apprenez les essentiels du crochet avec des tutoriels rapides et faciles. Parfait pour les débutants qui veulent maétriser les bases étape par étape ! >é
+videos:
+  - id: magic_ring
+    image: img/basics/magic_ring.png
+    caption: |
+      Voici l'Anneau Magique, exemple avec 6 mailles serrées : AM, 6 ms
+    links:
+      - id: youtube
+        label: Regarder sur YouTube l'Anneau Magique Gratuit
+        to: https://www.youtube.com/watch?v=4-Pa3hbHAks&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+        icon: "i-simple-icons-youtube"
+        target: _blank
+
+  - id: single_crochet
+    image: img/basics/single_crochet.png
+    caption: |
+      Voici la Maille Serrée : Insérer, Faire un jeté par dessus ou par dessous, Tirer une boucle, Faire un jeté par dessus ou par dessous é nouveau, Tirer é travers les deux boucles
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Maille Serrée de Base Gratuite
+        to: https://www.youtube.com/watch?v=6aOOm5wmO-o&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+        icon: "i-simple-icons-youtube"
+        target: _blank
+
+  - id: decrease
+    image: img/basics/decrease.png
+    caption: |
+      Voici la Diminution : Insérer, Faire un jeté par dessus ou par dessous, Tirer une boucle, insérer dans la maille suivante, Faire un jeté par dessus ou par dessous é nouveau, Tirer une boucle, Faire un jeté par dessus ou par dessous et tirer é travers les 3 boucles
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Diminution de Base Gratuite
+        to: https://www.youtube.com/watch?v=jStKgNfy96s&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+        icon: "i-simple-icons-youtube"
+        target: _blank
+
+  - id: increase
+    image: img/basics/increase.png
+    caption: |
+      Voici l'Augmentation : Faire 2 mailles serrées dans la méme maille
+    links:
+      - id: youtube
+        label: Regarder sur YouTube l'Augmentation Magique de Base Gratuite
+        to: https://www.youtube.com/watch?v=PE0igmHEANQ&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+        icon: "i-simple-icons-youtube"
+        target: _blank
+
+  - id: chain
+    image: img/basics/chain.png
+    caption: |
+      Voici la Chaénette : Faire un jeté, Tirer le fil é travers la boucle
+      Répéter ces étapes jusqu'é avoir le nombre de chaénettes nécessaire.
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Chaénette de Base Gratuite
+        to: https://www.youtube.com/watch?v=D-oZrEeHzS0&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+        icon: "i-simple-icons-youtube"
+        target: _blank
+
+  - id: yarn_under
+    image: img/basics/yarn_under.png
+    caption: |
+      Jeté par Dessous : Insérer le crochet, Passer le fil sous le crochet, Tirer le fil é travers la maille
+    links:
+      - id: youtube
+        label: Regarder sur YouTube le Jeté par Dessous de Base Gratuit
+        to: https://www.youtube.com/watch?v=O8h6C5ae1M4&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+        icon: "i-simple-icons-youtube"
+        target: _blank
+
+  - id: yarn_over
+    image: img/basics/yarn_over.png
+    caption: |
+      Jeté par Dessus : Insérer le crochet, Enrouler le fil par dessus le crochet, Tirer le fil é travers la maille
+    links:
+      - id: youtube
+        label: Regarder sur YouTube le Jeté par Dessus de Base Gratuit
+        to: https://www.youtube.com/watch?v=vSkKAXMAyfI&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8&
+        icon: "i-simple-icons-youtube"
+        target: _blank
+
+  - id: invisible_decrease
+    image: img/basics/invisible_decrease.png
+    caption: |
+      Voici la Diminution Invisible : Insérer le crochet dans le brin avant de la premiére maille, puis
+      dans le brin avant de la maille suivante, Faire un jeté par dessus ou par dessous, Tirer é travers les deux premiéres boucles,
+      Faire un jeté par dessus ou par dessous é nouveau, Tirer é travers les deux boucles.
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Diminution Invisible de Base Gratuite
+        to: https://www.youtube.com/watch?v=vSkKAXMAyfI&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8&
+        icon: "i-simple-icons-youtube"
+        target: _blank
+
+  - id: color_change
+    image: img/basics/color_change.png
+    caption: |
+      Voici le Changement de Couleur : Sur la derniére maille avant de changer de couleur, s'arréter avant le dernier jeté
+      et faire ce dernier jeté avec la nouvelle couleur pour terminer la maille, puis continuer é travailler
+      uniquement avec la nouvelle couleur.
+    links:
+      - id: youtube
+        label: Regarder sur YouTube le Changement de Couleur de Base Gratuit
+        to: https://www.youtube.com/watch?v=xkWJDE0MnYU&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+        icon: "i-simple-icons-youtube"
+        target: _blank
+
+  - id: double_crochet
+    image: img/basics/double_crochet.png
+    caption: |
+      Voici la Bride : Faire un jeté, insérer le crochet, tirer une boucle, faire un jeté, tirer é travers 2,
+      faire un jeté, tirer é travers 2.
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Bride de Base Gratuite
+        to: https://www.youtube.com/watch?v=5HCTxsjdUfw&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+        icon: "i-simple-icons-youtube"
+        target: _blank
+
+  - id: half_double_crochet
+    image: img/basics/half_double_crochet.png
+    caption: |
+      Voici la Demi-Bride : Faire un jeté, insérer le crochet, tirer une boucle, faire un jeté, tirer
+      é travers les 3 boucles.
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Demi-Bride de Base Gratuite
+        to: https://www.youtube.com/watch?v=c-GGTyqgsaU&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+        icon: "i-simple-icons-youtube"
+        target: _blank
+
+  - id: bobble
+    image: img/basics/bobble.png
+    caption: |
+      Voici le Picot (Picot 5 brides) : Faire un jeté, insérer le crochet, tirer une boucle, faire un jeté, tirer
+      é travers 2 é répéter 5 fois dans la méme maille. Vous devriez avoir 6 boucles sur votre crochet. Faire
+      un jeté, tirer é travers toutes les boucles.
+    links:
+      - id: youtube
+        label: Regarder sur YouTube le Demi-Picot de Base Gratuit
+        to: https://www.youtube.com/watch?v=vQHpUjnULHA&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+        icon: "i-simple-icons-youtube"
+        target: _blank
+
+  - id: treble
+    image: img/basics/treble.png
+    caption: |
+      Voici la Double Bride : Faire un jeté deux fois, insérer le crochet dans la maille, faire un jeté et tirer
+      une boucle (vous avez maintenant 4 boucles sur votre crochet). Faire un jeté, tirer é travers 2 boucles é faire un jeté,
+      tirer é travers 2 boucles é faire un jeté, tirer é travers les 2 derniéres boucles.
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Demi-Double Bride de Base Gratuite
+        to: https://www.youtube.com/watch?v=ikyUSjB7uuA&list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+        icon: "i-simple-icons-youtube"
+        target: _blank

@@ -1,11 +1,11 @@
 <template>
   <div>
-    <LandingHeader />
+    <LayoutsHeader />
 
     <UMain>
       <slot />
     </UMain>
 
-    <LandingFooter />
+    <LayoutsFooter />
   </div>
 </template>

@@ -6,14 +6,20 @@ Allow: /
 
 # Allow important SEO pages but with lower priority
 Allow: /sitemap.xml
+
+Allow: /sitemap_index.xml
 Allow: /__sitemap__/en.xml
 Allow: /__sitemap__/fr.xml
+Allow: /
+Allow: /fr
+Allow: /landing/creations/
+Allow: /fr/landing/creations/
+Allow: /landing/basics/
+Allow: /fr/landing/basics/
 Allow: /landing/policy/
 Allow: /fr/landing/policy/
 Allow: /landing/terms/
 Allow: /fr/landing/terms/
-Allow: /landing/creations/
-Allow: /fr/landing/creations/
 
 # Disallow unnecessary pages and technical paths
 Disallow: /api/

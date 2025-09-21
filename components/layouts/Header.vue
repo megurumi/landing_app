@@ -11,7 +11,12 @@ const links = [
   {
     label: t('creations'),
     to: localePath('/landing/creations'),
-    icon: 'i-heroicons-book-open',
+    icon: 'i-heroicons-sparkles',
+  },
+  {
+    label: t('basics'),
+    to: localePath('/landing/basics'),
+    icon: 'i-heroicons-academic-cap',
   }
 ]
 </script>

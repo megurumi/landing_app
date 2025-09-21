@@ -193,7 +193,7 @@ const etsy = computed(() => socials.find((social) => social.id === "etsy"));
         v-for="product in latestProducts"
         :key="product.id"
         :id="product.id"
-        class="overflow-hidden hover:shadow-lg transition-shadow"
+        class="overflow-hidden hover:shadow-xl transition-shadow"
         :ui="{
           header: { padding: 'p-0 sm:p-0' },
           body: { padding: 'px-2 py-4 sm:p-4' },
@@ -203,7 +203,7 @@ const etsy = computed(() => socials.find((social) => social.id === "etsy"));
         <template #header>
           <NuxtImg
             :src="product.image"
-            :alt="`${product.caption} -  ${t('product_alt')}`"
+            :alt="product.caption"
             preset="card"
             sizes="180px sm:286px"
             class="w-full h-auto max-h-80 object-cover object-center"
@@ -255,8 +255,6 @@ const etsy = computed(() => socials.find((social) => social.id === "etsy"));
     "language": "Language",
     "language_value": "English",
     "seller_name": "Megurumi Creative",
-    "profile_alt": "Crochet Artist & Designer",
-    "product_alt": "Handcrafted crochet creation by Megurumi Creative",
     "cta_youtube": "Follow Free Tutorials Pattern!",
     "cta_etsy": "Buy Community-Tested Pattern."
   },
@@ -270,8 +268,8 @@ const etsy = computed(() => socials.find((social) => social.id === "etsy"));
     "language": "Langue",
     "language_value": "Français",
     "seller_name": "Megurumi Creative",
-    "profile_alt": "Artiste et Designer de Crochet",
-    "product_alt": "Création de crochet faite à la main par Megurumi Creative",
+    "cta_youtube": "Suivez des Tutoriels Pattern Gratuits !",
+    "cta_etsy": "Achète des Patterns Testés."
   }
 }
 </i18n>
