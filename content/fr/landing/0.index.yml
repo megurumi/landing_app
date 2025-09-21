@@ -16,7 +16,7 @@ gallery:
     label: Voir toutes mes créations !
     to: /landing/creations
 social:
-  id: social
+  id: socials
   title: Suivez-moi !
   description: Sois parmi les premiers à découvrir mes nouvelles vidéos et patrons. Merci de suivre mon aventure !
   image: /img/landing/social.png

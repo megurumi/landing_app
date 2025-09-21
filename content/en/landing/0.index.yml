@@ -16,7 +16,7 @@ gallery:
     label: See all my creations!
     to: /landing/creations
 social:
-  id: social
+  id: socials
   title: Follow Me!
   description: Be the first to know when I share a new video or pattern. Thanks for following along!
   image: /img/landing/social.png
