@@ -83,7 +83,6 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       <template #links>
         <div class="flex flex-col gap-4 items-center justify-end w-full">
           <div class="flex gap-4 items-center w-full">
-            
             <div class="w-full flex gap-4 items-center justify-end">
               <UAvatarGroup size="sm" :max="5">
                 <UAvatar
@@ -232,7 +231,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       </UPageColumns>
     </ULandingSection>
 
-    <!-- Final CTA -->
+    <!-- FINAL CTA -->
     <ULandingSection>
       <ULandingCTA
         v-bind="page.cta"

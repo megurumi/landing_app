@@ -16,6 +16,8 @@ Allow: /landing/creations/
 Allow: /fr/landing/creations/
 Allow: /landing/basics/
 Allow: /fr/landing/basics/
+Allow: /landing/socials/
+Allow: /fr/landing/socials/
 Allow: /landing/policy/
 Allow: /fr/landing/policy/
 Allow: /landing/terms/

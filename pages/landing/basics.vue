@@ -132,10 +132,10 @@ const handleClick = (video: { id: string, to: string}) => {
 <i18n lang="json">
 {
   "en": {
-    "cta_youtube_basics_playlist": "Free Basics Playlist",
+    "cta_youtube_basics_playlist": "Free Basics Playlist"
   },
   "fr": {
-    "cta_youtube_basics_playlist": "Free Playlist des Basiques",
+    "cta_youtube_basics_playlist": "Free Playlist des Basiques"
   }
 }
 </i18n>
