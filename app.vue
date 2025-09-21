@@ -102,14 +102,25 @@ useSchemaOrg([
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Product',
-          name: t("productsOffer.name"),
-          description: t("productsOffer.description"),
+          name: t("patternsOffer.name"),
+          description: t("patternsOffer.description"),
           category: 'Digital Downloads',
-          brand: t("brand")
+          brand: t("brand"),
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '5',
+            reviewCount: '4',
+            bestRating: '5',
+            worstRating: '5'
+          }
         },
-        price: 'varies',
-        priceCurrency: 'CAD',
-        availability: 'InStock',
+        priceSpecification: {
+          '@type': 'PriceSpecification',
+          minPrice: '5.00',
+          maxPrice: '8.00',
+          priceCurrency: 'CAD'
+        },
+        availability: 'https://schema.org/InStock',
         validFrom: '2025-01-01',
         seller: {
           '@type': 'Organization',
@@ -126,7 +137,7 @@ useSchemaOrg([
         },
         price: '0',
         priceCurrency: 'CAD',
-        availability: 'InStock'
+        availability: 'https://schema.org/InStock'
       },
     ]
   }),
@@ -193,7 +204,7 @@ useSchemaOrg([
     "audience": "crochet enthusiasts, amigurumi lovers, DIY crafters, handmade toy creators, pattern designers, yarn artists, creative hobbyists",
     "genre": "Crochet Patterns, Amigurumi Tutorials, Handmade Crafts, Digital Downloads, Arts & Crafts Education",
     "knowsAbout": "crochet techniques, amigurumi construction, yarn selection, hook sizes, stitch patterns, pattern reading, safety eyes placement, stuffing techniques, color theory, fiber arts, handmade toy safety, digital pattern creation, video tutorials, beginner instruction, advanced techniques, kawaii design, modern amigurumi, traditional crochet, sustainable crafting, online teaching",
-    "productsOffer": {
+    "patternsOffer": {
       "name": "Premium Crochet Patterns & Amigurumi Tutorials",
       "description": "High-quality digital patterns with step-by-step instructions and video tutorials"
     },
@@ -209,7 +220,7 @@ useSchemaOrg([
     "audience": "passionnés de crochet, amateurs d'amigurumi, artisans DIY, créateurs de jouets faits main, créateurs de patrons, artistes du fil, passionnés créatifs",
     "genre": "Patrons de Crochet, Tutoriels Amigurumi, Artisanat Fait Main, Téléchargements Numériques, Éducation Arts et Artisanat",
     "knowsAbout": "techniques de crochet, construction amigurumi, sélection de fils, tailles de crochets, motifs de points, lecture de patrons, placement d'yeux de sécurité, techniques de rembourrage, théorie des couleurs, arts textiles, sécurité des jouets faits main, création de patrons numériques, tutoriels vidéo, instruction débutant, techniques avancées, design kawaii, amigurumi moderne, crochet traditionnel, artisanat durable, enseignement en ligne",
-    "productsOffer": {
+    "patternsOffer": {
       "name": "Patrons de Crochet Premium et Tutoriels Amigurumi",
       "description": "Patrons numériques de haute qualité avec instructions détaillées et tutoriels vidéo"
     },

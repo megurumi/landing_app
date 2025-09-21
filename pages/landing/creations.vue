@@ -38,12 +38,24 @@ const productSchemas = computed(() => {
       offers: {
         "@type": "Offer",
         url: product.etsy,
+        priceSpecification: {
+          "@type": "PriceSpecification",
+          minPrice: "5.00",
+          maxPrice: "8.00",
+          priceCurrency: "CAD"
+        },
         availability: "https://schema.org/InStock",
-        priceCurrency: "CAD",
         seller: {
           "@type": "Organization",
-          name: t("seller_name"),
+          name: t("brand"),
         },
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "5",
+        reviewCount: "4",
+        bestRating: "5",
+        worstRating: "1"
       },
       additionalProperty: [
         {
@@ -245,7 +257,6 @@ const etsy = computed(() => socials.find((social) => social.id === "etsy"));
     "craft_type_value": "Amigurumi Crochet Pattern",
     "language": "Language",
     "language_value": "English",
-    "seller_name": "Megurumi Creative",
     "cta_youtube": "Follow Free Tutorials Pattern!",
     "cta_etsy": "Buy Community-Tested Pattern."
   },
@@ -258,7 +269,6 @@ const etsy = computed(() => socials.find((social) => social.id === "etsy"));
     "craft_type_value": "Patron de Crochet Amigurumi",
     "language": "Langue",
     "language_value": "Français",
-    "seller_name": "Megurumi Creative",
     "cta_youtube": "Suivez des Tutoriels Pattern Gratuits !",
     "cta_etsy": "Achète des Patrons Testés."
   }
