@@ -81,7 +81,41 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       />
 
       <template #links>
-        <div class="flex flex-col gap-4 items-center justify-end">
+        <div class="flex flex-col gap-4 items-center justify-end w-full">
+          <div class="flex gap-4 items-center w-full">
+            
+            <div class="w-full flex gap-4 items-center justify-end">
+              <UAvatarGroup size="sm" :max="5">
+                <UAvatar
+                  src="/img/testimonials/diane.png"
+                  alt="Diane"
+                />
+                <UAvatar
+                src="/img/testimonials/Paula.png"
+                alt="Paula"
+                />
+                <UAvatar
+                  src="/img/testimonials/loic.png"
+                  alt="Loïc"
+                />
+              </UAvatarGroup>
+            </div>
+            
+            <div class="w-full">
+              <p class="text-left">
+                5/5 from 30+ sales on Etsy
+              </p>
+              <p class="text-left">
+                <UIcon
+                  v-for="star in 5"
+                  :key="star"
+                  name="i-heroicons-star-solid"
+                  class="text-yellow-400"
+                />
+              </p>
+            </div>
+          </div>
+
           <UIcon
             name="i-heroicons-chevron-down"
             class="h-6 w-6 relative -bottom-20 transition-opacity duration-1000 cursor-pointer"
@@ -181,7 +215,24 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       </div>
     </ULandingSection>
 
-    <!-- CTA -->
+    <!-- TESTIMONIALS -->
+     <ULandingSection
+      :id="page.testimonials.id"
+      :title="page.testimonials.title"
+      :description="page.testimonials.description"
+    >
+      <UPageColumns>
+        <div
+          v-for="(testimonial, index) in page.testimonials.items"
+          :key="index"
+          class="break-inside-avoid"
+        >
+          <ULandingTestimonial v-bind="testimonial" :card="false" />
+        </div>
+      </UPageColumns>
+    </ULandingSection>
+
+    <!-- Final CTA -->
     <ULandingSection>
       <ULandingCTA
         v-bind="page.cta"

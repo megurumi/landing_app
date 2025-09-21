@@ -86,3 +86,32 @@ cta:
       color: primary
       icon: i-heroicons-arrow-right-20-solid
       trailing: true
+testimonials:
+  id: testimonials
+  title: Mes Avis
+  description: ⭐ 5.0 | 30+ ventes
+  items:
+    - quote: Merveilleuse vendeuse. Elle met beaucoup de réflexion et de tests dans chacune de ses créations.
+      author:
+        name: Paula
+        description: 3 sep 2025
+        avatar:
+          src: /img/testimonials/paula.png
+    - quote: |
+        Je suis encore assez nouvelle au crochet et c'était vraiment facile à suivre. Kevin s'est révélé
+        si mignon ! Le patron est bien expliqué et j'ai passé un excellent moment à le faire. C'était vraiment
+        gratifiant de le terminer 🐥💛
+      author:
+        name: Loïc
+        description: 19 juin 2025
+        avatar:
+          src: /img/testimonials/loic.png
+    - quote: |
+        Le patron est excellent. Il a dépassé mes attentes. Clair, simple à lire, étape par
+        étape avec des photos pour vous aider. Barnabé 🐳 est tout simplement adorable. Maintenant il faut faire son
+        ami. Merci Megurumi_Creative pour un autre patron fantastique.
+      author:
+        name: Diane
+        description: 22 juil 2025
+        avatar:
+          src: /img/testimonials/diane.png
