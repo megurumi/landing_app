@@ -52,7 +52,7 @@ useSchemaOrg([
         {
           '@type': 'ListItem',
           position: 1,
-          name: 'Home',
+          name: t('home'),
           item: `${config.public.NUXT_APP_DOMAIN}${localePath('/')}`
         }
       ]

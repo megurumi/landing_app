@@ -4,6 +4,7 @@ import { track } from '@vercel/analytics';
 
 const { t, locale } = useI18n();
 const config = useRuntimeConfig();
+const localePath = useLocalePath()
 
 definePageMeta({
   layout: "landing",
@@ -30,23 +31,29 @@ useSeoMeta({
 });
 
 useSchemaOrg([
-  {
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: t("home"),
-        item: `${config.public.NUXT_APP_DOMAIN}/`
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: t("basics"),
-        item: `${config.public.NUXT_APP_DOMAIN}/landing/basics`
-      }
-    ]
-  },
+  defineWebPage({
+    "@type": "CollectionPage",
+    name: page.value.title,
+    description: page.value.description,
+    url: `${config.public.NUXT_APP_DOMAIN}${localePath('/landing/basics')}`,
+    breadcrumb: {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: t("home"),
+          item: `${config.public.NUXT_APP_DOMAIN}${localePath('/')}`,
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: t('basics'),
+          item: `${config.public.NUXT_APP_DOMAIN}${localePath('/landing/basics')}`,
+        },
+      ],
+    },
+  }),
   {
     "@type": "VideoObject",
     name: page.value.title,
@@ -69,7 +76,7 @@ useSchemaOrg([
     learningResourceType: t("free_video_tutorial"),
     teaches: t("free_videos_teaches"),
     inLanguage: ["en", "fr"]
-  }
+  },
 ]);
 
 const latestVideos = computed(() => [...page.value?.videos].reverse());
