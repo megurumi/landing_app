@@ -6,15 +6,13 @@ const { t, locale } = useI18n();
 const config = useRuntimeConfig();
 const localePath = useLocalePath();
 
-const scrollY = ref(0);
-
 definePageMeta({
   layout: "landing",
 });
 
 const { data: page } = await useAsyncData(
   "creations",
-  () => queryContent(`/${locale.value}/landing/creations`).findOne(),
+  () => queryContent(`/${locale.value}/creations`).findOne(),
   { watch: [locale] }
 );
 if (!page.value) {
@@ -114,13 +112,6 @@ useSchemaOrg([
   }),
   ...productSchemas.value,
 ]);
-
-function onScroll() {
-  scrollY.value = window.scrollY;
-}
-
-onMounted(() => window.addEventListener("scroll", onScroll));
-onUnmounted(() => window.removeEventListener("scroll", onScroll));
 
 const latestProducts = computed(() => [...page.value?.products].reverse());
 
@@ -269,7 +260,7 @@ const etsy = computed(() => socials.find((social) => social.id === "etsy"));
     "language_value": "Français",
     "seller_name": "Megurumi Creative",
     "cta_youtube": "Suivez des Tutoriels Pattern Gratuits !",
-    "cta_etsy": "Achète des Patterns Testés."
+    "cta_etsy": "Achète des Patrons Testés."
   }
 }
 </i18n>

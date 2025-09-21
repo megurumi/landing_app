@@ -3,9 +3,6 @@ import { socials } from '@/utils/socials';
 import { track } from '@vercel/analytics';
 
 const { t, locale } = useI18n();
-const router = useRouter();
-
-const scrollY = ref(0);
 
 definePageMeta({
   layout: "landing",
@@ -13,7 +10,7 @@ definePageMeta({
 
 const { data: page } = await useAsyncData(
   "basics",
-  () => queryContent(`/${locale.value}/landing/basics`).findOne(),
+  () => queryContent(`/${locale.value}/basics`).findOne(),
   { watch: [locale] }
 );
 if (!page.value) {
@@ -30,13 +27,6 @@ useSeoMeta({
   description: page.value.description,
   ogDescription: page.value.description,
 });
-
-function onScroll() {
-  scrollY.value = window.scrollY;
-}
-
-onMounted(() => window.addEventListener("scroll", onScroll));
-onUnmounted(() => window.removeEventListener("scroll", onScroll));
 
 const latestVideos = computed(() => [...page.value?.videos].reverse());
 

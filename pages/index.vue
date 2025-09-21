@@ -10,7 +10,7 @@ const viewport = useViewport();
 const scrollY = ref(0);
 
 const { data: page } = await useAsyncData(
-  "index",
+  "landing",
   () => queryContent(`/${locale.value}/landing`).findOne(),
   { watch: [locale] }
 );
@@ -24,7 +24,7 @@ if (!page.value) {
 
 const { data: creations } = await useAsyncData(
   "creations",
-  () => queryContent(`/${locale.value}/landing/creations`).findOne(),
+  () => queryContent(`/${locale.value}/creations`).findOne(),
   { watch: [locale] }
 );
 
@@ -66,6 +66,9 @@ function onScroll() {
 
 onMounted(() => window.addEventListener("scroll", onScroll));
 onUnmounted(() => window.removeEventListener("scroll", onScroll));
+
+const latestProducts = computed(() => [...creations.value?.products].reverse().slice(0, 4))
+const latestTestimonials = computed(() => [...page.value?.testimonials.items].reverse().slice(0, 3));
 </script>
 
 <template>
@@ -84,18 +87,11 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
         <div class="flex flex-col gap-4 items-center justify-end w-full">
           <div class="flex gap-4 items-center w-full">
             <div class="w-full flex gap-4 items-center justify-end">
-              <UAvatarGroup size="sm" :max="5">
+              <UAvatarGroup size="sm">
                 <UAvatar
-                  src="/img/testimonials/diane.png"
-                  alt="Diane"
-                />
-                <UAvatar
-                src="/img/testimonials/paula.png"
-                alt="Paula"
-                />
-                <UAvatar
-                  src="/img/testimonials/loic.png"
-                  alt="Loïc"
+                  v-for="item in page.testimonials.items"
+                  :src="item.author.avatar.src"
+                  :alt="item.quote || item.author.name"
                 />
               </UAvatarGroup>
             </div>
@@ -165,7 +161,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
       </template>
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
         <NuxtImg
-          v-for="product in [...creations?.products].reverse().slice(0, 4)"
+          v-for="product in latestProducts"
           :key="product.id"
           :src="product.image"
           :alt="`${product.caption} - ${t('gallery_caption_alt')}`"
@@ -222,7 +218,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
     >
       <UPageColumns>
         <div
-          v-for="(testimonial, index) in page.testimonials.items"
+          v-for="(testimonial, index) in latestTestimonials"
           :key="index"
           class="break-inside-avoid"
         >

@@ -5,7 +5,7 @@ const { t, locale } = useI18n();
 const viewport = useViewport();
 
 const { data: page } = await useAsyncData(
-  "index",
+  "landing",
   () => queryContent(`/${locale.value}/landing`).findOne(),
   { watch: [locale] }
 );

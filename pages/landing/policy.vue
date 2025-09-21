@@ -5,7 +5,7 @@ const localePath = useLocalePath();
 
 const { data: page } = await useAsyncData(
   "policy",
-  () => queryContent(`/${locale.value}/landing/policy`).findOne(),
+  () => queryContent(`/${locale.value}/policy`).findOne(),
   { watch: [locale] },
 )
 if (!page.value) {

@@ -1,7 +1,6 @@
 title: Megurumi Creative
 description:
   Enjoy the art of crochet with Megurumi Creative. Explore unique handmade creations, get inspired, and connect with crochet enthusiasts.
-navigation: true
 hero:
   title: Unleash Your Creativity with Crochet
   description:
@@ -91,21 +90,24 @@ testimonials:
   title: My Reviews
   description: ⭐ 5.0 | 30+ sales
   items:
+    - quote: null
+      author:
+        name: Marc
+        description: Sep 21, 2025
+        avatar:
+          src: /img/testimonials/marc.png
+    - quote: ""
+      author:
+        name: Michelle
+        description: Sep 12, 2025
+        avatar:
+          src: /img/testimonials/michelle.png
     - quote: Wonderful seller. She puts lots of thought and testing into each of her pieces.
       author:
         name: Paula
         description: Sep 3, 2025
         avatar:
           src: /img/testimonials/paula.png
-    - quote: |
-        I'm still pretty new to crochet and this was really easy to follow. Kevin turned out
-        so cute! The pattern is well explained and I had a great time doing it. Felt really
-        rewarding to finish it 🐥💛
-      author:
-        name: Loïc
-        description: Jun 19, 2025
-        avatar:
-          src: /img/testimonials/loic.png
     - quote: |
         The pattern is excellent. It exceeded my expectations. Clear,simple to read,step by
         step with photos to help you along. Barnabe 🐳 is simply adorable. Now to make his
@@ -115,3 +117,12 @@ testimonials:
         description: Jul 22, 2025
         avatar:
           src: /img/testimonials/diane.png
+    - quote: |
+        I'm still pretty new to crochet and this was really easy to follow. Kevin turned out
+        so cute! The pattern is well explained and I had a great time doing it. Felt really
+        rewarding to finish it 🐥💛
+      author:
+        name: Loïc
+        description: Jun 19, 2025
+        avatar:
+          src: /img/testimonials/loic.png
