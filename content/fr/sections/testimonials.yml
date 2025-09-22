@@ -1,0 +1,42 @@
+id: section-testimonials
+title: Mes Reviews
+description: 5/5 sur 30+ ventes sur Etsy
+description_short: ⭐ 5.0 | 30+ sales
+items:
+  - quote: null
+    author:
+      name: Marc
+      description: 21 sep 2025
+      avatar:
+        src: /img/testimonials/marc.png
+  - quote: null
+    author:
+      name: Michelle
+      description: 12 sep 2025
+      avatar:
+        src: /img/testimonials/michelle.png
+  - quote: |
+      Merveilleuse vendeuse. Elle met beaucoup de réflexion et de tests dans chacune de ses créations.
+    author:
+      name: Paula
+      description: 3 sep 2025
+      avatar:
+        src: /img/testimonials/paula.png
+  - quote: |
+      Le patron est excellent. Il a dépassé mes attentes. Clair, simple à lire, étape par
+      étape avec des photos pour vous aider. Barnabé 🐳 est tout simplement adorable. Maintenant il faut faire son
+      ami. Merci Megurumi_Creative pour un autre patron fantastique.
+    author:
+      name: Diane
+      description: 22 juil 2025
+      avatar:
+        src: /img/testimonials/diane.png
+  - quote: |
+      Je suis encore assez nouvelle au crochet et c'était vraiment facile à suivre. Kevin s'est révélé
+      si mignon ! Le patron est bien expliqué et j'ai passé un excellent moment à le faire. C'était vraiment
+      gratifiant de le terminer 🐥💛
+    author:
+      name: Loïc
+      description: 19 juin 2025
+      avatar:
+        src: /img/testimonials/loic.png

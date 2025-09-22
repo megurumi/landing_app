@@ -1,0 +1,47 @@
+id: section-socials
+title: Follow Me!
+description: Be the first to know when I share a new video or pattern. Thanks for following along!
+image_alt: Your Creative Partner - Megurumi Creative showcases handcrafted crochet amigurumi and accessories
+image: /img/landing/social.png
+align: left
+links:
+  - title: YouTube
+    icon: i-simple-icons-youtube
+    to: https://www.youtube.com/@Megurumi_creative
+    color: primary
+    target: _blank
+  - title: Instagram
+    to: https://www.instagram.com/megurumi_creative
+    color: primary
+    icon: i-simple-icons-instagram
+    target: _blank
+  - title: Facebook
+    to: https://www.facebook.com/megurumicreative
+    color: primary
+    icon: i-simple-icons-facebook
+    target: _blank
+  - title: Etsy
+    to: https://www.etsy.com/ca/shop/MegurumiCreative
+    color: primary
+    icon: i-simple-icons-etsy
+    target: _blank
+  - title: Ravelry
+    to: https://www.ravelry.com/designers/megurumi-creative
+    color: primary
+    icon: i-simple-icons-ravelry
+    target: _blank
+  - title: Tedooo
+    to: https://www.tedooo.com/user/6811260e3a88d9c8757fcb41
+    color: primary
+    icon: i-simple-icons-julia
+    target: _blank
+  - title: Ko-fi
+    to: https://ko-fi.com/megurumi_creative
+    color: primary
+    icon: i-simple-icons-kofi
+    target: _blank
+  - title: TikTok
+    to: https://www.tiktok.com/@megurumi_creative
+    color: primary
+    icon: i-simple-icons-tiktok
+    target: _blank

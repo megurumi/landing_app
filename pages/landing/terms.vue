@@ -4,30 +4,23 @@ const config = useRuntimeConfig();
 const localePath = useLocalePath();
 
 const { data: page } = await useAsyncData(
-  "terms",
-  () => queryContent(`/${locale.value}/terms`).findOne(),
+  "page-terms",
+  () => queryContent(`/${locale.value}/pages/terms`).findOne(),
   { watch: [locale] },
 )
-if (!page.value) {
-  throw createError({ statusCode: 404, statusMessage: "Page not found", fatal: true })
-}
-
-definePageMeta({
-  layout: "landing",
-})
 
 useSeoMeta({
-  title: page.value.title,
-  ogTitle: page.value.title,
-  description: page.value.description,
-  ogDescription: page.value.description,
+  title: page.value?.title,
+  ogTitle: page.value?.title,
+  description: page.value?.description,
+  ogDescription: page.value?.description,
 })
 
 useSchemaOrg([
   defineWebPage({
     "@type": "CollectionPage",
-    name: page.value.title,
-    description: page.value.description,
+    name: page.value?.title,
+    description: page.value?.description,
     url: `${config.public.NUXT_APP_DOMAIN}${localePath('/landing/terms')}`,
     breadcrumb: {
       "@type": "BreadcrumbList",
