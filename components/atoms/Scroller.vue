@@ -4,7 +4,7 @@ const localePath = useLocalePath();
 
 const scrollY = ref(0);
 
-const props = defineProps({
+defineProps({
   target: String
 })
 

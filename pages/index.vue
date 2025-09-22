@@ -110,10 +110,10 @@ useSchemaOrg([
 <i18n lang="json">
 {
   "en": {
-    "hero_alt": "Creative Partner - Megurumi Creative showcases handcrafted crochet amigurumi and accessories",
+    "hero_alt": "Creative Partner - Megurumi Creative showcases handcrafted crochet amigurumi and accessories"
   },
   "fr": {
-    "hero_alt": "Partenaire créatif - Megurumi Creative présente des amigurumis et accessoires en crochet faits à la main",
+    "hero_alt": "Partenaire créatif - Megurumi Creative présente des amigurumis et accessoires en crochet faits à la main"
   }
 }
 </i18n>
