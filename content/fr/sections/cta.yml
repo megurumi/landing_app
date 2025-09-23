@@ -1,0 +1,24 @@
+id: section-cta
+title: Commencez votre Aventure Megurumi
+description:
+  Explorez des créations uniques, apprenez de nouvelles techniques et connectez-vous avec une communauté partageant votre passion pour le crochet.
+links:
+  - label: Achetez Sur Etsy
+    size: xl
+    to: https://www.etsy.com/ca/shop/MegurumiCreative
+    color: gray
+    icon: i-heroicons-shopping-bag
+    target: _blank
+  - label: Pratiques débutant
+    size: xl
+    to: /landing/basics
+    color: blue
+    icon: i-heroicons-play
+    trailing: true
+    target: _blank
+  - label: Explorez les créations
+    size: xl
+    to: /landing/creations
+    color: primary
+    icon: i-heroicons-arrow-right-20-solid
+    trailing: true

@@ -1,0 +1,24 @@
+id: section-cta
+title: Start Your Mergurumi Journey
+description:
+  Explore unique creations, learn new techniques, and connect with a community that shares your passion for crochet.
+links:
+  - label: Shop On Etsy
+    size: xl
+    to: https://www.etsy.com/ca/shop/MegurumiCreative
+    color: gray
+    icon: i-heroicons-shopping-bag
+    target: _blank
+  - label: Beginner practices
+    size: xl
+    to: /landing/basics
+    color: blue
+    icon: i-heroicons-play
+    trailing: true
+    target: _blank
+  - label: Explore Creations
+    size: xl
+    to: /landing/creations
+    color: primary
+    icon: i-heroicons-arrow-right-20-solid
+    trailing: true

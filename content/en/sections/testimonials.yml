@@ -1,0 +1,42 @@
+id: section-testimonials
+title: My Reviews
+description: 5/5 from 30+ sales on Etsy
+description_short: ⭐ 5.0 | 30+ sales
+items:
+  - quote: null
+    author:
+      name: Marc
+      description: Sep 21, 2025
+      avatar:
+        src: /img/testimonials/marc.png
+  - quote: null
+    author:
+      name: Michelle
+      description: Sep 12, 2025
+      avatar:
+        src: /img/testimonials/michelle.png
+  - quote: |
+      Wonderful seller. She puts lots of thought and testing into each of her pieces.
+    author:
+      name: Paula
+      description: Sep 3, 2025
+      avatar:
+        src: /img/testimonials/paula.png
+  - quote: |
+      The pattern is excellent. It exceeded my expectations. Clear,simple to read,step by
+      step with photos to help you along. Barnabe 🐳 is simply adorable. Now to make his
+      friend. Thanks Megurumi_Creative for another fantastic pattern.
+    author:
+      name: Diane
+      description: Jul 22, 2025
+      avatar:
+        src: /img/testimonials/diane.png
+  - quote: |
+      I'm still pretty new to crochet and this was really easy to follow. Kevin turned out
+      so cute! The pattern is well explained and I had a great time doing it. Felt really
+      rewarding to finish it 🐥💛
+    author:
+      name: Loïc
+      description: Jun 19, 2025
+      avatar:
+        src: /img/testimonials/loic.png

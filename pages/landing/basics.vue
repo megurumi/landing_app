@@ -1,40 +1,33 @@
 <script setup lang="ts">
-import { socials } from '@/utils/socials';
 import { track } from '@vercel/analytics';
 
 const { t, locale } = useI18n();
 const config = useRuntimeConfig();
 const localePath = useLocalePath()
 
-definePageMeta({
-  layout: "landing",
-});
-
 const { data: page } = await useAsyncData(
-  "basics",
-  () => queryContent(`/${locale.value}/basics`).findOne(),
+  "page-basics",
+  () => queryContent(`/${locale.value}/pages/basics`).findOne(),
   { watch: [locale] }
 );
-if (!page.value) {
-  throw createError({
-    statusCode: 404,
-    statusMessage: "Page not found",
-    fatal: true,
-  });
-}
+const { data: basics } = await useAsyncData(
+  "section-basics",
+  () => queryContent(`/${locale.value}/sections/basics`).findOne(),
+  { watch: [locale] }
+);
 
 useSeoMeta({
-  title: page.value.title,
-  ogTitle: page.value.title,
-  description: page.value.description,
-  ogDescription: page.value.description,
+  title: page.value?.title,
+  ogTitle: page.value?.title,
+  description: page.value?.description,
+  ogDescription: page.value?.description,
 });
 
 useSchemaOrg([
   defineWebPage({
     "@type": "CollectionPage",
-    name: page.value.title,
-    description: page.value.description,
+    name: page.value?.title,
+    description: page.value?.description,
     url: `${config.public.NUXT_APP_DOMAIN}${localePath('/landing/basics')}`,
     breadcrumb: {
       "@type": "BreadcrumbList",
@@ -56,13 +49,13 @@ useSchemaOrg([
   }),
   {
     "@type": "VideoObject",
-    name: page.value.title,
-    description:page.value.description,
+    name: page.value?.title,
+    description:page.value?.description,
     thumbnailUrl: `${config.public.NUXT_APP_DOMAIN}/img/landing/hero.png`,
     uploadDate: "2025-01-01",
     duration: "PT10M",
-    contentUrl: page.value?.url + '/playlist?list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8',
-    embedUrl: page.value?.url + '/playlist?list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8',
+    contentUrl: page.value?.paylist_url,
+    embedUrl: page.value?.paylist_url,
     publisher: {
       "@type": "Organization",
       name: t("brand"),
@@ -79,8 +72,7 @@ useSchemaOrg([
   },
 ]);
 
-const latestVideos = computed(() => [...page.value?.videos].reverse());
-const youtube = computed(() => socials.find((social) => social.id === "youtube"));
+const latestVideos = computed(() => [...basics.value?.items].reverse());
 
 const handleClick = (video: { id: string, to: string}) => {
   track('click_cta_basics_video', { basic: video.id })
@@ -112,9 +104,8 @@ const handleClick = (video: { id: string, to: string}) => {
 
       <template #links>
         <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
-          <!-- YouTube basics playlist CTA -->
           <UButton
-            :to="youtube?.url + '/playlist?list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8'"
+            :to="page?.playist_url"
             target="_blank"
             color="primary"
             variant="solid"
@@ -123,7 +114,7 @@ const handleClick = (video: { id: string, to: string}) => {
           >
             {{ t("cta_youtube_basics_playlist") }}
             <template #trailing>
-              <UIcon v-if="youtube?.icon" :name="youtube?.icon" :size="20" />
+              <UIcon name="i-simple-icons-youtube" :size="20" />
             </template>
           </UButton>
         </div>

@@ -1,16 +1,7 @@
-title: Libère ta créativité avec le crochet
+id: section-products
+title: Mes Créations Faites Main
 description:
-  Plonge dans mon univers du crochet avec de magnifiques créations faites main, des tutoriels, et une communauté qui partage ta passion pour l'art du fil.
-hero:
-  image: img/brand/hero.png
-  caption: |
-    ✨ Retrouve tous mes tutoriels gratuits sur ma chaîne YouTube : @megurumi_creative !
-    (Lien dans la bio, ou écris-moi si tu ne le trouves pas !)
-    Si tu souhaites soutenir mon travail et m'aider à continuer à créer du contenu gratuit,
-    chaque geste compte énormément pour moi 💕
-    Une fois testés et peaufinés, mes patrons sont disponibles dans ma boutique Etsy,
-    et certains le sont déjà !
-    Merci de suivre mon aventure créative et d'en faire partie. Joyeux crochet ! 🧶💫
+  Découvrez une collection de créations au crochet uniques, des amigurumis adorables aux accessoires élégants, tous fabriqués avec amour et créativité.
 products:
   - id: barnabe
     image: img/creations/barnabe.png

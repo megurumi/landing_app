@@ -1,11 +1,5 @@
-title: Crochet Basics
-description:
-  Learn the essentials of crochet with quick and easy tutorials. Perfect for beginners who want to master the basics step by step! 🧶
-hero:
-  image: img/brand/hero.png
-  caption:
-    Learn the essentials of crochet with quick and easy tutorials. Perfect for beginners who want to master the basics step by step! 🧶
-videos:
+id: section-basics
+items:
   - id: magic_ring
     image: img/basics/magic_ring.png
     caption: |

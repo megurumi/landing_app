@@ -1,0 +1,8 @@
+id: section-gallery
+title: My Latest Handmade Creations
+description:
+  Explore a collection of unique crochet creations, from adorable amigurumi to stylish accessories, all crafted with love and creativity.
+image: /img/landing/gallery.png
+link: 
+  label: See all my creations!
+  to: /landing/creations

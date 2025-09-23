@@ -1,0 +1,8 @@
+id: section-gallery
+image: /img/landing/gallery.png
+title: Mes Dernières Créations Faites Main
+description:
+  Découvrez une collection de créations au crochet uniques, des amigurumis adorables aux accessoires élégants, tous fabriqués avec amour et créativité.
+link: 
+  label: Voir toutes mes créations !
+  to: /landing/creations
