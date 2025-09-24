@@ -1,10 +1,12 @@
 title: Megurumi Creative
 description:
   Profitez de l'art du crochet avec Megurumi Creative. Explorez des créations uniques faites à la main, inspirez-vous et connectez-vous avec des passionnés de crochet.
+
 hero:
   title: Libérez votre créativité avec le crochet
   description:
     Plongez dans mon univers de crochet avec des créations faites à la main, des tutoriels époustouflants et des personnes partageant votre passion pour l'artisanat.
+
 gallery:
   id: gallery
   title: Mes Dernières Créations Faites Main
@@ -14,6 +16,7 @@ gallery:
   link: 
     label: Voir toutes mes créations !
     to: /landing/creations
+
 social:
   id: socials
   title: Suivez-moi !
@@ -61,30 +64,7 @@ social:
       color: primary
       icon: i-simple-icons-tiktok
       target: _blank
-cta:
-  title: Commencez votre Aventure Megurumi
-  description:
-    Explorez des créations uniques, apprenez de nouvelles techniques et connectez-vous avec une communauté partageant votre passion pour le crochet.
-  links:
-    - label: Achetez Sur Etsy
-      size: xl
-      to: https://www.etsy.com/ca/shop/MegurumiCreative
-      color: gray
-      icon: i-heroicons-shopping-bag
-      target: _blank
-    - label: Pratiques débutant
-      size: xl
-      to: /landing/basics
-      color: blue
-      icon: i-heroicons-play
-      trailing: true
-      target: _blank
-    - label: Explorez les créations
-      size: xl
-      to: /landing/creations
-      color: primary
-      icon: i-heroicons-arrow-right-20-solid
-      trailing: true
+
 testimonials:
   id: testimonials
   title: Mes Avis
@@ -138,3 +118,28 @@ testimonials:
         description: 19 juin 2025
         avatar:
           src: /img/testimonials/loic.png
+
+cta:
+  title: Commencez votre Aventure Megurumi
+  description:
+    Explorez des créations uniques, apprenez de nouvelles techniques et connectez-vous avec une communauté partageant votre passion pour le crochet.
+  links:
+    - label: Achetez Sur Etsy
+      size: xl
+      to: https://www.etsy.com/ca/shop/MegurumiCreative
+      color: gray
+      icon: i-heroicons-shopping-bag
+      target: _blank
+    - label: Pratiques débutant
+      size: xl
+      to: /landing/basics
+      color: blue
+      icon: i-heroicons-play
+      trailing: true
+      target: _blank
+    - label: Explorez les créations
+      size: xl
+      to: /landing/creations
+      color: primary
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

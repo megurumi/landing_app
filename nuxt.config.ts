@@ -105,6 +105,8 @@ export default defineNuxtConfig({
         "/fr/landing/basics",
         "/landing/socials",
         "/fr/landing/socials",
+        "/landing/about",
+        "/fr/landing/about",
         "/landing/terms",
         "/fr/landing/terms",
         "/landing/policy",

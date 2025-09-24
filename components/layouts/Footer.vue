@@ -14,18 +14,22 @@ const links = computed(() => [
         to: localePath("/"),
       },
       {
-        label: t("basics"),
-        to: localePath("/landing/basics"),
-      },
-      {
         label: t("creations"),
         to: localePath("/landing/creations"),
+      },
+      {
+        label: t("basics"),
+        to: localePath("/landing/basics"),
       },
     ],
   },
   {
-    label: t("about"),
+    label: t("info"),
     children: [
+      {
+        label: t("about"),
+        to: localePath("/landing/about"),
+      },
       {
         label: t("policy"),
         to: localePath("/landing/policy"),

@@ -141,7 +141,7 @@ const etsy = computed(() => socials.find((social) => social.id === "etsy"));
       <template #headline>
         <NuxtImg
           :src="page?.hero.image"
-          :alt="`${page?.hero.caption} - ${t('profile_alt')}`"
+          :alt="page?.hero.caption"
           preset="logo"
           sizes="200px"
           class="object-fit mx-auto rounded-full"
@@ -244,6 +244,27 @@ const etsy = computed(() => socials.find((social) => social.id === "etsy"));
         </template>
       </UCard>
     </div>
+
+     <!-- FAQ SECTION -->
+    <ULandingSection
+      :title="page?.faq.title"
+      :description="page?.faq.description"
+      align="center"
+    >
+      <ULandingFAQ
+        :items="page?.faq.items"
+        :ui="{
+          wrapper: 'max-w-4xl mx-auto',
+          item: {
+            padding: 'p-6'
+          }
+        }"
+      >
+        <template #item="{ item }">
+          <MDC :value="item.content" class="prose prose-primary dark:prose-invert max-w-none text-gray-500 dark:text-gray-400" />
+        </template>
+      </ULandingFAQ>
+    </ULandingSection>
   </UContainer>
 </template>
 

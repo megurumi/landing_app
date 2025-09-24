@@ -1,9 +1,11 @@
 {
     "brand": "Megurumi Creative",
     "brand_short": "Megurumi",
-    "creations": "Mes Créations",
+    "creations": "Créations",
     "terms": "Terme et condition",
     "policy": "Politique d'utilisation",
     "home": "Accueil",
-    "basics": "Les Basiques"
+    "basics": "Basiques",
+    "About": "À Propos",
+    "info": "Informations"
 }

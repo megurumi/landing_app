@@ -9,7 +9,11 @@ const { data: page } = await useAsyncData(
   { watch: [locale] },
 )
 if (!page.value) {
-  throw createError({ statusCode: 404, statusMessage: "Page not found", fatal: true })
+  throw createError({
+    statusCode: 404,
+    statusMessage: "Page not found",
+    fatal: true,
+  });
 }
 
 definePageMeta({

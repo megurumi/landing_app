@@ -1,0 +1,116 @@
+title: À propos de Megurumi Creative
+description: Découvrez la créatrice derrière les patrons d'amigurumi magiques et rejoignez une communauté passionnée par l'art du crochet.
+
+hero:
+  title: Salut, je suis la Créatrice de Megurumi Creative !
+  description: |
+    Bienvenue dans mon petit coin du monde du crochet ! Je suis passionnée par la création de patrons d'amigurumi
+    adorables qui apportent de la joie aux artisans partout. Ce qui a commencé comme un hobby personnel s'est
+    transformé en une communauté d'enthousiastes du crochet partageant l'amour des créations faites main.
+  image: img/brand/hero.png
+
+process:
+  title: De l'Idée au Patron
+  description: Comment je crée chaque personnage d'amigurumi adorable
+  steps:
+    - title: 1. Design & Esquisse
+      description: Chaque personnage commence par une esquisse simple et une vision
+      icon: i-heroicons-pencil-square
+    - title: 2. Test & Raffinement
+      description: Je crochète plusieurs prototypes pour perfectionner chaque patron
+      icon: i-heroicons-cog-6-tooth
+    - title: 3. Tutoriels Gratuits
+      description: Vidéos YouTube étape par étape que tout le monde peut suivre
+      icon: i-heroicons-play-circle
+    - title: 4. Test Communautaire
+      description: D'autres artisans aident à tester les patrons avant leur sortie
+      icon: i-heroicons-users
+    - title: 5. Boutique de Patrons
+      description: Patrons raffinés et testés par la communauté disponibles sur Etsy
+      icon: i-heroicons-shopping-bag
+
+achievements:
+  title: Ce Que Nous Avons Accompli Ensemble
+  stats:
+    - number: "12+"
+      label: Personnages Uniques
+      description: De Barnabé la Baleine à Andy la Créature
+    - number: "5.0⭐"
+      label: Note de la Boutique
+      description: Basée sur plus de 30 clients satisfaits
+    - number: "500+"
+      label: Abonnés YouTube
+      description: Communauté grandissante d'enthousiastes du crochet
+    - number: "100%"
+      label: Tutoriels Gratuits
+      description: Chaque patron a un tutoriel YouTube gratuit
+
+community:
+  title: Rejoignez Notre Communauté Crochet
+  description: |
+    Ce qui rend Megurumi Creative spécial, ce ne sont pas seulement les patrons—c'est l'incroyable communauté
+    d'artisans qui partagent leurs créations, s'entraident pour apprendre, et répandent la joie à travers les
+    cadeaux faits main. Que tu sois débutant(e) prenant ton premier crochet ou crocheteur/crocheteuse
+    expérimenté(e) cherchant ton prochain projet, tu es le/la bienvenu(e) ici !
+
+faq:
+  title: Questions Fréquemment Posées
+  description: Tout ce que vous devez savoir sur les patrons et tutoriels Megurumi Creative.
+  items:
+    - label: Pourquoi acheter le patron si le tutoriel est gratuit ?
+      content: |
+        ✨ Sur YouTube : tu trouveras mes tutoriels gratuits, accessibles à tous. Ils sont parfaits si tu es débutant(e), si tu aimes suivre
+        étape par étape en vidéo, ou si tu as un budget serré. Cependant, comme ils n'ont pas encore été entièrement testés, il pourrait y avoir de petites
+        erreurs ici et là. Tu peux me soutenir gratuitement en t'abonnant, likant, et laissant un commentaire.
+
+        🧶 Patron PDF : ces patrons sont testés par la communauté, soigneusement relus, et professionnellement mis en page.
+        Ils sont sans erreur et faits pour ceux qui préfèrent un patron écrit qui soit clair, structuré, et plus facile à garder sous la main—ou
+        pour ceux qui n'ont pas la patience pour une vidéo. En achetant, tu soutiens directement mon travail créatif. N'hésite pas à
+        laisser un avis avec une photo de ton projet. Ça m'aide beaucoup ! Et bien sûr, tu peux toujours me contacter si tu as des questions.
+      defaultOpen: true
+    - label: Puis-je vendre des objets faits à partir de vos patrons ?
+      content: |
+        Oui, tu peux ! Si tu décides de vendre les peluches que tu fabriques à partir de mes patrons, assure-toi de me créditer comme créatrice dans la description de ton produit
+        avec la mention :
+
+        👉 Patron par @megurumi_creative
+
+        Pourquoi est-ce important (et équitable) ?
+
+        Concevoir un patron demande des heures de créativité, de tests, et de perfectionnement. C'est la fondation qui rend ta peluche finie possible. En donnant
+        du crédit, tu ne respectes pas seulement le travail de la créatrice, mais tu es également transparent(e) avec tes clients sur l'origine du design.
+        C'est une façon équitable d'honorer le processus créatif, de soutenir les créatrices indépendantes, et de garder cette communauté artisanale forte. Cette simple ligne est
+        un petit geste pour toi, mais cela représente le monde pour nous, les créatrices. 💖
+    - label: Offrez-vous du support pour vos patrons ?
+      content: |
+        Oui ! Tu peux me contacter via n'importe lequel de mes réseaux sociaux, et je suis toujours heureuse d'aider à résoudre les problèmes. La communauté crochet est aussi
+        incroyablement solidaire. Tu trouveras souvent de l'aide dans les commentaires de mes vidéos aussi !
+    - label: Quel est le niveau de compétence requis pour vos patrons ?
+      content: |
+        La plupart de mes patrons sont adaptés aux débutants ! Je me concentre sur les points de base et fournis des explications détaillées. Si tu sais faire un
+        cercle magique, une maille serrée, augmenter, et diminuer, tu peux faire la plupart de mes créations. J'ai aussi une playlist de bases pour les débutants complets.
+
+cta:
+  title: Commencez Votre Aventure Megurumi
+  description:
+    Explorez des créations uniques, apprenez de nouvelles techniques, et connectez-vous avec une communauté qui partage votre passion pour le crochet.
+  links:
+    - label: Boutique sur Etsy
+      size: xl
+      to: https://www.etsy.com/ca/shop/MegurumiCreative
+      color: gray
+      icon: i-heroicons-shopping-bag
+      target: _blank
+    - label: Pratiques débutants
+      size: xl
+      to: /landing/basics
+      color: blue
+      icon: i-heroicons-play
+      trailing: true
+      target: _blank
+    - label: Explorer les Créations
+      size: xl
+      to: /landing/creations
+      color: primary
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

@@ -1,9 +1,11 @@
 {
     "brand": "Megurumi Creative",
     "brand_short": "Megurumi",
-    "creations": "My Creations",
+    "creations": "Creations",
     "terms": "Terms and Condition",
     "policy": "Policy of use",
     "home": "Home",
-    "basics": "Crochet Basics"
+    "basics": "Basics",
+    "about": "About",
+    "info": "Informations"
 }

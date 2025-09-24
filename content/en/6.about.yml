@@ -1,0 +1,116 @@
+title: About Megurumi Creative
+description: Learn about the creator behind the magical amigurumi patterns and join a community passionate about crochet artistry.
+
+hero:
+  title: Hi, I'm the Creator Behind Megurumi Creative!
+  description: |
+    Welcome to my little corner of the crochet world! I'm passionate about creating adorable amigurumi patterns
+    that bring joy to crafters everywhere. What started as a personal hobby has grown into a community of
+    crochet enthusiasts sharing the love for handmade creations.
+  image: img/brand/hero.png
+
+process:
+  title: From Idea to Pattern
+  description: How I create each adorable amigurumi character
+  steps:
+    - title: 1. Design & Sketch
+      description: Every character starts with a simple sketch and vision
+      icon: i-heroicons-pencil-square
+    - title: 2. Test & Refine
+      description: I crochet multiple prototypes to perfect each pattern
+      icon: i-heroicons-cog-6-tooth
+    - title: 3. Free Tutorials
+      description: Step-by-step YouTube videos for everyone to follow
+      icon: i-heroicons-play-circle
+    - title: 4. Community Testing
+      description: Fellow crafters help test patterns before release
+      icon: i-heroicons-users
+    - title: 5. Pattern Shop
+      description: Refined, community-tested patterns available on Etsy
+      icon: i-heroicons-shopping-bag
+
+achievements:
+  title: What We've Accomplished Together
+  stats:
+    - number: "12+"
+      label: Unique Characters
+      description: From Barnabé the Whale to Andy the Creature
+    - number: "5.0⭐"
+      label: Shop Rating
+      description: Based on 30+ happy customers
+    - number: "500+"
+      label: YouTube Subscribers
+      description: Growing community of crochet enthusiasts
+    - number: "100%"
+      label: Free Tutorials
+      description: Every pattern has a free YouTube tutorial
+
+community:
+  title: Join Our Crochet Community
+  description: |
+    What makes Megurumi Creative special isn't just the patterns—it's the amazing community of crafters who
+    share their creations, help each other learn, and spread joy through handmade gifts. Whether you're a
+    beginner picking up your first hook or an experienced crocheter looking for your next project, you're
+    welcome here!
+
+faq:
+  title: Frequently Asked Questions
+  description: Everything you need to know about Megurumi Creative patterns and tutorials.
+  items:
+    - label: Why buy the pattern if the tutorial is free?
+      content: |
+        ✨ On YouTube: you'll find my free tutorials, accessible to everyone. They're perfect if you're a beginner, if you like to follow
+        along step by step on video, or if you're on a budget. However, since they haven't been fully tested yet, there might be small
+        mistakes here and there. You can support me for free by subscribing, liking, and leaving a comment.
+        
+        🧶 PDF pattern: these patterns are tested by the community, carefully proofread, and professionally laid out.
+        They're error-free and made for those who prefer a written pattern that's clear, structured, and easier to keep on hand—or
+        for those who don't have the patience for a video. By purchasing, you directly support my creative work. Don't hesitate to
+        leave a review with a photo of your project. It helps me a lot! And of course, you can always reach out if you have any questions.
+      defaultOpen: true
+    - label: Can I sell items made from your patterns?
+      content: |
+        Yes, you can! If you decide to sell the plushies you make from my patterns, please make sure to credit me as the designer in your product
+        description with the mention:
+
+        👉 Pattern by @megurumi_creative
+
+        Why is this important (and fair)?
+        
+        Designing a pattern takes hours of creativity, testing, and polishing. It's the foundation that makes your finished plush possible. By giving
+        credit, you're not only respecting the designer's work, but also being transparent with your customers about the origin of the design. 
+        It's a fair way to honor the creative process, support independent designers, and keep this craft community strong. That one simple line is
+        a small gesture for you, but it means the world to us designers. 💖
+    - label: Do you offer support for your patterns?
+      content: |
+        Yes! You can reach out through any of my social media channels, and I'm always happy to help troubleshoot. The crochet community is also
+        incredibly supportive. You'll often find help in the comments of my videos too!
+    - label: What skill level are your patterns?
+      content: |
+        Most of my patterns are beginner-friendly! I focus on basic stitches and provide detailed explanations. If you can make a 
+        magic ring, single crochet, increase, and decrease, you can make most of my designs. I also have a basics playlist for complete beginners.
+
+cta:
+  title: Start Your Mergurumi Journey
+  description:
+    Explore unique creations, learn new techniques, and connect with a community that shares your passion for crochet.
+  links:
+    - label: Shop On Etsy
+      size: xl
+      to: https://www.etsy.com/ca/shop/MegurumiCreative
+      color: gray
+      icon: i-heroicons-shopping-bag
+      target: _blank
+    - label: Beginner practices
+      size: xl
+      to: /landing/basics
+      color: blue
+      icon: i-heroicons-play
+      trailing: true
+      target: _blank
+    - label: Explore Creations
+      size: xl
+      to: /landing/creations
+      color: primary
+      icon: i-heroicons-arrow-right-20-solid
+      trailing: true

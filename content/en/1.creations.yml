@@ -1,4 +1,4 @@
-title: Unleash Your Creativity with Crochet
+title: My Creations
 description:
   Dive into my world of crochet with stunning handmade creations, tutorials, and a community that shares your passion for crafting.
 hero:
@@ -213,3 +213,40 @@ products:
         to: https://www.etsy.com/ca/listing/4369278765/andy-the-creature-monster-crochet
         icon: i-simple-icons-etsy
         target: _blank
+
+faq:
+  title: Frequently Asked Questions
+  description: Everything you need to know about Megurumi Creative patterns and tutorials.
+  items:
+    - label: Why buy the pattern if the tutorial is free?
+      content: |
+        ✨ On YouTube: you'll find my free tutorials, accessible to everyone. They're perfect if you're a beginner, if you like to follow
+        along step by step on video, or if you're on a budget. However, since they haven't been fully tested yet, there might be small
+        mistakes here and there. You can support me for free by subscribing, liking, and leaving a comment.
+        
+        🧶 PDF pattern: these patterns are tested by the community, carefully proofread, and professionally laid out.
+        They're error-free and made for those who prefer a written pattern that's clear, structured, and easier to keep on hand—or
+        for those who don't have the patience for a video. By purchasing, you directly support my creative work. Don't hesitate to
+        leave a review with a photo of your project. It helps me a lot! And of course, you can always reach out if you have any questions.
+      defaultOpen: true
+    - label: Can I sell items made from your patterns?
+      content: |
+        Yes, you can! If you decide to sell the plushies you make from my patterns, please make sure to credit me as the designer in your product
+        description with the mention:
+
+        👉 Pattern by @megurumi_creative
+
+        Why is this important (and fair)?
+        
+        Designing a pattern takes hours of creativity, testing, and polishing. It's the foundation that makes your finished plush possible. By giving
+        credit, you're not only respecting the designer's work, but also being transparent with your customers about the origin of the design. 
+        It's a fair way to honor the creative process, support independent designers, and keep this craft community strong. That one simple line is
+        a small gesture for you, but it means the world to us designers. 💖
+    - label: Do you offer support for your patterns?
+      content: |
+        Yes! You can reach out through any of my social media channels, and I'm always happy to help troubleshoot. The crochet community is also
+        incredibly supportive. You'll often find help in the comments of my videos too!
+    - label: What skill level are your patterns?
+      content: |
+        Most of my patterns are beginner-friendly! I focus on basic stitches and provide detailed explanations. If you can make a 
+        magic ring, single crochet, increase, and decrease, you can make most of my designs. I also have a basics playlist for complete beginners.

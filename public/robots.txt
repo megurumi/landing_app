@@ -18,6 +18,8 @@ Allow: /landing/basics/
 Allow: /fr/landing/basics/
 Allow: /landing/socials/
 Allow: /fr/landing/socials/
+Allow: /landing/about/
+Allow: /fr/landing/about/
 Allow: /landing/policy/
 Allow: /fr/landing/policy/
 Allow: /landing/terms/

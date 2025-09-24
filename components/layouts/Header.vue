@@ -9,6 +9,11 @@ const links = [
     icon: 'i-heroicons-home',
   },
   {
+    label: t("about"),
+    to: localePath("/landing/about"),
+    icon: 'i-heroicons-user',
+  },
+  {
     label: t('creations'),
     to: localePath('/landing/creations'),
     icon: 'i-heroicons-sparkles',
