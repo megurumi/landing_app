@@ -92,6 +92,18 @@ testimonials:
   items:
     - quote: null
       author:
+        name: Grace
+        description: 24 sep 2025
+        avatar:
+          src: /img/testimonials/grace.png
+    - quote: null
+      author:
+        name: Amanda
+        description: 23 sep 2025
+        avatar:
+          src: /img/testimonials/amanda.png
+    - quote: null
+      author:
         name: Marc
         description: 21 sep 2025
         avatar:
