@@ -196,12 +196,12 @@ const etsy = computed(() => socials.find((social) => social.id === "etsy"));
         v-for="product in latestProducts"
         :key="product.id"
         :id="product.id"
-        class="overflow-hidden hover:shadow-xl transition-shadow"
         :ui="{
           header: { padding: 'p-0 sm:p-0' },
           body: { padding: 'px-2 py-4 sm:p-4' },
           footer: { padding: 'px-2 sm:px-2 py-1' },
         }"
+        class="overflow-hidden"
       >
         <template #header>
           <NuxtImg
@@ -225,10 +225,11 @@ const etsy = computed(() => socials.find((social) => social.id === "etsy"));
               :key="link.id"
               :text="link.label"
             >
-              <UButton  
-                :to="link.url"
+              <UButton
+                :to="link.to"
                 :aria-label="link.label"
                 target="_blank"
+                rel="noopener noreferrer"
                 color="primary"
                 variant="ghost"
                 size="lg"
