@@ -1,10 +1,17 @@
 title: Bases du Crochet
 description:
-  Apprenez les essentiels du crochet avec des tutoriels rapides et faciles. Parfait pour les débutants qui veulent maétriser les bases étape par étape ! >é
+  Apprenez les essentiels du crochet avec des tutoriels rapides et faciles. Parfait pour les débutants qui veulent maétriser les bases étape par étape ! 🧶
+
 hero:
   image: img/brand/hero.png
   caption:
-    Apprenez les essentiels du crochet avec des tutoriels rapides et faciles. Parfait pour les débutants qui veulent maétriser les bases étape par étape ! >é
+    Apprenez les essentiels du crochet avec des tutoriels rapides et faciles. Parfait pour les débutants qui veulent maétriser les bases étape par étape ! 🧶
+  link:
+    to: https://www.youtube.com/playlist?list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+    label: Playlist Gratuites des Basiques
+    icon: i-simple-icons-youtube
+    target: _blank
+
 videos:
   - id: magic_ring
     image: img/basics/magic_ring.png

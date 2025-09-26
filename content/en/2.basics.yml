@@ -1,10 +1,17 @@
 title: Crochet Basics
 description:
   Learn the essentials of crochet with quick and easy tutorials. Perfect for beginners who want to master the basics step by step! 🧶
+
 hero:
   image: img/brand/hero.png
   caption:
     Learn the essentials of crochet with quick and easy tutorials. Perfect for beginners who want to master the basics step by step! 🧶
+  link:
+    to: https://www.youtube.com/playlist?list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8
+    label: Free Basics Playlist
+    icon: i-simple-icons-youtube
+    target: _blank
+
 videos:
   - id: magic_ring
     image: img/basics/magic_ring.png

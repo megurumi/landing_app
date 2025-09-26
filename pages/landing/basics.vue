@@ -59,7 +59,7 @@ useSchemaOrg([
     name: page.value.title,
     description:page.value.description,
     thumbnailUrl: `${config.public.NUXT_APP_DOMAIN}/img/landing/hero.png`,
-    uploadDate: "2025-01-01",
+    uploadDate: "2025-09-20T00:00:00Z",
     duration: "PT10M",
     contentUrl: page.value?.url + '/playlist?list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8',
     embedUrl: page.value?.url + '/playlist?list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8',
@@ -80,7 +80,6 @@ useSchemaOrg([
 ]);
 
 const latestVideos = computed(() => [...page.value?.videos].reverse());
-const youtube = computed(() => socials.find((social) => social.id === "youtube"));
 
 const handleClick = (video: { id: string, to: string}) => {
   track('click_cta_basics_video', { basic: video.id })
@@ -112,18 +111,17 @@ const handleClick = (video: { id: string, to: string}) => {
 
       <template #links>
         <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
-          <!-- YouTube basics playlist CTA -->
           <UButton
-            :to="youtube?.url + '/playlist?list=PL8tgm60WDRRQPT6TYJV_KgHCGoQjDbDP8'"
-            target="_blank"
+            :to="page?.hero.link.to"
+            :target="page?.hero.link.target"
             color="primary"
             variant="solid"
             size="xl"
             @click.stop="track('click_cta_basics_playlist')"
           >
-            {{ t("cta_youtube_basics_playlist") }}
+            {{ page?.hero.link.label }}
             <template #trailing>
-              <UIcon v-if="youtube?.icon" :name="youtube?.icon" :size="20" />
+              <UIcon :name="page?.hero.link.icon" :size="20" />
             </template>
           </UButton>
         </div>
@@ -172,13 +170,11 @@ const handleClick = (video: { id: string, to: string}) => {
 <i18n lang="json">
 {
   "en": {
-    "cta_youtube_basics_playlist": "Free Basics Playlist",
     "free_videos_teaches": "crochet basics, foundation stitches, reading patterns, basic techniques",
     "free_videos_level": "Beginner to Advanced",
     "free_video_tutorial": "Tutorial"
   },
   "fr": {
-    "cta_youtube_basics_playlist": "Free Playlist des Basiques",
     "free_videos_teaches": "bases du crochet, points de base, lecture de patrons, techniques de base",
     "free_videos_level": "Débutant à Avancé",
     "free_video_tutorial": "Tutoriel"

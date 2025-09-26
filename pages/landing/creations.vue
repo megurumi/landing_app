@@ -41,7 +41,7 @@ const productSchemas = computed(() => {
         priceSpecification: {
           "@type": "PriceSpecification",
           minPrice: "5.00",
-          maxPrice: "8.00",
+          maxPrice: "13.00",
           priceCurrency: "CAD"
         },
         availability: "https://schema.org/InStock",
@@ -55,7 +55,7 @@ const productSchemas = computed(() => {
         ratingValue: "5",
         reviewCount: "4",
         bestRating: "5",
-        worstRating: "1"
+        worstRating: "5"
       },
       additionalProperty: [
         {
@@ -155,33 +155,18 @@ const etsy = computed(() => socials.find((social) => social.id === "etsy"));
 
       <template #links>
         <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
-          <!-- YouTube playlists CTA -->
           <UButton
-            :to="youtube?.url + '/playlists'"
-            target="_blank"
-            color="red"
+            v-for="link in page?.hero.links"
+            :to="link.to"
+            :target="link.target"
+            :color="link.color"
             variant="solid"
             size="xl"
-            @click.stop="track('click_cta_creations_youtube')"
+            @click.stop="track(link.track)"
           >
-            {{ t("cta_youtube") }}
+            {{ link.label }}
             <template #trailing>
-              <UIcon v-if="youtube?.icon" :name="youtube?.icon" :size="20" />
-            </template>
-          </UButton>
-
-          <!-- Etsy CTA -->
-          <UButton
-            :to="etsy?.url"
-            target="_blank"
-            color="primary"
-            variant="solid"
-            size="xl"
-            @click.stop="track('click_cta_creations_etsy')"
-          >
-            {{ t("cta_etsy") }}
-            <template #trailing>
-              <UIcon v-if="etsy?.icon" :name="etsy?.icon" :size="20" />
+              <UIcon :name="link.icon" :size="20" />
             </template>
           </UButton>
         </div>
@@ -278,9 +263,7 @@ const etsy = computed(() => socials.find((social) => social.id === "etsy"));
     "craft_type": "Craft Type",
     "craft_type_value": "Amigurumi Crochet Pattern",
     "language": "Language",
-    "language_value": "English",
-    "cta_youtube": "Follow Free Tutorials Pattern!",
-    "cta_etsy": "Buy Community-Tested Pattern."
+    "language_value": "English"
   },
   "fr": {
     "pattern": "Patron de Crochet",
@@ -290,9 +273,7 @@ const etsy = computed(() => socials.find((social) => social.id === "etsy"));
     "craft_type": "Type d'Artisanat",
     "craft_type_value": "Patron de Crochet Amigurumi",
     "language": "Langue",
-    "language_value": "Français",
-    "cta_youtube": "Suivez des Tutoriels Pattern Gratuits !",
-    "cta_etsy": "Achète des Patrons Testés."
+    "language_value": "Français"
   }
 }
 </i18n>

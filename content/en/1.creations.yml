@@ -1,6 +1,7 @@
 title: My Creations
 description:
   Dive into my world of crochet with stunning handmade creations, tutorials, and a community that shares your passion for crafting.
+
 hero:
   image: img/brand/hero.png
   caption: |
@@ -9,6 +10,20 @@ hero:
     If you'd like to support my work and help me keep creating free content, any support means the world to me 💕
     Once tested and polished, my patterns are available in my Etsy shop, and some are already up!
     Thank you for following along and being part of my creative journey. Happy crocheting! 🧶💫
+  links:
+    - to: https://www.youtube.com/playlist
+      label: Follow Free Tutorials Pattern
+      icon: i-simple-icons-youtube
+      color: red
+      track: click_cta_creations_youtube
+      target: _blank
+    - to: https://www.etsy.com/ca/shop/MegurumiCreative
+      label: Buy Community-Tested Pattern
+      icon: i-simple-icons-etsy
+      color: primary
+      track: click_cta_creations_etsy
+      target: _blank
+
 products:
   - id: barnabe
     image: img/creations/barnabe.png
