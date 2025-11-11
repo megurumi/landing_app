@@ -98,7 +98,7 @@ const latestTestimonials = computed(() => [...page.value?.testimonials.items].re
             
             <div class="w-full">
               <p class="text-left">
-                5/5 from 30+ sales on Etsy
+                5/5 from 40+ sales on Etsy
               </p>
               <p class="text-left">
                 <UIcon
