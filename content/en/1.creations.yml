@@ -41,6 +41,7 @@ products:
         to: https://www.etsy.com/ca/listing/4298995429/barnabe-the-whale-crochet-pattern
         icon: i-simple-icons-etsy
         target: _blank
+
   - id: shelly
     image: img/creations/shelly.png
     caption: |
@@ -263,15 +264,90 @@ products:
         icon: i-simple-icons-etsy
         target: _blank
 
-  # - id: haley
-  #   image: img/creations/haley.png
-  #   caption: 🐝 Haley the Bee, a ray of honey and sweetness. 🍯
-  #   links:
-  #     - id: youtube
-  #       label: Watch on YouTube Free Andy Pattern Playlist
-  #       to: https://www.youtube.com/playlist?list=PL8tgm60WDRRTY5hgYdtPxNfoqKy4xEo6e
-  #       icon: i-simple-icons-youtube
-  #       target: _blank
+  - id: haley
+    image: img/creations/haley.png
+    caption: |
+      🌸🐝 With her soft velvety texture, delicate wings, big eyes and her adorable flower crown,
+      Haley is a sweet and charming little bee, perfect to celebrate spring and bring a touch of sunshine.
+    links:
+      - id: youtube
+        label: Watch on YouTube Free Haley Pattern Playlist
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRTY5hgYdtPxNfoqKy4xEo6e
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested Haley Pattern on Etsy
+        to: https://www.etsy.com/ca/listing/4417165812/haley-the-bee-crochet-pattern-amigurumi
+        icon: i-simple-icons-etsy
+        target: _blank
+
+  - id: elio
+    image: img/creations/elio.png
+    caption: |
+      🦛💙 Elio is soft, chunky, and irresistibly cute in chenille or worsted yarn,
+      making him a perfect cuddly companion or handmade gift!
+    links:
+      - id: youtube
+        label: Watch on YouTube Free Elio Pattern Playlist
+        to: https://www.youtube.com/watch?v=5WZP5QPuKnQ&list=PL8tgm60WDRRT2DrLt4rb-tCpgx-MGZBbM
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested Elio Pattern on Etsy
+        to: https://www.etsy.com/ca/listing/4458533060/elio-the-hippo-crochet-pattern-amigurumi
+        icon: i-simple-icons-etsy
+        target: _blank
+
+  - id: valentin
+    image: img/creations/valentin.png
+    caption: |
+      💕 Valentin is the perfect Valentine's Day gift
+      You can hold him by his tail to offer him like a bouquet of flowers to your loved one,
+      a unique and adorable way to say “I love you”.
+    links:
+      - id: youtube
+        label: Watch on YouTube Free Valentin Pattern Playlist
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRQU-XRk4XEZamsJBPpXpp_X
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested Valentin Pattern on Etsy
+        to: https://www.etsy.com/ca/listing/4442653061/valentin-the-otter-with-his-rose-crochet
+        icon: i-simple-icons-etsy
+        target: _blank
+
+  - id: amber
+    image: img/creations/amber.png
+    caption: |
+      🐰🌸 Amber is quick to make, and adorable in any color, whether blue or orange, chenille or
+      worsted yarn! and she's perfect for Easter!
+    links:
+      - id: youtube
+        label: Watch on YouTube Free Amber Pattern Playlist
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRROxs_UwFnX9NO_qFBWDM5L
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested Amber Pattern on Etsy
+        to: https://www.etsy.com/ca/listing/4449850460/amber-the-bunny-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
+
+  - id: justin
+    image: img/creations/justin.png
+    caption: |
+      🍁 Crochet your very own Justin Beaver, the cutest and most Canadian amigurumi!
+    links:
+      - id: youtube
+        label: Watch on YouTube Free Justin Pattern Playlist
+        to: https://www.youtube.com/watch?v=eQ8DWSbFWLM&list=PL8tgm60WDRRQ1kh6or7E3RujtntLu9oM5
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested Justin Pattern on Etsy
+        to: https://www.etsy.com/ca/listing/4469168252/justin-beaver-crochet-pattern-amigurumi
+        icon: i-simple-icons-etsy
+        target: _blank
 
 faq:
   title: Frequently Asked Questions

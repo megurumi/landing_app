@@ -32,13 +32,13 @@ process:
 achievements:
   title: Ce Que Nous Avons Accompli Ensemble
   stats:
-    - number: "12+"
+    - number: "18+"
       label: Personnages Uniques
       description: De Barnabé la Baleine à Andy la Créature
     - number: "5.0⭐"
       label: Note de la Boutique
       description: Basée sur plus de 30 clients satisfaits
-    - number: "500+"
+    - number: "1250+"
       label: Abonnés YouTube
       description: Communauté grandissante d'enthousiastes du crochet
     - number: "100%"

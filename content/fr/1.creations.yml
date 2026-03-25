@@ -265,15 +265,90 @@ products:
         icon: i-simple-icons-etsy
         target: _blank
 
-  # - id: haley
-  #   image: img/creations/haley.png
-  #   caption: 🐝 Haley l'abeille est un rayon de miel et de douceur. 🍯
-  #   links:
-  #     - id: youtube
-  #       label: Watch on YouTube Free Andy Pattern Playlist
-  #       to: https://www.youtube.com/playlist?list=PL8tgm60WDRRTY5hgYdtPxNfoqKy4xEo6e
-  #       icon: i-simple-icons-youtube
-  #       target: _blank
+  - id: haley
+    image: img/creations/haley.png
+    caption: |
+      🌸🐝 Avec sa douce texture veloutée, ses ailes délicates, ses grands yeux et son adorable couronne de fleurs,
+      Haley est une petite abeille douce et charmante, parfaite pour célébrer le printemps et apporter un rayon de soleil.
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Haley
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRTY5hgYdtPxNfoqKy4xEo6e
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Haley sur Etsy
+        to: https://www.etsy.com/ca/listing/4417165812/haley-the-bee-crochet-pattern-amigurumi
+        icon: i-simple-icons-etsy
+        target: _blank
+
+  - id: elio
+    image: img/creations/elio.png
+    caption: |
+      🦛💙 Elio est doux, dodu et irrésistiblement mignon en laine chenille ou worsted,
+      ce qui en fait un parfait compagnon câlin ou un cadeau fait main !
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite d'Elio
+        to: https://www.youtube.com/watch?v=5WZP5QPuKnQ&list=PL8tgm60WDRRT2DrLt4rb-tCpgx-MGZBbM
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé d'Elio sur Etsy
+        to: https://www.etsy.com/ca/listing/4458533060/elio-the-hippo-crochet-pattern-amigurumi
+        icon: i-simple-icons-etsy
+        target: _blank
+
+  - id: valentin
+    image: img/creations/valentin.png
+    caption: |
+      💕 Valentin est le cadeau parfait pour la Saint-Valentin !
+      Tu peux le tenir par la queue pour l'offrir comme un bouquet de fleurs à ton/ta bien-aimé(e),
+      une façon unique et adorable de dire « je t'aime ».
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Valentin
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRQU-XRk4XEZamsJBPpXpp_X
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Valentin sur Etsy
+        to: https://www.etsy.com/ca/listing/4442653061/valentin-the-otter-with-his-rose-crochet
+        icon: i-simple-icons-etsy
+        target: _blank
+
+  - id: amber
+    image: img/creations/amber.png
+    caption: |
+      🐰🌸 Amber est rapide à réaliser et adorable dans toutes les couleurs, que ce soit en bleu ou en orange, en chenille ou
+      en worsted ! Et elle est parfaite pour Pâques !
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite d'Amber
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRROxs_UwFnX9NO_qFBWDM5L
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé d'Amber sur Etsy
+        to: https://www.etsy.com/ca/listing/4449850460/amber-the-bunny-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
+
+  - id: justin
+    image: img/creations/justin.png
+    caption: |
+      🍁 Crochète ton propre Justin Beaver, l'amigurumi le plus mignon et le plus canadien !
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Justin
+        to: https://www.youtube.com/watch?v=eQ8DWSbFWLM&list=PL8tgm60WDRRQ1kh6or7E3RujtntLu9oM5
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Justin sur Etsy
+        to: https://www.etsy.com/ca/listing/4469168252/justin-beaver-crochet-pattern-amigurumi
+        icon: i-simple-icons-etsy
+        target: _blank
 
 faq:
   title: Questions Fréquemment Posées
