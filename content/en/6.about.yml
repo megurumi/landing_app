@@ -32,13 +32,13 @@ process:
 achievements:
   title: What We've Accomplished Together
   stats:
-    - number: "12+"
+    - number: "18+"
       label: Unique Characters
       description: From Barnabé the Whale to Andy the Creature
     - number: "5.0⭐"
       label: Shop Rating
       description: Based on 30+ happy customers
-    - number: "500+"
+    - number: "1250+"
       label: YouTube Subscribers
       description: Growing community of crochet enthusiasts
     - number: "100%"
