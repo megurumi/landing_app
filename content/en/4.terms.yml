@@ -42,3 +42,10 @@ sections:
       These terms and conditions are governed by and interpreted in accordance with the laws of the
       Province of Quebec and the federal laws of Canada. In the event of a dispute, it will be
       subject to the exclusive jurisdiction of the courts of Quebec.
+  - title: Publication Manager
+    content: >
+      This website is developed and published by <a href="https://alventech.fr" target="_blank"
+      rel="noopener">Alven Tech</a>, a web development company. Alven Tech is responsible for the
+      publication of this site and ensures its proper technical operation. For any questions
+      regarding the publication or infrastructure of this site, please contact
+      <a href="https://alventech.fr" target="_blank" rel="noopener">Alven Tech</a> through their official website.

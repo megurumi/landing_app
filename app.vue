@@ -169,6 +169,12 @@ useSchemaOrg([
       '@type': 'Organization',
       '@id': `${config.public.NUXT_APP_DOMAIN}${localePath('/')}`,
     },
+    creator: {
+      '@type': 'Organization',
+      name: 'Alven Tech',
+      url: 'https://alventech.fr',
+      '@id': 'https://alventech.fr',
+    },
   }),
   defineLocalBusiness({
     name: t("brand"),
