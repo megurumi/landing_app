@@ -48,7 +48,7 @@ achievements:
 community:
   title: Rejoignez Notre Communauté Crochet
   description: |
-    Ce qui rend Megurumi Creative spécial, ce ne sont pas seulement les patrons—c'est l'incroyable communauté
+    Ce qui rend Megurumi Creative spécial, ce ne sont pas seulement les patrons. C'est l'incroyable communauté
     d'artisans qui partagent leurs créations, s'entraident pour apprendre, et répandent la joie à travers les
     cadeaux faits main. Que tu sois débutant(e) prenant ton premier crochet ou crocheteur/crocheteuse
     expérimenté(e) cherchant ton prochain projet, tu es le/la bienvenu(e) ici !
@@ -57,18 +57,8 @@ faq:
   title: Questions Fréquemment Posées
   description: Tout ce que vous devez savoir sur les patrons et tutoriels Megurumi Creative.
   items:
-    - label: Pourquoi acheter le patron si le tutoriel est gratuit ?
-      content: |
-        ✨ Sur YouTube : tu trouveras mes tutoriels gratuits, accessibles à tous. Ils sont parfaits si tu es débutant(e), si tu aimes suivre
-        étape par étape en vidéo, ou si tu as un budget serré. Cependant, comme ils n'ont pas encore été entièrement testés, il pourrait y avoir de petites
-        erreurs ici et là. Tu peux me soutenir gratuitement en t'abonnant, likant, et laissant un commentaire.
-
-        🧶 Patron PDF : ces patrons sont testés par la communauté, soigneusement relus, et professionnellement mis en page.
-        Ils sont sans erreur et faits pour ceux qui préfèrent un patron écrit qui soit clair, structuré, et plus facile à garder sous la main—ou
-        pour ceux qui n'ont pas la patience pour une vidéo. En achetant, tu soutiens directement mon travail créatif. N'hésite pas à
-        laisser un avis avec une photo de ton projet. Ça m'aide beaucoup ! Et bien sûr, tu peux toujours me contacter si tu as des questions.
-      defaultOpen: true
     - label: Puis-je vendre des objets faits à partir de vos patrons ?
+      defaultOpen: true
       content: |
         Oui, tu peux ! Si tu décides de vendre les peluches que tu fabriques à partir de mes patrons, assure-toi de me créditer comme créatrice dans la description de ton produit
         avec la mention :
