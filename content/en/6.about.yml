@@ -48,7 +48,7 @@ achievements:
 community:
   title: Join Our Crochet Community
   description: |
-    What makes Megurumi Creative special isn't just the patterns—it's the amazing community of crafters who
+    What makes Megurumi Creative special isn't just the patterns. It's the amazing community of crafters who
     share their creations, help each other learn, and spread joy through handmade gifts. Whether you're a
     beginner picking up your first hook or an experienced crocheter looking for your next project, you're
     welcome here!
@@ -57,18 +57,8 @@ faq:
   title: Frequently Asked Questions
   description: Everything you need to know about Megurumi Creative patterns and tutorials.
   items:
-    - label: Why buy the pattern if the tutorial is free?
-      content: |
-        ✨ On YouTube: you'll find my free tutorials, accessible to everyone. They're perfect if you're a beginner, if you like to follow
-        along step by step on video, or if you're on a budget. However, since they haven't been fully tested yet, there might be small
-        mistakes here and there. You can support me for free by subscribing, liking, and leaving a comment.
-        
-        🧶 PDF pattern: these patterns are tested by the community, carefully proofread, and professionally laid out.
-        They're error-free and made for those who prefer a written pattern that's clear, structured, and easier to keep on hand—or
-        for those who don't have the patience for a video. By purchasing, you directly support my creative work. Don't hesitate to
-        leave a review with a photo of your project. It helps me a lot! And of course, you can always reach out if you have any questions.
-      defaultOpen: true
     - label: Can I sell items made from your patterns?
+      defaultOpen: true
       content: |
         Yes, you can! If you decide to sell the plushies you make from my patterns, please make sure to credit me as the designer in your product
         description with the mention:
