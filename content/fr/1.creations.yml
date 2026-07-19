@@ -350,6 +350,70 @@ products:
         icon: i-simple-icons-etsy
         target: _blank
 
+  - id: simon
+    image: img/creations/simon.png
+    caption: |
+      ✨ Simon est plein de personnalité et peut être affiché de plusieurs façons!
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Simon
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRTU8UwGbLUSrxV9LMsYu7kC
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Simon sur Etsy
+        to: https://www.etsy.com/listing/4512984496/simon-the-opossum-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
+
+  - id: diego
+    image: img/creations/diego.png
+    caption: |
+      💚 Diego se transforme en un jouet unique et attrayant, et a l'air fantastique dans n'importe quelle combinaison de couleurs
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Diego
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRRu59UKo7WxFdgSPGiaIlDa
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Diego sur Etsy
+        to: https://www.etsy.com/listing/4484182852/diego-the-chameleon-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
+
+  - id: alice
+    image: img/creations/alice.png
+    caption: |
+      🐧💙 Alice le bébé pingouin, un adorable petit amigurumi qui est sûr de faire fondre les cœurs!
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Alice
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRQAVh0fTEPt5W7E2oEGsYpg
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Alice sur Etsy
+        to: https://www.etsy.com/listing/4535147674/alice-the-baby-penguin-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
+
+  - id: olivio
+    image: img/creations/olivio.png
+    caption: |
+      🐧💙 Olivio le tatous, un adorable amigurumi qui est rapide à faire et amusant à tricoter!
+    links:
+      - id: youtube
+        label: Regarder sur YouTube la Playlist Gratuite de Olivio
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRTU8UwGbLUSrxV9LMsYu7kC
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Acheter le Patron Testé de Olivio sur Etsy
+        to: https://www.etsy.com/listing/4528621492/olivio-the-armadillo-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
+
 faq:
   title: Questions Fréquemment Posées
   description: Tout ce que vous devez savoir sur les patrons et tutoriels Megurumi Creative.

@@ -349,6 +349,70 @@ products:
         icon: i-simple-icons-etsy
         target: _blank
 
+  - id: simon
+    image: img/creations/simon.png
+    caption: |
+      ✨ Simon is full of personality and can be displayed in multiple ways!
+    links:
+      - id: youtube
+        label: Watch on YouTube Free Simon Pattern Playlist
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRTU8UwGbLUSrxV9LMsYu7kC
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested Simon Pattern on Etsy
+        to: https://www.etsy.com/listing/4512984496/simon-the-opossum-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
+
+  - id: diego
+    image: img/creations/diego.png
+    caption: |
+      💚 Diego turns into a unique, eye-catching plush and looks amazing in any color combination
+    links:
+      - id: youtube
+        label: Watch on YouTube Free Diego Pattern Playlist
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRRu59UKo7WxFdgSPGiaIlDa
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested Diego Pattern on Etsy
+        to: https://www.etsy.com/listing/4484182852/diego-the-chameleon-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
+
+  - id: alice
+    image: img/creations/alice.png
+    caption: |
+      🐧💙 Alice the Baby Penguin, an adorable little amigurumi that is sure to melt hearts!
+    links:
+      - id: youtube
+        label: Watch on YouTube Free Alice Pattern Playlist
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRQAVh0fTEPt5W7E2oEGsYpg
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested Alice Pattern on Etsy
+        to: https://www.etsy.com/listing/4535147674/alice-the-baby-penguin-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
+
+  - id: olivio
+    image: img/creations/olivio.png
+    caption: |
+      🐧💙 Olivio the Armadillo, an adorable amigurumi that is quick to make and fun to work on!
+    links:
+      - id: youtube
+        label: Watch on YouTube Free Olivio Pattern Playlist
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRTU8UwGbLUSrxV9LMsYu7kC
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested Olivio Pattern on Etsy
+        to: https://www.etsy.com/listing/4528621492/olivio-the-armadillo-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
+
 faq:
   title: Frequently Asked Questions
   description: Everything you need to know about Megurumi Creative patterns and tutorials.
