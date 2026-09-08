@@ -54,5 +54,15 @@
     "nuxt-schema-org": "^5.0.6",
     "nuxt-site-config": "^3.2.8",
     "nuxt-viewport": "^2.2.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "sharp",
+      "esbuild",
+      "@parcel/watcher",
+      "vue-demi",
+      "unrs-resolver",
+      "@vercel/speed-insights"
+    ]
   }
 }

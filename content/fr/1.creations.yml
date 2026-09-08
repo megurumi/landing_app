@@ -350,6 +350,23 @@ products:
         icon: i-simple-icons-etsy
         target: _blank
 
+  - id: ernest
+    image: img/creations/ernest.png
+    caption: |
+      🦀🐚 Un adorable petit compagnion de blage avec de la personnalité, un carapace removable, 
+      des yeux expressifs, et un design unique!
+    links:
+      - id: youtube
+        label: Watch on YouTube Free Ernest Pattern Playlist
+        to: https://www.youtube.com/playlist?list=PL8tgm60WDRRT-mq1ED4uWx3WaHf2FS5gF
+        icon: "i-simple-icons-youtube"
+        target: _blank
+      - id: etsy
+        label: Buy Community-Tested Ernest Pattern on Etsy
+        to: https://www.etsy.com/listing/4541420731/ernest-the-hermit-crab-crochet-pattern
+        icon: i-simple-icons-etsy
+        target: _blank
+
 faq:
   title: Questions Fréquemment Posées
   description: Tout ce que vous devez savoir sur les patrons et tutoriels Megurumi Creative.

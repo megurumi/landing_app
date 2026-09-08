@@ -193,8 +193,8 @@ const latestTestimonials = computed(() => [...page.value?.testimonials.items].re
           :alt="t('social_alt')"
           :src="page.social.image"
           preset="card"
-          sizes="280px"
-          class="w-[280px] h-auto object-cover object-center rounded-md mb-8"
+          sizes="480px"
+          class="w-[480px] h-auto object-cover object-center rounded-md mb-8"
           loading="eager"
           fetchpriority="high"
         />        
